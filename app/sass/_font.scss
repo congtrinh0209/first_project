@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Lato-Bold;
+  src: url('../fonts/Lato/fonts/Lato-Bold.woff2') format('woff2'),
+  url('../fonts/Lato/fonts/Lato-Bold.ttf') format('truetype'),
+  url('../fonts/Lato/fonts/Lato-Bold.eot') format('eot')
+}
+@font-face {
+  font-family: Lato-Light;
+  src: url('../fonts/Lato/fonts/Lato-Light.woff2') format('woff2'),
+  url('../fonts/Lato/fonts/Lato-Light.ttf') format('truetype'),
+  url('../fonts/Lato/fonts/Lato-Light.eot') format('eot')
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url('../fonts/Lato/fonts/Lato-Regular.woff2') format('woff2'),
+  url('../fonts/Lato/fonts/Lato-Regular.ttf') format('truetype'),
+  url('../fonts/Lato/fonts/Lato-Regular.eot') format('eot')
+}
+@font-face {
+  font-family: Lato-Italic;
+  src: url('../fonts/Lato/fonts/Lato-Italic.woff2') format('woff2'),
+  url('../fonts/Lato/fonts/Lato-Italic.ttf') format('truetype'),
+  url('../fonts/Lato/fonts/Lato-Italic.eot') format('eot')
+}
+$font-bold: Lato-Bold, Helvetica, sans-serif;
+$font-light: Lato-Light, Helvetica, sans-serif;
+$font-regular: Lato-Regular, Helvetica, sans-serif;
+$font-italic: Lato-Italic, Helvetica, sans-serif;

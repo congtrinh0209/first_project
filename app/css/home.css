@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Lato-Bold;
+  src: url("../fonts/Lato/fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato/fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato/fonts/Lato-Bold.eot") format("eot"); }
+
+@font-face {
+  font-family: Lato-Light;
+  src: url("../fonts/Lato/fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato/fonts/Lato-Light.ttf") format("truetype"), url("../fonts/Lato/fonts/Lato-Light.eot") format("eot"); }
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url("../fonts/Lato/fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato/fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato/fonts/Lato-Regular.eot") format("eot"); }
+
+@font-face {
+  font-family: Lato-Italic;
+  src: url("../fonts/Lato/fonts/Lato-Italic.woff2") format("woff2"), url("../fonts/Lato/fonts/Lato-Italic.ttf") format("truetype"), url("../fonts/Lato/fonts/Lato-Italic.eot") format("eot"); }
+
+@-webkit-keyframes banner-ani {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -55px);
+    transform: translate(0px, -55px); }
+  6% {
+    opacity: 0.04;
+    -webkit-transform: translate(0px, -55px);
+    transform: translate(0px, -55px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px); } }
+
+@keyframes banner-ani {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -55px);
+    transform: translate(0px, -55px); }
+  6% {
+    opacity: 0.04;
+    -webkit-transform: translate(0px, -55px);
+    transform: translate(0px, -55px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px); } }
+
+body {
+  font-family: Lato-Regular, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #D0D2D3; }
+
+ul li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin: 0; }
+
+button {
+  border: none; }
+
+img {
+  vertical-align: middle; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+
+.clear {
+  clear: both; }
+
+.wrapper-content {
+  background: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #000000; }
+  .wrapper-content .banner {
+    width: 100%;
+    height: 90px;
+    background-image: url("../images/banner.jpg");
+    background-position: center center;
+    background-size: 100%; }
+    .wrapper-content .banner .list-banner {
+      display: none; }
+    @media all and (min-width: 992px) {
+      .wrapper-content .banner {
+        height: 480px;
+        background-size: 100% 480px;
+        position: fixed;
+        top: 0;
+        left: 0; }
+        .wrapper-content .banner .list-banner {
+          display: block; } }
+    .wrapper-content .banner .list-banner {
+      width: 100%;
+      margin: 0 auto;
+      height: 23em;
+      bottom: 55px;
+      font-size: 1.2em;
+      font-family: Lato-Bold; }
+      @media all and (min-width: 1200px) {
+        .wrapper-content .banner .list-banner {
+          width: 1200px; } }
+      .wrapper-content .banner .list-banner .list {
+        width: 15%;
+        height: 10em;
+        float: left;
+        margin-right: 3%;
+        position: relative; }
+        .wrapper-content .banner .list-banner .list .list-text {
+          display: block;
+          width: 100%;
+          height: 14em;
+          background-color: rgba(0, 223, 0, 0.6);
+          border-radius: 50%; }
+          .wrapper-content .banner .list-banner .list .list-text img {
+            width: 70%;
+            margin-left: 14%;
+            margin-top: 14%; }
+          .wrapper-content .banner .list-banner .list .list-text span {
+            display: block;
+            text-align: center;
+            padding-left: 3%;
+            font-size: 1.2em;
+            color: #1e141e; }
+            .wrapper-content .banner .list-banner .list .list-text span.slogan {
+              font-size: 1em;
+              padding-left: 7%;
+              width: 90%;
+              color: black; }
+          .wrapper-content .banner .list-banner .list .list-text::after {
+            width: 63%;
+            border: solid transparent;
+            content: "";
+            border-width: 3.2em;
+            border-top: 5em solid rgba(0, 233, 0, 0.5);
+            left: 19%;
+            position: absolute;
+            top: 123%; }
+        .wrapper-content .banner .list-banner .list:nth-child(1) {
+          width: 23%;
+          height: 20em;
+          -webkit-animation: banner-ani ease 0.8s 0.2s;
+          animation: banner-ani ease 0.8s 0.2s; }
+          .wrapper-content .banner .list-banner .list:nth-child(1) .list-text {
+            display: block;
+            width: 100%;
+            height: 19em;
+            background-color: rgba(249, 250, 87, 0.8);
+            border-radius: 50%; }
+            .wrapper-content .banner .list-banner .list:nth-child(1) .list-text .name {
+              color: #E74C3C; }
+            .wrapper-content .banner .list-banner .list:nth-child(1) .list-text img {
+              width: 50%;
+              margin-left: 24%;
+              margin-top: 1%; }
+            .wrapper-content .banner .list-banner .list:nth-child(1) .list-text::after {
+              border: solid transparent;
+              content: "";
+              border-width: 5em;
+              border-top: 6em solid rgba(249, 248, 87, 0.8);
+              position: absolute;
+              left: 18%;
+              top: 84%; }
+        .wrapper-content .banner .list-banner .list:nth-child(2) {
+          margin-top: 180px;
+          -webkit-animation: banner-ani ease 0.8s 0.6s;
+          animation: banner-ani ease 0.8s 0.6s; }
+        .wrapper-content .banner .list-banner .list:nth-child(3) {
+          margin-top: 10px;
+          -webkit-animation: banner-ani ease 0.8s 0.4s;
+          animation: banner-ani ease 0.8s 0.4s; }
+        .wrapper-content .banner .list-banner .list:nth-child(4) {
+          margin-top: 170px;
+          -webkit-animation: banner-ani ease 0.8s 1s;
+          animation: banner-ani ease 0.8s 1s; }
+        .wrapper-content .banner .list-banner .list:nth-child(5) {
+          margin-top: 15px;
+          -webkit-animation: banner-ani ease 0.8s 0.8s;
+          animation: banner-ani ease 0.8s 0.8s; }
+  .wrapper-content header {
+    width: 100%; }

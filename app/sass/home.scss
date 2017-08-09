@@ -1,0 +1,109 @@
+//**Bourbon và font-face
+@import '../../bourbon/bourbon';
+@import 'font';
+//**Khai báo biến
+$color-black: #000000;
+$color-white: #ffffff;
+@keyframes banner-ani{
+  0% {
+    opacity: 0;
+    transform: translate(0px,-55px);
+  }
+  6% {
+    opacity: 0.04;
+    transform: translate(0px,-55px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px,0px);
+  }
+}
+//**Responsive mixin
+$tablet-width: 768px;
+$desktop-md-width: 992px;
+$desktop-lg-width: 1200px;
+@mixin tablet {
+  @media all and (min-width:#{$tablet-width}){
+    @content
+  }
+}
+@mixin desktop-md{
+  @media all and (min-width: #{$desktop-md-width}) {
+    @content
+  }
+}
+@mixin desktop-lg{
+  @media all and (min-width: #{$desktop-lg-width}) {
+    @content
+  }
+}
+//**Khai báo mixin
+@mixin button{
+
+}
+//**Reset CSS
+body{
+  font-family: Lato-Regular, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #D0D2D3;
+}
+ul li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+p{
+  margin: 0;
+}
+button{
+  border: none;
+}
+img{
+  vertical-align: middle;
+}
+.row{
+  margin: 0;
+  padding: 0;
+}
+.clear{
+  clear: both;
+}
+//*****************
+.wrapper-content{
+  background: $color-white;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid $color-black;
+  .banner{
+    width: 100%;
+    height: 90px;
+    background-image: url("../images/banner.jpg");
+    background-position: center center;
+    background-size: 100%;
+    .list-banner{
+      display: none;
+    }
+    @include desktop-md{
+      height: 480px;
+      background-size: 100% 480px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      .list-banner{
+        display: block;
+      }
+    }
+    @import "banner";
+  }
+  header{
+    width: 100%;
+    @import "header";
+  }
+  main{
+    @import "main";
+  }
+  footer{
+    @import "footer";
+  }
+}

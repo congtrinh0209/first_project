@@ -1,0 +1,98 @@
+.list-banner{
+  width: 100%;
+  @include desktop-lg{
+    width: 1200px;
+  }
+  margin: 0 auto;
+  height: 23em;
+  bottom: 55px;
+  font-size: 1.2em;
+  font-family: Lato-Bold;
+  .list{
+    width: 15%;
+    height: 10em;
+    float: left;
+    margin-right: 3%;
+    position: relative;
+    .list-text{
+      display: block;
+      width: 100%;
+      height: 14em;
+      background-color: rgba(0, 223, 0, 0.6);
+      border-radius: 50%;
+      img{
+        width: 70%;
+        margin-left: 14%;
+        margin-top: 14%;
+      }
+      span{
+        display: block;
+        text-align: center;
+        padding-left: 3%;
+        font-size: 1.2em;
+        color: rgba(30, 20, 30, 1);
+        &.slogan{
+          font-size: 1em;
+          padding-left: 7%;
+          width: 90%;
+          color: black;
+        }
+      }
+      &::after{
+        width: 63%;
+        border: solid transparent;
+        content: "";
+        border-width: 3.2em;
+        border-top: 5em solid rgba(0, 233, 0, 0.5);
+        left: 19%;
+        position: absolute;
+        top: 123%;
+      }
+    }
+    &:nth-child(1){
+      width: 23%;
+      height: 20em;
+      animation: banner-ani ease 0.8s 0.2s;
+      .list-text{
+        display: block;
+        width: 100%;
+        height: 19em;
+        background-color: rgba(249, 250, 87, 0.8);
+        border-radius: 50%;
+        .name{
+          color: #E74C3C;
+        }
+        img{
+          width: 50%;
+          margin-left: 24%;
+          margin-top: 1%;
+        }
+        &::after{
+          border: solid transparent;
+          content: "";
+          border-width: 5em;
+          border-top: 6em solid rgba(249, 248, 87, 0.8);
+          position: absolute;
+          left: 18%;
+          top: 84%;
+        }
+      }
+    }
+    &:nth-child(2){
+      margin-top: 180px;
+      animation: banner-ani ease 0.8s 0.6s;
+    }
+    &:nth-child(3){
+      margin-top: 10px;
+      animation: banner-ani ease 0.8s 0.4s;
+    }
+    &:nth-child(4){
+      margin-top: 170px;
+      animation: banner-ani ease 0.8s 1s;
+    }
+    &:nth-child(5){
+      margin-top: 15px;
+      animation: banner-ani ease 0.8s 0.8s;
+    }
+  }
+}
