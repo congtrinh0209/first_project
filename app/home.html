@@ -9,6 +9,7 @@
 		<meta name="author" content="congtrinh0209">
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="./css/home.css">
 		<link rel='shortcut icon' type='image/x-icon' href='./images/logo-option2png.ico'/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,6 +17,7 @@
 </head>
 <body>
 	<div class="wrapper-content">
+			<!---------- Phần banner ------->
 			<article class="banner">
 					<ul class="list-banner">
 							<li class="list item1">
@@ -57,7 +59,48 @@
 					</ul>
 			</article>
 			<header>
-					<nav></nav>
+					<!---------- Phần nav-bar ------->
+					<nav class="navbar navbar-inverse">
+							<div class="container-fluid">
+									<div class="navbar-header">
+											<ul class="nav-mobile">   <!--Nav for mobile-->
+													<li><i class="fa fa-search"></i><p>Tìm phòng</p></li>
+													<li><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></li>
+													<li><i class="fa fa-upload"></i><p>Đăng tin</p></li>
+													<div class="clear"></div>
+											</ul>
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+											</button>
+									</div>
+									<div class="collapse navbar-collapse" id="myNavbar">
+											<ul class="nav navbar-nav">
+													<li class="item"><a href="home.html"><i class="fa fa-home"></i><p>Trang chủ<p></p></a></li>
+													<li class="item dropdown">
+															<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-secret"></i><p>Cho thuê <span class="caret"></span></p></a>
+															<ul class="dropdown-menu">
+																	<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Nhà cho thuê</p></a></li>
+																	<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Phòng cho thuê</p></a></li>
+																	<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Chung cư mini</p></a></li>
+																	<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Mặt bằng cho thuê</p></a></li>
+															</ul>
+													</li>
+													<li class="item"><a href="#"><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
+													<li class="item"><a href="#"><i class="fa fa-binoculars"></i><p>Giúp tôi</p></a></li>
+													<li class="item"><a href="#"><i class="fa fa-newspaper-o"></i><p>Tin tức</p></a></li>
+													<li class="item"><a href="#"><i class="fa fa-life-ring"></i><p>Hướng dẫn</p></a></li>
+													<li class="item"><a href="#"><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
+													<li class="item"><a href="#"><i class="fa fa-book"></i><p>Quản lý</p></a></li>
+											</ul>
+											<ul class="nav navbar-nav navbar-right"> <!-- Sign-in, Sign-up-->
+													<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i><span> Đăng nhập</span></button></li>
+													<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil"></i><span> Đăng ký</span></button></li>
+											</ul>
+									</div>
+							</div>
+					</nav>
 			</header>
 			<main>
 					<article class="main-content"></article>
@@ -68,5 +111,7 @@
 			</main>
 			<footer></footer>
 	</div>
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
 </body>
 </html>

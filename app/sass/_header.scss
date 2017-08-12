@@ -1,0 +1,192 @@
+//Style navigation
+nav{
+  background: #004824;
+  @include tablet{
+    background: $color-white;
+  }
+  border: none;
+  .container-fluid{
+    @include tablet{
+      padding: 0;
+    }
+    .navbar-header{
+      .nav-mobile{       //***Phần nav cho mobile**
+        padding-top: 5px;
+        display: inline-block;
+        width: 80%;
+        @include tablet{
+          display: none;
+        }
+        li{
+          width: 30%;
+          text-align: center;
+          color: $color-white;
+          float: left;
+          &:nth-child(2){
+            width: 40%;
+          }
+        }
+      }
+      button{
+        border-color: $color-white;
+        span{
+          color: $color-black;
+        }
+      }
+    }
+    #myNavbar{
+      @include tablet{
+        padding: 0;
+      }
+      ul.nav{
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #1D9E74;
+        @include tablet{
+          background-color: $color-white;
+          -webkit-padding-start: 0;
+        }
+        @include desktop-md{
+
+        }
+        li:nth-child(3),li:nth-child(7){
+          display: none;
+          @include tablet{
+            display: block;
+          }
+        }
+        li.item{
+          border-bottom: 1px solid white;
+          @include tablet{
+            border-radius: 5px;
+            background-color: $color-white;
+            border-bottom: 2px solid white;
+          }
+          a{
+            width: 100%;
+            @include text($color-white,1.2em);
+            transition: all 0.5s ease;
+            @include tablet{
+              padding: 15px 11px;
+              color: #004824;
+              font-family: Lato-Bold;
+              text-align: center;
+            }
+            @include desktop-lg{
+              padding: 15px 20px;
+            }
+            i{
+              color: #0e211e;
+            }
+            p{
+              display: inline-block;
+              @include position(absolute,null,null,null,50px);
+              @include tablet{
+                display: block;
+                @include position(static,null,null,null,null);
+              }
+            }
+          }
+          &:hover{
+            cursor: pointer;
+            background-color: $color-white;
+            border-bottom: 2px solid red;
+            a{
+              transform: translate(0,-4px);
+              color: #004824;
+            }
+          }
+        }
+        li.open a{
+          background-color: transparent;
+        }
+        li.dropdown{      //********Menu drop-down*******
+          .dropdown-toggle{}
+          .dropdown-menu{
+            background-color: #2A3B45;
+            @include position(absolute,42px,null,null,null);
+            @include tablet{
+              width: 200px;
+              top: 72px;
+            }
+            width: 100%;
+            z-index: 2;
+            padding: 0;
+            border: none;
+            .sub-item{
+              color: white;
+              border-bottom: 1px solid white;
+              //border-top: 1px solid white;
+              border-radius: 5px;
+              a{
+                height: 40px;
+                line-height: 40px;
+                text-align: left;
+                color: $color-white;
+                i{
+                  color: #23BB39;
+                }
+                p{
+                  @include tablet{
+                    display: inline-block;
+                    @include position(absolute,null,null,null,30px);
+                  }
+                  @include desktop-md{
+                    left: 40px;
+                  }
+                }
+                @include tablet{
+                  line-height: 16px;
+                }
+
+              }
+              &:hover{
+                background-color: #004824;
+                border-bottom: 2px solid red;
+              }
+              &:hover a{
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+      ul.navbar-right{      //**Sign-in, Sign-up**
+        @include tablet{
+          display: inline-block;
+          margin: 0;
+          width: 260px;
+          background-color: transparent;
+          @include position(absolute,-45px,0,null,null);
+        }
+        @include desktop-md{
+          @include position(static,null,null,null,null);
+          margin-top: 10px;
+        }
+        li{
+          background-color: #FA681F;
+          border-bottom: 1px solid white;
+          @include tablet{
+            background-color: transparent;
+            margin-left: 5px;
+            border: none;
+          }
+          button{
+            color: $color-black;
+            background-color: transparent;
+            border: none;
+            span{
+              @include position(absolute,null,null,null,50px)
+              @include tablet{
+                @include position(static,null,null,null,null)
+              }
+            }
+            @include tablet{
+              @include btn;
+            }
+          }
+        }
+      }
+    }
+  }
+}

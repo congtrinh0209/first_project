@@ -42,12 +42,42 @@
     -webkit-transform: translate(0px, 0px);
     transform: translate(0px, 0px); } }
 
+@-webkit-keyframes rote-img {
+  0% {
+    -webkit-transform: rotateZ(25deg);
+    transform: rotateZ(25deg); }
+  33% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); }
+  66% {
+    -webkit-transform: rotateZ(-25deg);
+    transform: rotateZ(-25deg); }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); } }
+
+@keyframes rote-img {
+  0% {
+    -webkit-transform: rotateZ(25deg);
+    transform: rotateZ(25deg); }
+  33% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); }
+  66% {
+    -webkit-transform: rotateZ(-25deg);
+    transform: rotateZ(-25deg); }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg); } }
+
 body {
   font-family: Lato-Regular, Helvetica, sans-serif;
   font-size: 14px;
   background-color: #D0D2D3; }
 
-ul li {
+ol, ul, li {
+  margin: 0;
+  padding: 0;
   list-style-type: none; }
 
 a {
@@ -72,8 +102,7 @@ img {
 .wrapper-content {
   background: #ffffff;
   margin: 0 auto;
-  padding: 0;
-  border: 1px solid #000000; }
+  padding: 0; }
   .wrapper-content .banner {
     width: 100%;
     height: 90px;
@@ -97,7 +126,7 @@ img {
       height: 23em;
       bottom: 55px;
       font-size: 1.2em;
-      font-family: Lato-Bold; }
+      font-family: Lato-Regular; }
       @media all and (min-width: 1200px) {
         .wrapper-content .banner .list-banner {
           width: 1200px; } }
@@ -119,6 +148,9 @@ img {
           width: 100%;
           height: 14em;
           z-index: 2; }
+          .wrapper-content .banner .list-banner .list .list-text:hover .img-item {
+            -webkit-animation: rote-img 0.5s ease;
+            animation: rote-img 0.5s ease; }
           .wrapper-content .banner .list-banner .list .list-text img {
             width: 70%;
             margin-left: 14%;
@@ -172,4 +204,177 @@ img {
           -webkit-animation: banner-ani ease 0.8s 0.8s;
           animation: banner-ani ease 0.8s 0.8s; }
   .wrapper-content header {
-    width: 100%; }
+    max-width: 1200px;
+    margin: 0 auto; }
+    .wrapper-content header nav {
+      background: #004824;
+      border: none; }
+      @media all and (min-width: 768px) {
+        .wrapper-content header nav {
+          background: #ffffff; } }
+      @media all and (min-width: 768px) {
+        .wrapper-content header nav .container-fluid {
+          padding: 0; } }
+      .wrapper-content header nav .container-fluid .navbar-header .nav-mobile {
+        padding-top: 5px;
+        display: inline-block;
+        width: 80%; }
+        @media all and (min-width: 768px) {
+          .wrapper-content header nav .container-fluid .navbar-header .nav-mobile {
+            display: none; } }
+        .wrapper-content header nav .container-fluid .navbar-header .nav-mobile li {
+          width: 30%;
+          text-align: center;
+          color: #ffffff;
+          float: left; }
+          .wrapper-content header nav .container-fluid .navbar-header .nav-mobile li:nth-child(2) {
+            width: 40%; }
+      .wrapper-content header nav .container-fluid .navbar-header button {
+        border-color: #ffffff; }
+        .wrapper-content header nav .container-fluid .navbar-header button span {
+          color: #000000; }
+      @media all and (min-width: 768px) {
+        .wrapper-content header nav .container-fluid #myNavbar {
+          padding: 0; } }
+      .wrapper-content header nav .container-fluid #myNavbar ul.nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #1D9E74; }
+        @media all and (min-width: 768px) {
+          .wrapper-content header nav .container-fluid #myNavbar ul.nav {
+            background-color: #ffffff;
+            -webkit-padding-start: 0; } }
+        .wrapper-content header nav .container-fluid #myNavbar ul.nav li:nth-child(3), .wrapper-content header nav .container-fluid #myNavbar ul.nav li:nth-child(7) {
+          display: none; }
+          @media all and (min-width: 768px) {
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li:nth-child(3), .wrapper-content header nav .container-fluid #myNavbar ul.nav li:nth-child(7) {
+              display: block; } }
+        .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item {
+          border-bottom: 1px solid white; }
+          @media all and (min-width: 768px) {
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item {
+              border-radius: 5px;
+              background-color: #ffffff;
+              border-bottom: 2px solid white; } }
+          .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item a {
+            width: 100%;
+            color: #ffffff;
+            font-size: 1.2em;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease; }
+            @media all and (min-width: 768px) {
+              .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item a {
+                padding: 15px 11px;
+                color: #004824;
+                font-family: Lato-Bold;
+                text-align: center; } }
+            @media all and (min-width: 1200px) {
+              .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item a {
+                padding: 15px 20px; } }
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item a i {
+              color: #0e211e; }
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item a p {
+              display: inline-block;
+              position: absolute;
+              left: 50px; }
+              @media all and (min-width: 768px) {
+                .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item a p {
+                  display: block;
+                  position: static; } }
+          .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item:hover {
+            cursor: pointer;
+            background-color: #ffffff;
+            border-bottom: 2px solid red; }
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li.item:hover a {
+              -webkit-transform: translate(0, -4px);
+              transform: translate(0, -4px);
+              color: #004824; }
+        .wrapper-content header nav .container-fluid #myNavbar ul.nav li.open a {
+          background-color: transparent; }
+        .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu {
+          background-color: #2A3B45;
+          position: absolute;
+          top: 42px;
+          width: 100%;
+          z-index: 2;
+          padding: 0;
+          border: none; }
+          @media all and (min-width: 768px) {
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu {
+              width: 200px;
+              top: 72px; } }
+          .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu .sub-item {
+            color: white;
+            border-bottom: 1px solid white;
+            border-radius: 5px; }
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu .sub-item a {
+              height: 40px;
+              line-height: 40px;
+              text-align: left;
+              color: #ffffff; }
+              .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu .sub-item a i {
+                color: #23BB39; }
+              @media all and (min-width: 768px) {
+                .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu .sub-item a p {
+                  display: inline-block;
+                  position: absolute;
+                  left: 30px; } }
+              @media all and (min-width: 992px) {
+                .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu .sub-item a p {
+                  left: 40px; } }
+              @media all and (min-width: 768px) {
+                .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu .sub-item a {
+                  line-height: 16px; } }
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu .sub-item:hover {
+              background-color: #004824;
+              border-bottom: 2px solid red; }
+            .wrapper-content header nav .container-fluid #myNavbar ul.nav li.dropdown .dropdown-menu .sub-item:hover a {
+              color: #ffffff; }
+      @media all and (min-width: 768px) {
+        .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right {
+          display: inline-block;
+          margin: 0;
+          width: 260px;
+          background-color: transparent;
+          position: absolute;
+          top: -45px;
+          right: 0; } }
+      @media all and (min-width: 992px) {
+        .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right {
+          position: static;
+          margin-top: 10px; } }
+      .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right li {
+        background-color: #FA681F;
+        border-bottom: 1px solid white; }
+        @media all and (min-width: 768px) {
+          .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right li {
+            background-color: transparent;
+            margin-left: 5px;
+            border: none; } }
+        .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right li button {
+          color: #000000;
+          background-color: transparent;
+          border: none; }
+          .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right li button span {
+            position: absolute;
+            left: 50px; }
+            @media all and (min-width: 768px) {
+              .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right li button span {
+                position: static; } }
+          @media all and (min-width: 768px) {
+            .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right li button {
+              background-color: #E74C3C;
+              color: #ffffff;
+              font-size: 1.2em;
+              font-family: Lato-Bold;
+              border-radius: 7px;
+              border: none;
+              background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f7968c), color-stop(50%, #E74C3C));
+              background: linear-gradient(to left, #f7968c 50%, #E74C3C 50%);
+              background-size: 200% 100%;
+              -webkit-transition: background-position 100ms ease;
+              transition: background-position 100ms ease;
+              background-position: left bottom; }
+              .wrapper-content header nav .container-fluid #myNavbar ul.navbar-right li button:hover {
+                background-position: right top;
+                color: black; } }

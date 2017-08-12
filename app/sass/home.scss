@@ -4,6 +4,35 @@
 //**Khai báo biến
 $color-black: #000000;
 $color-white: #ffffff;
+//**Khai báo mixin
+@mixin text($color,$font-size){
+  color: $color;
+  font-size: $font-size;
+}
+@mixin position($type,$top,$right,$bottom,$left){
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin btn{
+  background-color: #E74C3C;
+  @include text($color-white,1.2em);
+  font-family: Lato-Bold;
+  border-radius: 7px;
+  border: none;
+  //******
+  background: linear-gradient(to left, #f7968c 50%,#E74C3C 50%);
+  background-size: 200% 100%;
+  transition: background-position 100ms ease;
+  background-position: left bottom;
+  &:hover{
+    background-position: right top;
+    color: black;
+  }
+}
+//**Animation
 @keyframes banner-ani{
   0% {
     opacity: 0;
@@ -16,6 +45,20 @@ $color-white: #ffffff;
   100% {
     opacity: 1;
     transform: translate(0px,0px);
+  }
+}
+@keyframes rote-img{
+  0% {
+    transform: rotateZ(25deg);
+  }
+  33% {
+    transform: rotateZ(0deg);
+  }
+  66% {
+    transform: rotateZ(-25deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
   }
 }
 //**Responsive mixin
@@ -37,17 +80,16 @@ $desktop-lg-width: 1200px;
     @content
   }
 }
-//**Khai báo mixin
-@mixin button{
 
-}
 //**Reset CSS
 body{
   font-family: Lato-Regular, Helvetica, sans-serif;
   font-size: 14px;
   background-color: #D0D2D3;
 }
-ul li{
+ol,ul,li{
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 a{
@@ -74,7 +116,6 @@ img{
   background: $color-white;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid $color-black;
   .banner{
     width: 100%;
     height: 90px;
@@ -97,7 +138,8 @@ img{
     @import "banner";
   }
   header{
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     @import "header";
   }
   main{
