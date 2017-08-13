@@ -16,14 +16,13 @@ $color-white: #ffffff;
   bottom: $bottom;
   left: $left;
 }
-@mixin btn{
-  background-color: #E74C3C;
+@mixin btn($color1,$color2){
+  background-color: $color1;
   @include text($color-white,1.2em);
-  font-family: Lato-Bold;
   border-radius: 7px;
   border: none;
   //******
-  background: linear-gradient(to left, #f7968c 50%,#E74C3C 50%);
+  background: linear-gradient(to left, $color2 50%,$color1 50%);
   background-size: 200% 100%;
   transition: background-position 100ms ease;
   background-position: left bottom;
@@ -31,6 +30,12 @@ $color-white: #ffffff;
     background-position: right top;
     color: black;
   }
+}
+@mixin btn1{
+  @include btn(#5cb85c,#69D17A)
+}
+@mixin btn2{
+  @include btn(#E74C3C,#f7968c)
 }
 //**Animation
 @keyframes banner-ani{

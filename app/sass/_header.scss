@@ -182,11 +182,42 @@ nav{
               }
             }
             @include tablet{
-              @include btn;
+              @include btn1;
             }
           }
         }
       }
     }
   }
+}
+section#myModal{
+  button{
+    @include btn1;
+    width: 100%;
+    padding: 10px;
+  }
+  .modal-dialog{
+    .modal-content{
+      .modal-header{
+        background-color: #5cb85c;
+        h4{
+          @include text(white,18px);
+        }
+      }
+      .modal-body{
+        .psw:hover{
+          cursor: pointer;
+        }
+      }
+      .modal-footer{
+        button{
+          @include btn2;
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+section#myModal2{
+  @extend #myModal;
 }

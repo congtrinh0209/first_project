@@ -101,6 +101,88 @@
 									</div>
 							</div>
 					</nav>
+					<!-- Modal Sign-in, Sign-up -->
+					<!-- Modal Sign-in -->
+					<section class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog">
+									<!-- Modal content-->
+									<div class="modal-content">
+											<div class="modal-header">
+													<h4 class="modal-title"><i class="fa fa-lock"></i>  Đăng nhập hệ thống !</h4>
+											</div>
+											<div class="modal-body">
+													<form action="home.html" id="sign-in" role="form">    <!--Login form-->
+															<div class="form-group">
+																	<label><b><i class="fa fa-user"></i> Tên đăng nhập:</b></label>
+																	<input type="text" class="form-control" id="uname" placeholder="Email hoặc số điện thoại" name="uname" value="0868979193" required>
+																	<span style="color:red" class="error1"></span>
+															</div>
+															<div class="form-group">
+																	<label><b><i class="fa fa-eye"></i> Mật khẩu:</b></label>
+																	<input type="password" class="form-control" id="psw" placeholder="Mật khẩu đăng nhập" name="psw" value="02092008" required>
+																	<span style="color:red" class="error2"></span>
+															</div>
+															<button class="login" type="submit"><i class="fa fa-power-off"></i> Login</button></br>
+															<div class="checkbox">
+																	<label><input type="checkbox" value="" checked>Remember me</label>
+															</div>
+													</form>
+													<div class="psw" id="forgot-pass" data-toggle="collapse" data-target="#u-mobile"><a>Forgot password?</a></div>
+													<form id="request-pass">   <!--Request-password form-->
+															<div class="form-group" style="background-color:#f1f1f1">
+																	<div class="collapse" id="u-mobile">
+																			<input type="text" class="form-control" id="send-mobile"  placeholder="Nhập số điện thoại của bạn chúng tôi sẽ gửi lại mật khẩu cho bạn" name="mobile" requisec><span style="color:red" class="error3"></span></br>
+																			<button id="send" type="submit"><i class="fa fa-paper-plane-o"></i> Send</button>
+																	</div>
+																	<span style="color:red" class="error3"></span>
+															</div>
+													</form>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+											</div>
+									</div>
+							</div>
+					</section>
+					<!-- Modal Sign-up -->
+					<section class="modal fade" id="myModal2" role="dialog">
+							<div class="modal-dialog">
+									<!-- Modal content-->
+									<div class="modal-content">
+											<div class="modal-header">
+													<h4 class="modal-title"><i class="fa fa-user-plus"></i> Đăng ký tài khoản !</h4>
+											</div>
+											<div class="modal-body">
+													<form action="signup-success.html" id="login-form">
+															<div class="form-group">
+																	<label><b>Họ tên:</b></label>
+																	<input type="text" class="form-control" placeholder="Họ tên bạn" name="name" required>
+															</div>
+															<div class="form-group">
+																	<label><b>Số điện thoại:</b></label>
+																	<input type="text" class="form-control" placeholder="Số điện thoại của bạn" name="mobile" required>
+															</div>
+															<div class="form-group">
+																	<label><b>Email:</b></label>
+																	<input type="email" class="form-control" placeholder="Email của bạn" name="email" required>
+															</div>
+															<div class="form-group">
+																	<label><b>Mật khẩu:</b></label>
+																	<input type="password" class="form-control" id="psw1" placeholder="Mật khẩu" name="pass" required>
+															</div>
+															<div class="form-group">
+																	<label><b>Nhập lại mật khẩu:</b></label>
+																	<input type="password" class="form-control" id="psw2" placeholder="Nhập lại mật khẩu" name="pass" required><span style="color:red" class="error4"></span>
+															</div>
+															<button class="login" type="submit"><i class="fa fa-pencil"></i> Đăng ký</button>
+													</form>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn " data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+											</div>
+									</div>
+							</div>
+					</section>
 			</header>
 			<main>
 					<article class="main-content"></article>
