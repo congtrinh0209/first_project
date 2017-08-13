@@ -71,6 +71,7 @@
     transform: rotateZ(0deg); } }
 
 body {
+  height: 1500px;
   font-family: Lato-Regular, Helvetica, sans-serif;
   font-size: 14px;
   background-color: #D0D2D3; }
@@ -99,6 +100,13 @@ img {
 .clear {
   clear: both; }
 
+.affix {
+  top: 0;
+  width: 100%; }
+  @media all and (min-width: 992px) {
+    .affix {
+      max-width: 1200px; } }
+
 .wrapper-content {
   background: #ffffff;
   margin: 0 auto;
@@ -114,10 +122,7 @@ img {
     @media all and (min-width: 992px) {
       .wrapper-content .banner {
         height: 480px;
-        background-size: 100% 480px;
-        position: fixed;
-        top: 0;
-        left: 0; }
+        background-size: 100% 480px; }
         .wrapper-content .banner .list-banner {
           display: block; } }
     .wrapper-content .banner .list-banner {

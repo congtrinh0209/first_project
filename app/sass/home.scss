@@ -88,6 +88,7 @@ $desktop-lg-width: 1200px;
 
 //**Reset CSS
 body{
+  height: 1500px;
   font-family: Lato-Regular, Helvetica, sans-serif;
   font-size: 14px;
   background-color: #D0D2D3;
@@ -116,6 +117,15 @@ img{
 .clear{
   clear: both;
 }
+.affix {
+  top:0;
+  width: 100%;
+  //z-index: 9999 !important;
+  @include desktop-md{
+    max-width: 1200px;
+  }
+}
+
 //*****************
 .wrapper-content{
   background: $color-white;
@@ -133,9 +143,6 @@ img{
     @include desktop-md{
       height: 480px;
       background-size: 100% 480px;
-      position: fixed;
-      top: 0;
-      left: 0;
       .list-banner{
         display: block;
       }
