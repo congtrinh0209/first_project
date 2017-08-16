@@ -4,7 +4,7 @@ const sass = require('gulp-sass');
 const babel = require('gulp-babel');
 const gulp_glob = require('gulp-sass-globbing');
 const browserSync = require('browser-sync').create();
-const autoprefixer = require('gulp-autoprefixer')
+const autoprefixer = require('gulp-autoprefixer');
 
 //Set task compile Scss
 gulp.task('sass', function () {
@@ -17,21 +17,21 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({
                 stream: true
-            }
-        ))
+        })
+        )
 });
 // Set task compile from ES6 to ES5
 gulp.task('babel',function() {
-    return gulp.src(['app/js_es6/**/*.js'])
+    return gulp.src('app/jses6/**/*.js')
         .pipe(babel({
             presets: ['env']
         }))
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({
                 stream: true
-            }
-        ))
-})
+        })
+        )
+});
 //Set task auto reload browser
 gulp.task('browserSync', function () {
     browserSync.init({
@@ -46,7 +46,7 @@ gulp.task('browserSync', function () {
 //Note: Task 'browserSync' and 'Sass', 'babel' always run before 'watch'.
 gulp.task('watch',['browserSync','sass','babel'], function () {
     gulp.watch('app/sass/**/*.scss',['sass']);   //auto compile when file change and reload browser
-    gulp.watch('app/js_es6/**/*.js',['babel']);
+    gulp.watch('app/jses6/**/*.js',['babel']);
     gulp.watch('app/*html',browserSync.reload); //auto reload when file change
 })
 
