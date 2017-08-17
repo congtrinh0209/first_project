@@ -15,9 +15,9 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="0">
+<body data-spy="scroll" data-target=".header" data-offset="75">
 	<div class="wrapper-content">
-			<!---------- Phần banner ------->
+	<!---------- Phần banner ------->
 			<article class="banner">
 					<ul class="list-banner">
 							<li class="list item1">
@@ -58,9 +58,9 @@
 							</li>
 					</ul>
 			</article>
-			<header>
-					<!---------- Phần nav-bar ------->
-					<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="452">
+			<header class="header" data-spy="affix" data-offset-top="452">
+			<!---------- Phần nav-bar ------->
+					<nav class="navbar navbar-inverse">
 							<div class="container-fluid">
 									<div class="navbar-header">
 											<ul class="nav-mobile">   <!--Nav for mobile-->
@@ -100,8 +100,20 @@
 											</ul>
 									</div>
 							</div>
+							<!-- Show infomation acc -->
+							<section class="info-acc">
+									<div class="img-ava">
+											<img src="./images/user.jpg">
+									</div>
+									<div class="info-user">
+											<p>Xin chào: <b style="color: red">Trịnh Công Trình</b></p>
+											<button class="manager-user">Quản lý</button>
+											<button class="sign-out">Đăng xuất</button>
+									</div>
+									<div class="clear"></div>
+							</section>
 					</nav>
-					<!-- Modal Sign-in, Sign-up -->
+			<!-- Modal Sign-in, Sign-up -->
 					<!-- Modal Sign-in -->
 					<section class="modal fade" id="myModal" role="dialog">
 							<div class="modal-dialog">
@@ -184,11 +196,13 @@
 							</div>
 					</section>
 			</header>
-			<main>
-					<article class="main-content"></article>
-					<aside>
-							<article class="search-bar"></article>
-							<article class="news-bar"></article>
+			<main class="wrapper">
+					<article class="main-content col-xs-12 col-md-9">
+
+					</article>
+					<aside  class="side-bar col-xs-12 col-md-3">
+							<section class="search-bar"></section>
+							<section class="news-bar"></section>
 					</aside>
 			</main>
 			<footer></footer>

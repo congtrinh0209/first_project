@@ -1,11 +1,19 @@
+//**Scroll fixed menu navigation-mobile,tablet
 $(document).ready(function() {
-    //Scroll fixed menu navigation
     var window_width = innerWidth;
     if (window_width <= 768) {
-        $('.navbar').attr('data-offset-top','89')
+        $('.header').attr('data-offset-top','89')
     };
+    //*****Hiển thị sign-in, sign-up
+    if ($(location).attr('href').search('psw')>0){
+        $('.navbar-right').css('display','none');
+        $('.info-acc').css('display','block');
+    }
+    $(".sign-out").on("click",()=>{
+        window.location.href='home.html';
+})
 });
-//Check sign-in//demo 2 user
+//*************Check sign-in//demo 2 user_data
 var users = [
     {
         fullname: 'Trịnh Công Trình',
@@ -37,4 +45,22 @@ $('#sign-in').on('submit',()=>{
         }
     }
     return error;
+});
+//****************Request send password
+$('#request-pass').on('submit',()=> {
+    var error = true;
+        for (let user of users) {
+            if ($('#send-mobile').val() != user.mobile) {
+                $('#send-mobile').next('span').html('<i class="fa fa-exclamation-circle"></i>' + ' Số điện thoại không tồn tại trên hệ thống!</br>');
+                error = false;
+            }
+            else {
+                $('#send-mobile').next('span').text('');
+                $('.error3').css('padding', '0px');
+                alert('Vui lòng kiểm tra tin nhắn để nhận lại mật khẩu!');
+                return true;
+            }
+        }
+    return error;
 })
+

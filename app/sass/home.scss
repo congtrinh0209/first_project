@@ -120,9 +120,14 @@ img{
 .affix {
   top:0;
   width: 100%;
-  //z-index: 9999 !important;
+  margin: 0 auto;
+  z-index: 9999 !important;
+}
+.affix ~ .wrapper{
+  position: relative;
+  top: 60px;
   @include desktop-md{
-    max-width: 1200px;
+    top: 95px;
   }
 }
 
@@ -150,11 +155,15 @@ img{
     @import "banner";
   }
   header{
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     @import "header";
   }
   main{
+    max-width: 1200px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
     @import "main";
   }
   footer{
