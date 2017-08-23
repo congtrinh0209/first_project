@@ -118,7 +118,6 @@ nav{
             .sub-item{
               color: white;
               border-bottom: 1px solid white;
-              //border-top: 1px solid white;
               border-radius: 5px;
               a{
                 height: 40px;
@@ -140,7 +139,6 @@ nav{
                 @include tablet{
                   line-height: 16px;
                 }
-
               }
               &:hover{
                 background-color: #004824;

@@ -1,0 +1,34 @@
+{
+  "users" : [
+    {
+    "fullname": "Trịnh Công Trình",
+    "mobile": "0868979193",
+    "email": "congtrinh0209@gmail.com",
+    "pass": "02092008"
+    },
+    {
+    "fullname": "Vũ Thị Quý",
+    "mobile": "0972047443",
+    "email": "vuquy@gmail.com",
+    "pass": "123456789"
+    }
+  ],
+  "district_locale":{
+    "district_hn": [
+      "Quận Ba Đình","Quận Hoàn Kiếm","Quận Hai Bà Trưng","Quận Đống Đa","Quận Tây Hồ","Quận Cầu Giấy",
+      "Quận Thanh Xuân","Quận Hoàng Mai","Quận Long Biên","Huyện Từ Liêm","Huyện Thanh Trì","Huyện Gia Lâm",
+      "Huyện Đông Anh","Huyện Sóc Sơn","Quận Hà Đông","Thị xã Sơn Tây","Huyện Ba Vì","Huyện Phúc Thọ",
+      "Huyện Thạch Thất","Huyện Quốc Oai","Huyện Chương Mỹ","Huyện Đan Phượng","Huyện Hoài Đức","Huyện Thanh Oai",
+      "Huyện Mỹ Đức","Huyện Ứng Hoà","Huyện Thường Tín","Huyện Phú Xuyên","Huyện Mê Linh"
+    ],
+    "district_dn":[
+      "Quận Hải Châu","Quận Thanh Khê","Quận Sơn Trà","Quận Ngũ Hành Sơn","Quận Liên Chiểu","Huyện Hòa Vang",
+      "Quận Cẩm Lệ","Huyện Hoàng Sa"
+    ],
+    "district_hcm":[
+      "Quận 1","Quận 2","Quận 3","Quận 4","Quận 5","Quận 6","Quận 7","Quận 8","Quận 9","Quận 10","Quận 11","Quận 12",
+      "Quận Thủ Đức","Quận Gò Vấp","Quận Bình Thạnh","Quận Tân Bình","Quận Tân Phú","Quận Phú Nhuận","Quận Bình Tân",
+      "Huyện Củ Chi","Huyện Hóc Môn","Huyện Bình Chánh","Huyện Nhà Bè","Huyện Cần Giờ"
+    ]
+  }
+}

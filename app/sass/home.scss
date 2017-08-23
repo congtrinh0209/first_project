@@ -29,6 +29,7 @@ $color-white: #ffffff;
   &:hover{
     background-position: right top;
     color: black;
+    cursor: pointer;
   }
 }
 @mixin btn1{
@@ -88,10 +89,8 @@ $desktop-lg-width: 1200px;
 
 //**Reset CSS
 body{
-  height: 1500px;
   font-family: Lato-Regular, Helvetica, sans-serif;
   font-size: 14px;
-  background-color: #D0D2D3;
 }
 ol,ul,li{
   margin: 0;
@@ -123,17 +122,17 @@ img{
   margin: 0 auto;
   z-index: 9999 !important;
 }
-.affix ~ .wrapper{
+.affix + .wrapper{
   position: relative;
-  top: 60px;
+  padding-top: 51px;
   @include desktop-md{
-    top: 95px;
+    padding-top: 72px;
   }
 }
 
 //*****************
 .wrapper-content{
-  background: $color-white;
+  background-color: #D0D2D3;
   margin: 0 auto;
   padding: 0;
   .banner{
@@ -161,8 +160,7 @@ img{
   }
   main{
     max-width: 1200px;
-    height: 500px;
-    border: 1px solid black;
+    background-color: white;
     margin: 0 auto;
     @import "main";
   }
