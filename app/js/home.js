@@ -2,6 +2,12 @@
 
 //**Scroll fixed menu navigation-mobile,tablet
 $(document).ready(function () {
+    //*************Load dữ liệu - chuyển trang
+    $.getJSON("./data.json", function (data) {
+        $.each(data.users, function (key, value) {
+            //**console.log(value.news[0].content);
+        });
+    });
     var window_width = innerWidth;
     if (window_width <= 768) {
         $(".header").attr("data-offset-top", "89");
@@ -9,7 +15,7 @@ $(document).ready(function () {
     //*****Hiển thị sign-in, sign-up
     if ($(location).attr("href").search("psw") > 0) {
         $(".navbar-right").css("display", "none");
-        $("info-acc").css("display", "block");
+        $(".info-acc").css("display", "block");
     }
     $(".sign-out").on("click", function () {
         window.location.href = "home.html";
@@ -32,7 +38,7 @@ $(document).ready(function () {
                 $("#sign-in").submit();
                 return true;
             } else {
-                $("#psw").next("span").html('<i class="fa fa-exclamation-circle"></i>' + 'Tên đăng nhập hoặc mật khẩu không chính xác</br>');
+                $("#psw").next("span").html("<i class=\"fa fa-exclamation-circle\"></i>T\xEAn \u0111\u0103ng nh\u1EADp ho\u1EB7c m\u1EADt kh\u1EA9u kh\xF4ng ch\xEDnh x\xE1c</br>");
             }
         });
         return false;
@@ -47,12 +53,17 @@ $(document).ready(function () {
                 $("#request-pass").submit();
                 return true;
             } else {
-                $("#send-mobile").next("span").html('<i class="fa fa-exclamation-circle"></i>' + ' Số điện thoại không tồn tại trên hệ thống!</br>');
+                $("#send-mobile").next("span").html("<i class=\"fa fa-exclamation-circle\"></i> S\u1ED1 \u0111i\u1EC7n tho\u1EA1i kh\xF4ng t\u1ED3n t\u1EA1i tr\xEAn h\u1EC7 th\u1ED1ng!</br>");
             }
         });
         return false;
     });
     //*************Load các quận huyện theo địa danh-menu search
+    function data_locale(data) {
+        $.each(data, function (key, value) {
+            display_locale += "<option>" + value + "</option>";
+        });
+    }
     function load_locale() {
         var display_locale = "<option>Quận, Huyện</option>";
         if ($(".locale-item").val() == "Hà Nội") {

@@ -1,5 +1,11 @@
 //**Scroll fixed menu navigation-mobile,tablet
 $(document).ready(function() {
+    //*************Load dữ liệu - chuyển trang
+    $.getJSON("./data.json",(data)=> {
+        $.each(data.users,(key,value)=>{
+            //**console.log(value.news[0].content);
+        })
+    });
     var window_width = innerWidth;
     if (window_width <= 768) {
         $(".header").attr("data-offset-top", "89");
@@ -7,7 +13,7 @@ $(document).ready(function() {
     //*****Hiển thị sign-in, sign-up
     if ($(location).attr("href").search("psw")>0){
         $(".navbar-right").css("display", "none");
-        $("info-acc").css("display", "block");
+        $(".info-acc").css("display", "block");
     }
     $(".sign-out").on("click",()=>{
         window.location.href = "home.html";
@@ -31,7 +37,7 @@ $(document).ready(function() {
                 return true;
             }
             else {
-                $("#psw").next("span").html('<i class="fa fa-exclamation-circle"></i>' + 'Tên đăng nhập hoặc mật khẩu không chính xác</br>');
+                $("#psw").next("span").html(`<i class="fa fa-exclamation-circle"></i>Tên đăng nhập hoặc mật khẩu không chính xác</br>`);
             }
         });
         return false;
@@ -47,28 +53,33 @@ $(document).ready(function() {
                 return true;
             }
             else {
-                $("#send-mobile").next("span").html('<i class="fa fa-exclamation-circle"></i>' + ' Số điện thoại không tồn tại trên hệ thống!</br>');
+                $("#send-mobile").next("span").html(`<i class="fa fa-exclamation-circle"></i> Số điện thoại không tồn tại trên hệ thống!</br>`);
             }
         });
         return false;
     });
     //*************Load các quận huyện theo địa danh-menu search
+    function data_locale(data){
+        $.each(data, (key, value)=>{
+            display_locale += `<option>${value}</option>`;
+        });
+    }
     function load_locale(){
         var display_locale = "<option>Quận, Huyện</option>";
         if ($(".locale-item").val() == "Hà Nội"){
             $.each(data_json.district_locale.district_hn,(key,value)=> {
-                display_locale += "<option>"+value+"</option>";
-        });
+                display_locale += `<option>${value}</option>`;
+            });
         }
         else if ($(".locale-item").val() == "Đà Nẵng"){
             $.each(data_json.district_locale.district_dn,(key,value)=> {
-                display_locale += "<option>"+value+"</option>";
-        });
+                display_locale += `<option>${value}</option>`;
+            });
         }
         else if ($(".locale-item").val() == "TP.Hồ Chí Minh"){
             $.each(data_json.district_locale.district_hcm,(key,value)=> {
-                display_locale += "<option>"+value+"</option>";
-        });
+                display_locale += `<option>${value}</option>`;
+            });
         }
         else {
             display_locale += "<option>Quận, Huyện</option>";
@@ -79,8 +90,6 @@ $(document).ready(function() {
     $(".locale-item").click(function() {
         load_locale();
     });
-
-
 
 });
 
