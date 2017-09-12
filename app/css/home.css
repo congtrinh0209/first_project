@@ -494,7 +494,8 @@ img {
   .wrapper-content main {
     max-width: 1200px;
     background-color: white;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 70px; }
     .wrapper-content main article.main-content {
       padding: 0;
       font-size: 1.1em; }
@@ -674,3 +675,49 @@ img {
             text-decoration: none; }
       .wrapper-content main aside.side-bar section.news-bar .news .icon-s {
         margin-top: 10px; }
+  .wrapper-content footer {
+    padding-top: 20px; }
+    .wrapper-content footer .footer-content {
+      padding-bottom: 10px;
+      color: #c1c1c1;
+      background-color: #004824; }
+      .wrapper-content footer .footer-content .wrapper-fcontent {
+        width: 1200px;
+        margin: 0 auto; }
+        .wrapper-content footer .footer-content .wrapper-fcontent .f-content1 {
+          text-align: center; }
+          .wrapper-content footer .footer-content .wrapper-fcontent .f-content1 img:nth-child(1) {
+            width: 70%; }
+          .wrapper-content footer .footer-content .wrapper-fcontent .f-content1 img:nth-child(2) {
+            width: 100%; }
+        .wrapper-content footer .footer-content .wrapper-fcontent .f-content2 {
+          text-align: justify; }
+          .wrapper-content footer .footer-content .wrapper-fcontent .f-content2 .footer-nav .item {
+            display: inline-block;
+            padding-right: 15px; }
+            .wrapper-content footer .footer-content .wrapper-fcontent .f-content2 .footer-nav .item:hover a {
+              color: red; }
+            .wrapper-content footer .footer-content .wrapper-fcontent .f-content2 .footer-nav .item a {
+              color: #2196F3;
+              font-size: 18px; }
+        .wrapper-content footer .footer-content .wrapper-fcontent .footer-link .row1 {
+          margin-left: 20px; }
+          .wrapper-content footer .footer-content .wrapper-fcontent .footer-link .row1 a {
+            display: inline-block;
+            width: 11%;
+            margin-left: 20px; }
+            .wrapper-content footer .footer-content .wrapper-fcontent .footer-link .row1 a img {
+              width: 100%; }
+              .wrapper-content footer .footer-content .wrapper-fcontent .footer-link .row1 a img:hover {
+                opacity: 0.8;
+                cursor: pointer; }
+        .wrapper-content footer .footer-content .wrapper-fcontent .footer-link .row2 img {
+          margin-top: 10px;
+          width: 100%; }
+        .wrapper-content footer .footer-content .wrapper-fcontent .bot-footer {
+          border-top: 1px solid #c1c1c1;
+          margin-top: 15px;
+          padding-top: 15px;
+          text-align: center; }
+          .wrapper-content footer .footer-content .wrapper-fcontent .bot-footer p {
+            color: #c1c1c1; }
