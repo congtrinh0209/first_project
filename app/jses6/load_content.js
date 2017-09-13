@@ -38,7 +38,7 @@ $(document).ready(function() {
                 <div class="content-right col-xs-12 col-sm-7 col-md-8">
                     <div class="content-right1 col-xs-12 col-md-8">
                     <div class="item-cr1 title">
-                      <a data-toggle="collapse" data-target="#content-detail${key + 1}"><p>${value.title}</p></a>
+                      <a data-toggle="collapse" data-target="#content-detail${key + 1}">${value.title}</a>
                     </div>
                     <div class="item-cr1 summarize-desc">
                       <p>${value.summary}</p>
@@ -62,7 +62,7 @@ $(document).ready(function() {
                     <div class="clear"></div>
                 </div>
                 <div class="clear"></div>
-                 <!--Thông tin xem chi tiết-->
+                <!--Thông tin xem chi tiết-->
                 <article id="content-detail${key + 1}" class="content-detail collapse">
                     <div class="menu-detail"><!-- Navs Tabs-->
                         <button class="btn-close button-detail" data-toggle="collapse" data-target="#content-detail${key + 1}">
@@ -178,6 +178,6 @@ $(document).ready(function() {
                 </article>
             </div>`;
         });
-        $(".main-content").html(content_new);
+        $(".wrap-content").html(content_new);
     });
 });

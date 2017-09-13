@@ -5,101 +5,127 @@ article.main-content{
     padding-left: 3px;
     padding-right: 10px;
   }
-  .content{
-    border: 2px solid #4FB748;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 5px;
-    .content-left{
-      padding: 0;
-      padding-top: 5px;
-    }
-    .content-right{
-      padding: 0;
-      .content-right1{
-        padding: 0;
-        @include tablet{
-          padding: 0 5px;
-          border-right: 1px solid #CDD0D2;
-        }
-        text-align: justify;
-        div{
-          margin-top: 5px;
-        }
-        .title{
-          font-weight: bold;
-        }
-        .local,.area{
-          font-weight: bold;
-        }
-        .date{
-          color: red;
-        }
-        .price, .phone{
-          color: #66A400;
-        }
-      }
-      .content-right2{
-        padding: 0;
-        @include tablet{
-          padding-left: 5px;
-        }
-        color: #66A400;
-        p{
-          color: #337ab7;
-          margin-top: 3px;
-          font-weight: bold;
-        }
-        .hide_op{
+  .nav-text{
+    ol{
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #ecf0f1;
+      padding: 8px 15px;
+      margin: 10px 0 20px 0;
+      list-style: none;
+      li{
+        color: #4FB748;
+        display: inline-block;
+        &:nth-child(1) a:hover{color: red}
+        &:nth-child(2){
+          color: #000000;
           display: none;
-          @include desktop-md{
-            display: block;
-          }
-        }
-        .item-cr1{
-          line-height: 1.9em;
-          .fa{
-            width: 25px;
-            color: black;
-          }
-        }
-        button{
-          @include btn1;
-          width: 100%;
-          margin-top: 15px;
-          padding: 7px;
         }
       }
     }
   }
-  .content-detail{
-    .menu-detail{
-      border-top: 1px solid #4fb748;
-      padding-top: 10px;
-      margin-top: 10px;
-      position: relative;
-      .btn-close{
-        @include btn2;
-        width: 80px;
-        padding: 8px;
-        position: absolute;
-        top: 5px;
-        right: 0;
+  .wrap-content{
+    .content{
+      border: 2px solid #4FB748;
+      border-radius: 5px;
+      margin: 10px 0;
+      padding: 5px;
+      .content-left{
+        padding: 0;
+        padding-top: 5px;
       }
-      .nav-tabs{
-
-      }
-      .tab-content{
-        padding-top: 10px;
-        border: 1px solid #dddddd;
-        .tab-pane{
-          padding: 5px;
+      .content-right{
+        padding: 0;
+        .content-right1{
+          padding: 0;
+          @include tablet{
+            padding: 0 5px;
+            border-right: 1px solid #CDD0D2;
+          }
+          text-align: justify;
+          div{
+            margin-top: 5px;
+          }
+          .title{
+            font-weight: bold;
+            text-transform: uppercase;
+            a:hover{
+              color: #69D17A;
+            }
+          }
+          .local,.area{
+            font-weight: bold;
+          }
+          .date{
+            color: #E74C3C;
+            font-weight: bold;
+          }
+          .price, .phone{
+            color: #66A400;
+          }
         }
-        #menu3{
-          .image-item{
-            .slide2{
-              width: 70%;
-              margin: 0 auto;
+        .content-right2{
+          padding: 0;
+          @include tablet{
+            padding-left: 5px;
+          }
+          color: #66A400;
+          p{
+            color: #00914E;
+            margin-top: 3px;
+            font-weight: bold;
+          }
+          .hide_op{
+            display: none;
+            @include desktop-md{
+              display: block;
+            }
+          }
+          .item-cr1{
+            line-height: 1.9em;
+            .fa{
+              width: 25px;
+              color: black;
+            }
+          }
+          button{
+            @include btn1;
+            width: 100%;
+            margin-top: 15px;
+            padding: 7px;
+          }
+        }
+      }
+    }
+    .content-detail{
+      .menu-detail{
+        border-top: 1px solid #4fb748;
+        padding-top: 10px;
+        margin-top: 10px;
+        position: relative;
+        .btn-close{
+          @include btn2;
+          width: 80px;
+          padding: 8px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+        }
+        .nav-tabs{
+
+        }
+        .tab-content{
+          padding-top: 10px;
+          border: 1px solid #dddddd;
+          .tab-pane{
+            padding: 5px;
+          }
+          #menu3{
+            .image-item{
+              .slide2{
+                width: 70%;
+                margin: 0 auto;
+              }
             }
           }
         }

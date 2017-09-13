@@ -1,12 +1,12 @@
 .top-footer{
-  
+  width: 100% 
 }
 .footer-content{
     padding-bottom:10px;
     color: #c1c1c1;
     background-color: #004824;
    .wrapper-fcontent{
-     width: 1200px;
+     max-width: 1200px;
      margin: 0 auto;
      .f-content1{
        text-align: center;
@@ -31,6 +31,7 @@
        .text-copyright{}
      }
      .footer-link{
+       margin-top: 5px;
        .row1{
         margin-left: 20px;
           a{

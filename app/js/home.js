@@ -2,6 +2,27 @@
 
 //**Scroll fixed menu navigation-mobile,tablet
 $(document).ready(function () {
+    /***Gán dữ liệu vào menu search khi click logo******/
+    $(".room").on('click', function () {
+        $("#arrow1").css("display", "inline-block");
+        $(".loaihinh").val($(".loaihinh>option:nth-child(2)").val());
+        $("#search-target").text("Phòng cho thuê");
+    });
+    $(".house").on('click', function () {
+        $("#arrow1").css("display", "inline-block");
+        $(".loaihinh").val($(".loaihinh>option:nth-child(3)").val());
+        $("#search-target").text("Nhà cho thuê");
+    });
+    $(".flat").on('click', function () {
+        $("#arrow1").css("display", "inline-block");
+        $(".loaihinh").val($(".loaihinh>option:nth-child(4)").val());
+        $("#search-target").text("Căn hộ cho thuê");
+    });
+    $(".store").on('click', function () {
+        $("#arrow1").css("display", "inline-block");
+        $(".loaihinh").val($(".loaihinh>option:nth-child(5)").val());
+        $("#search-target").text("Mặt bằng cho thuê");
+    });
     //*************Load dữ liệu - chuyển trang
     $.getJSON("./data.json", function (data) {
         $.each(data.users, function (key, value) {
