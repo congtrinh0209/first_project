@@ -111,6 +111,5 @@ $(document).ready(function() {
     $(".locale-item").click(function() {
         load_locale();
     });
-
 });
 

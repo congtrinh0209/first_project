@@ -1,8 +1,13 @@
+/******** PAGINATION ************/
 $(document).ready(function() {
     $.getJSON("./data.json", (data) => {
-        let content_new = "";
-        $.each(data.news, (key, value) => {
-            content_new += `<div class="content" id="content${key + 1}">
+        const length_arr = data.news.length;
+        var number_page = Math.ceil(length_arr/2); // Tính số trang
+        function pagination(a, b) {  //Hàm load content cho mỗi trang
+            let content_new = "";
+            $.each(data.news, (key, value) => {
+                if (a <= key && key < b) {
+                    content_new += `<div class="content" id="content${key + 1}">
                 <div class="content-left col-xs-12 col-sm-5 col-md-4">
                     <div id="myCarousel${key + 1}" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -177,7 +182,45 @@ $(document).ready(function() {
                     </div>
                 </article>
             </div>`;
+                    $(".wrap-content").html(content_new);
+                }
+            });
+        }
+        pagination(0, 2);
+        $(".page>a").click(function() {
+            let page_first = Number($(".page_2>a").html());
+            let page_last = Number($(".page2>a").html());
+            let page = Number(this.innerText);
+            let a = (page - 1) * 2;
+            let b = page * 2;
+            $(".page").removeClass("active");
+            if ((page > 2) && (page < number_page - 1)) {
+                $(".page0").children().html(page);
+                $(".page_2").children().html(page - 2);
+                $(".page_1").children().html(page - 1);
+                $(".page1").children().html(page + 1);
+                $(".page2").children().html(page + 2);
+                $(".page0").addClass("active");
+                pagination(a, b);
+            }
+            else if (page == 2 && page_first == page ){
+                $(".page>a").each((index, value) => {
+                    $(value).html((Number($(value).html()) - 1));
+                });
+                $(".page_1").addClass("active");
+                pagination(a, b);
+            }
+            else if (page == (number_page - 1) && page == page_last){
+                $(".page>a").each((index, value) => {
+                    $(value).html((Number($(value).html()) + 1));
+                });
+                $(".page1").addClass("active");
+                pagination(a, b);
+            }
+            else {
+                $(this).parent().addClass("active");
+                pagination(a, b);
+            }
         });
-        $(".wrap-content").html(content_new);
     });
 });

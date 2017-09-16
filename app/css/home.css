@@ -494,8 +494,7 @@ img {
   .wrapper-content main {
     max-width: 1200px;
     background-color: white;
-    margin: 0 auto;
-    padding-bottom: 70px; }
+    margin: 0 auto; }
     .wrapper-content main article.main-content {
       padding: 0;
       font-size: 1.1em; }
@@ -622,6 +621,9 @@ img {
           .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content #menu3 .image-item .slide2 {
             width: 70%;
             margin: 0 auto; }
+      .wrapper-content main article.main-content .pagination-container {
+        margin: 0 auto;
+        text-align: center; }
     .wrapper-content main aside.side-bar {
       padding: 1px; }
       .wrapper-content main aside.side-bar section.search-bar, .wrapper-content main aside.side-bar section.news-bar {

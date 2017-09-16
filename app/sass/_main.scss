@@ -132,6 +132,13 @@ article.main-content{
       }
     }
   }
+  .pagination-container{
+    margin: 0 auto;
+    text-align: center;
+    .pagination{
+      li{}
+    }
+  }
 }
 aside.side-bar{
   padding: 1px;
