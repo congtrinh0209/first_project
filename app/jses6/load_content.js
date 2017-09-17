@@ -1,9 +1,11 @@
 /******** PAGINATION ************/
 $(document).ready(function() {
     $.getJSON("./data.json", (data) => {
-        const length_arr = data.news.length;
+        const length_arr = data.news.length;  // Kích thước magr dữ liệu
+        const nper_page = 2;                  // Số tin trên 1 trang
+        var stt_b;                            // Số thứ tự box giữa pagination
         var number_page = Math.ceil(length_arr/2); // Tính số trang
-        function pagination(a, b) {  //Hàm load content cho mỗi trang
+        function pagination(a, b) {            //Hàm đổ html cho mỗi trang
             let content_new = "";
             $.each(data.news, (key, value) => {
                 if (a <= key && key < b) {
@@ -187,22 +189,27 @@ $(document).ready(function() {
             });
         }
         pagination(0, 2);
+        function stt_page() { //HÀm phân số thứ tự trang
+            $(".page0").children().html(stt_b);
+            $(".page_2").children().html(stt_b - 2);
+            $(".page_1").children().html(stt_b - 1);
+            $(".page1").children().html(stt_b + 1);
+            $(".page2").children().html(stt_b + 2);
+        }
         $(".page>a").click(function() {
             let page_first = Number($(".page_2>a").html());
             let page_last = Number($(".page2>a").html());
             let page = Number(this.innerText);
-            let a = (page - 1) * 2;
-            let b = page * 2;
+            let a = (page - 1) * nper_page;
+            let b = page * nper_page;
             $(".page").removeClass("active");
             if ((page > 2) && (page < number_page - 1)) {
-                $(".page0").children().html(page);
-                $(".page_2").children().html(page - 2);
-                $(".page_1").children().html(page - 1);
-                $(".page1").children().html(page + 1);
-                $(".page2").children().html(page + 2);
+                stt_b = page;
+                stt_page();
                 $(".page0").addClass("active");
                 pagination(a, b);
             }
+            // Trường hợp trang thứ 2 và trang gần cuối
             else if (page == 2 && page_first == page ){
                 $(".page>a").each((index, value) => {
                     $(value).html((Number($(value).html()) - 1));
@@ -221,6 +228,21 @@ $(document).ready(function() {
                 $(this).parent().addClass("active");
                 pagination(a, b);
             }
+        });
+        // Hàm load cho First và Last
+        $(".first>a").click(function () {
+            stt_b = 3;
+            stt_page();
+            pagination(0, nper_page);
+            $(".page").removeClass("active");
+            $(".page_2").addClass("active");
+        });
+        $(".last>a").click(function () {
+            stt_b = number_page -2;
+            stt_page();
+            pagination((number_page-1)*nper_page, length_arr);
+            $(".page").removeClass("active");
+            $(".page2").addClass("active");
         });
     });
 });

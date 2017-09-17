@@ -3,10 +3,12 @@
 /******** PAGINATION ************/
 $(document).ready(function () {
     $.getJSON("./data.json", function (data) {
-        var length_arr = data.news.length;
+        var length_arr = data.news.length; // Kích thước magr dữ liệu
+        var nper_page = 2; // Số tin trên 1 trang
+        var stt_b; // Số thứ tự box giữa pagination
         var number_page = Math.ceil(length_arr / 2); // Tính số trang
         function pagination(a, b) {
-            //Hàm load content cho mỗi trang
+            //Hàm đổ html cho mỗi trang
             var content_new = "";
             $.each(data.news, function (key, value) {
                 if (a <= key && key < b) {
@@ -16,37 +18,59 @@ $(document).ready(function () {
             });
         }
         pagination(0, 2);
+        function stt_page() {
+            //HÀm phân số thứ tự trang
+            $(".page0").children().html(stt_b);
+            $(".page_2").children().html(stt_b - 2);
+            $(".page_1").children().html(stt_b - 1);
+            $(".page1").children().html(stt_b + 1);
+            $(".page2").children().html(stt_b + 2);
+        }
         $(".page>a").click(function () {
             var page_first = Number($(".page_2>a").html());
             var page_last = Number($(".page2>a").html());
             var page = Number(this.innerText);
-            var a = (page - 1) * 2;
-            var b = page * 2;
+            var a = (page - 1) * nper_page;
+            var b = page * nper_page;
             $(".page").removeClass("active");
             if (page > 2 && page < number_page - 1) {
-                $(".page0").children().html(page);
-                $(".page_2").children().html(page - 2);
-                $(".page_1").children().html(page - 1);
-                $(".page1").children().html(page + 1);
-                $(".page2").children().html(page + 2);
+                stt_b = page;
+                stt_page();
                 $(".page0").addClass("active");
                 pagination(a, b);
-            } else if (page == 2 && page_first == page) {
-                $(".page>a").each(function (index, value) {
-                    $(value).html(Number($(value).html()) - 1);
-                });
-                $(".page_1").addClass("active");
-                pagination(a, b);
-            } else if (page == number_page - 1 && page == page_last) {
-                $(".page>a").each(function (index, value) {
-                    $(value).html(Number($(value).html()) + 1);
-                });
-                $(".page1").addClass("active");
-                pagination(a, b);
-            } else {
-                $(this).parent().addClass("active");
-                pagination(a, b);
             }
+            // Trường hợp trang thứ 2 và trang gần cuối
+            else if (page == 2 && page_first == page) {
+                    $(".page>a").each(function (index, value) {
+                        $(value).html(Number($(value).html()) - 1);
+                    });
+                    $(".page_1").addClass("active");
+                    pagination(a, b);
+                } else if (page == number_page - 1 && page == page_last) {
+                    $(".page>a").each(function (index, value) {
+                        $(value).html(Number($(value).html()) + 1);
+                    });
+                    $(".page1").addClass("active");
+                    pagination(a, b);
+                } else {
+                    $(this).parent().addClass("active");
+                    pagination(a, b);
+                }
+        });
+        // Hàm load cho First và Last
+        $(".first>a").click(function () {
+            stt_b = 3;
+            stt_page();
+            pagination(0, nper_page);
+            $(".page").removeClass("active");
+            $(".page_2").addClass("active");
+        });
+        $(".last>a").click(function () {
+            stt_b = number_page - 2;
+            stt_page();
+            pagination((number_page - 1) * nper_page, length_arr);
+            $(".page").removeClass("active");
+            $(".page2").addClass("active");
         });
     });
 });
