@@ -5,10 +5,11 @@ $(document).ready(function() {
         const nper_page = 2;                  // Số tin trên 1 trang
         var stt_b;                            // Số thứ tự box giữa pagination
         var number_page = Math.ceil(length_arr/2); // Tính số trang
-        function pagination(a, b) {            //Hàm đổ html cho mỗi trang
+        function pagination(a, b) {            //Hàm render html cho mỗi trang
             let content_new = "";
             $.each(data.news, (key, value) => {
                 if (a <= key && key < b) {
+                    // HTML template phần nội dung tin đăng
                     content_new += `<div class="content" id="content${key + 1}">
                 <div class="content-left col-xs-12 col-sm-5 col-md-4">
                     <div id="myCarousel${key + 1}" class="carousel slide" data-ride="carousel">
@@ -80,7 +81,7 @@ $(document).ready(function() {
                             <li><a data-toggle="tab" href="#menu2_${key + 1}">MÔ TẢ CHI TIẾT</a></li>
                             <li><a data-toggle="tab" href="#menu3_${key + 1}">HÌNH ẢNH</a></li>
                             <li><a data-toggle="tab" href="#menu5_${key + 1}">ẢNH 360<sup>o</sup></a></li>
-                            <li class="position item1"><a data-toggle="tab" href="#menu4_${key + 1}">VỊ TRÍ</a></li>
+                            <li class="position item${key + 1}"><a data-toggle="tab" href="#menu4_${key + 1}">VỊ TRÍ</a></li>
                         </ul>
                         <!-- Content navs tabs-->
                         <div class="tab-content">
@@ -162,9 +163,9 @@ $(document).ready(function() {
                             </div>
                             <div id="menu4_${key + 1}" class="tab-pane fade" style="position: relative;">
                                 <div class="des-detail-content">
-                                    <p style="color: green">Bật định vị để sử dụng được tính năng này</p>
-                                    <div id="googleMap1" style="width:100%;height:400px;"></div>
-                                    <div id="right-panel">
+                                    <p style="color: green">Click vào địa điểm để nhận chỉ đường!</p>
+                                    <div id="googleMap${key + 1}" style="width:100%;height:400px;"></div>
+                                    <div class="right-panel" id="right-panel${key + 1}">
                                         <select class="near_by_item">
                                             <option>Địa điểm lân cận</option>
                                             <option>Trường CĐ, ĐH</option>
@@ -172,7 +173,7 @@ $(document).ready(function() {
                                             <option>Bệnh viện</option>
                                             <option>Bãi gửi xe</option>
                                         </select>
-                                        <ul id="places"></ul>
+                                        <ul class="places" id="place${key + 1}"></ul>
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +190,8 @@ $(document).ready(function() {
             });
         }
         pagination(0, 2);
-        function stt_page() { //HÀm phân số thứ tự trang
+        //Hàm phân số thứ tự trang
+        function stt_page() {
             $(".page0").children().html(stt_b);
             $(".page_2").children().html(stt_b - 2);
             $(".page_1").children().html(stt_b - 1);

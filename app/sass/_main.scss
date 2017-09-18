@@ -9,17 +9,16 @@ article.main-content{
     ol{
       font-size: 16px;
       font-weight: 600;
-      background-color: #ecf0f1;
+      background-color: #33cc66;
       padding: 8px 15px;
       margin: 10px 0 20px 0;
       list-style: none;
       li{
-        color: #4FB748;
+        color: #000000;
         display: inline-block;
-        &:nth-child(1) a:hover{color: red}
+        &:nth-child(1) a:hover{color: #E74C3C}
         &:nth-child(2){
           color: #000000;
-          display: none;
         }
       }
     }
@@ -49,9 +48,13 @@ article.main-content{
           .title{
             font-weight: bold;
             text-transform: uppercase;
-            a:hover{
-              color: #69D17A;
+            a{
+              color: #337ab7;
+              &:hover{
+                color: #69D17A;
+              } 
             }
+            
           }
           .local,.area{
             font-weight: bold;
@@ -112,19 +115,59 @@ article.main-content{
           right: 0;
         }
         .nav-tabs{
-
+          li a{
+            color: #337ab7;
+          }
         }
         .tab-content{
           padding-top: 10px;
           border: 1px solid #dddddd;
           .tab-pane{
             padding: 5px;
-          }
-          #menu3{
-            .image-item{
-              .slide2{
-                width: 70%;
-                margin: 0 auto;
+            &:nth-child(4){
+              .des-detail-content{
+                .right-panel{
+                  font-family: Arial, Helvetica, sans-serif;
+                  line-height: 15px;
+                  position: absolute;
+                  right: 5px;
+                  top: 2%;
+                  width: 23%;
+                  padding: 5px;
+                  z-index: 1;
+                  border: 1px solid #999;
+                  background: #fff;
+                  .near_by_item{
+                    list-style-type: none;
+                    font-size: 16px;
+                    color: green;
+                    padding: 0;
+                    margin: 0;
+                    max-height: 250px;
+                    width: 100%;
+                    overflow-y: scroll;
+                    overflow-x: scroll;
+                    option{
+                    }
+                  }
+                  .places{
+                    font-size: 12px;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    max-height: 250px;
+                    width: 100%;
+                    overflow-y: scroll;
+                    overflow-x: scroll;
+                    li{
+                      width: 100%;
+                      background-color: #f1f1f1;
+                      padding: 10px;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                    }
+                  }
+                }
               }
             }
           }

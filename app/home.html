@@ -201,8 +201,8 @@
 							<div class="nav-text">
 									<ol>
 											<li><a href="home.html">Trang chủ</a></li>
-											<li id="arrow1">  /  </li>
-											<li class="active" id="search-target"></li>
+											<li id="arrow1">  <i class="fa fa-angle-right"></i>  </li>
+											<li class="active" id="search-target">Nhà cho thuê, Chung cư cho thuê, mặt bằng cho thuê...</li>
 									</ol>
 							</div>
 							<section class="wrap-content">
@@ -364,10 +364,10 @@
 																			</div>
 																	</div>
 																	<div id="menu4" class="tab-pane fade" style="position: relative;">
-																			<div id="detail-item4" class="des-detail-content">
-																					<p style="color: green">Bật định vị để sử dụng được tính năng này</p>
+																			<div class="des-detail-content">
+																					<p style="color: green">Click vào địa điểm để nhận chỉ đường!</p>
 																					<div id="googleMap1" style="width:100%;height:400px;"></div>
-																					<div id="right-panel">
+																					<div class="right-panel right-panel1">
 																							<select class="near_by_item">
 																									<option>Địa điểm lân cận</option>
 																									<option>Trường CĐ, ĐH</option>
@@ -375,7 +375,7 @@
 																									<option>Bệnh viện</option>
 																									<option>Bãi gửi xe</option>
 																							</select>
-																							<ul id="places"></ul>
+																							<ul class="places place1"></ul>
 																					</div>
 																			</div>
 																	</div>
@@ -526,8 +526,10 @@
 			</footer>
 	</div>
 	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDUYFDaXnS0a217T0rP3xNrnqxuErZsD4&language=vi&region=vie&libraries=places"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/home.js"></script>
-	<script src="./js/load_content.js"></script>
+	<script src="./js/pagination.js"></script>
+	<script src="./js/locationmap.js"></script>
 </body>
 </html>

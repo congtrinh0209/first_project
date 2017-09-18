@@ -80,7 +80,8 @@ ol, ul, li {
   list-style-type: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000000; }
   a:hover {
     text-decoration: none;
     cursor: pointer; }
@@ -505,18 +506,17 @@ img {
       .wrapper-content main article.main-content .nav-text ol {
         font-size: 16px;
         font-weight: 600;
-        background-color: #ecf0f1;
+        background-color: #33cc66;
         padding: 8px 15px;
         margin: 10px 0 20px 0;
         list-style: none; }
         .wrapper-content main article.main-content .nav-text ol li {
-          color: #4FB748;
+          color: #000000;
           display: inline-block; }
           .wrapper-content main article.main-content .nav-text ol li:nth-child(1) a:hover {
-            color: red; }
+            color: #E74C3C; }
           .wrapper-content main article.main-content .nav-text ol li:nth-child(2) {
-            color: #000000;
-            display: none; }
+            color: #000000; }
       .wrapper-content main article.main-content .wrap-content .content {
         border: 2px solid #4FB748;
         border-radius: 5px;
@@ -539,8 +539,10 @@ img {
             .wrapper-content main article.main-content .wrap-content .content .content-right .content-right1 .title {
               font-weight: bold;
               text-transform: uppercase; }
-              .wrapper-content main article.main-content .wrap-content .content .content-right .content-right1 .title a:hover {
-                color: #69D17A; }
+              .wrapper-content main article.main-content .wrap-content .content .content-right .content-right1 .title a {
+                color: #337ab7; }
+                .wrapper-content main article.main-content .wrap-content .content .content-right .content-right1 .title a:hover {
+                  color: #69D17A; }
             .wrapper-content main article.main-content .wrap-content .content .content-right .content-right1 .local, .wrapper-content main article.main-content .wrap-content .content .content-right .content-right1 .area {
               font-weight: bold; }
             .wrapper-content main article.main-content .wrap-content .content .content-right .content-right1 .date {
@@ -613,14 +615,49 @@ img {
             background-position: right top;
             color: black;
             cursor: pointer; }
+        .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .nav-tabs li a {
+          color: #337ab7; }
         .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content {
           padding-top: 10px;
           border: 1px solid #dddddd; }
           .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content .tab-pane {
             padding: 5px; }
-          .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content #menu3 .image-item .slide2 {
-            width: 70%;
-            margin: 0 auto; }
+            .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content .tab-pane:nth-child(4) .des-detail-content .right-panel {
+              font-family: Arial, Helvetica, sans-serif;
+              line-height: 15px;
+              position: absolute;
+              right: 5px;
+              top: 2%;
+              width: 23%;
+              padding: 5px;
+              z-index: 1;
+              border: 1px solid #999;
+              background: #fff; }
+              .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content .tab-pane:nth-child(4) .des-detail-content .right-panel .near_by_item {
+                list-style-type: none;
+                font-size: 16px;
+                color: green;
+                padding: 0;
+                margin: 0;
+                max-height: 250px;
+                width: 100%;
+                overflow-y: scroll;
+                overflow-x: scroll; }
+              .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content .tab-pane:nth-child(4) .des-detail-content .right-panel .places {
+                font-size: 12px;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                max-height: 250px;
+                width: 100%;
+                overflow-y: scroll;
+                overflow-x: scroll; }
+                .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content .tab-pane:nth-child(4) .des-detail-content .right-panel .places li {
+                  width: 100%;
+                  background-color: #f1f1f1;
+                  padding: 10px;
+                  text-overflow: ellipsis;
+                  white-space: nowrap; }
       .wrapper-content main article.main-content .pagination-container {
         margin: 0 auto;
         text-align: center; }

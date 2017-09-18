@@ -18,7 +18,6 @@
   ],
   "news": [
     {
-      "user": "",
       "title": "B1-Cho Thuê Chung Cư MiNi DT 40M2 Đầy Đủ Tiện Nghi Điều Hòa Nóng Lạnh Số 213 Phố Xã Đàn",
       "summary": "Tòa nhà nằm ở vị trí trung tâm, giao thông thuận tiện, cách mặt đường Xã Đàn 20m, nằm trong khuôn viên Tập Thể Học Viện Kỹ Thuật Quân Sự nên an ninh rất tốt, gần các trung tâm thương mại, lên phố cổ cũng gần, cách ngã tư Xã Đàn 300m…",
       "content": "– Diện tích các phòng từ 35m2 – 40m2.</br>Giá cho thuê :6.000.000đ /tháng, các căn hộ bao gồm:</br>1 phòng ngủ + phòng khách và khu bếp riêng biệt.</br>– Phòng ngủ được trang bị điều hòa 2 chiều, giường, tủ quần áo…</br>– Phòng bếp được trang bị bàn ăn, bàn bếp, tủ bếp, chậu rửa bát…</br>– Khu vực nhà vệ sinh được lắp đầy đủ thiết bị hiện đại như chậu rửa mặt, bệt Inax, vòi sen, bình nóng lạnh…</br>– Tòa nhà có bảo vệ 24/24, đảm bảo an ninh tuyệt đối, giờ giấc ra vào thoải mái.</br>– Khu vực ban công phơi đồ riêng biệt của từng phòng.</br>* Tòa nhà nằm ở vị trí trung tâm, giao thông thuận tiện, cách mặt đường Xã Đàn 20m, nằm trong khuôn viên Tập Thể Học Viện Kỹ Thuật Quân Sự nên an ninh rất tốt, gần các trung tâm thương mại, lên phố cổ cũng gần, cách ngã tư Xã Đàn 300m…",
@@ -30,8 +29,10 @@
       "price_i": "50.000/tháng",
       "price_p": "Free",
       "phone": "0902212798",
-      "add": " Số 213 Xã Đàn- P. Phương Liên- Q. Đống Đa., Xã Đàn",
-      "locale": "Đống Đa, Hà Nội"
+      "add": "Số 213 Xã Đàn- P. Phương Liên- Q. Đống Đa., Xã Đàn",
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B2-NHÀ TÔI CHÍNH CHỦ CHO THUÊ PHÒNG TRỌ TẠI SỐ 3/108 NGUYỄN TRÃI - THƯỢNG ĐÌNH -THANH XUÂN",
@@ -46,7 +47,9 @@
       "price_p": "Free",
       "phone": "0988870225",
       "add": "SỐ 3/108 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội",
-      "locale": "Thanh Xuân, Hà Nội"
+      "locale": "Thanh Xuân, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.914200
     },
     {
       "title": "B3-cho thuê mặt bằng làm văn phòng, spa",
@@ -61,10 +64,11 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
-      "user": "",
       "title": "B4-Cho Thuê Chung Cư MiNi DT 40M2 Đầy Đủ Tiện Nghi Điều Hòa Nóng Lạnh Số 213 Phố Xã Đàn",
       "summary": "Tòa nhà nằm ở vị trí trung tâm, giao thông thuận tiện, cách mặt đường Xã Đàn 20m, nằm trong khuôn viên Tập Thể Học Viện Kỹ Thuật Quân Sự nên an ninh rất tốt, gần các trung tâm thương mại, lên phố cổ cũng gần, cách ngã tư Xã Đàn 300m…",
       "content": "– Diện tích các phòng từ 35m2 – 40m2.</br>Giá cho thuê :6.000.000đ /tháng, các căn hộ bao gồm:</br>1 phòng ngủ + phòng khách và khu bếp riêng biệt.</br>– Phòng ngủ được trang bị điều hòa 2 chiều, giường, tủ quần áo…</br>– Phòng bếp được trang bị bàn ăn, bàn bếp, tủ bếp, chậu rửa bát…</br>– Khu vực nhà vệ sinh được lắp đầy đủ thiết bị hiện đại như chậu rửa mặt, bệt Inax, vòi sen, bình nóng lạnh…</br>– Tòa nhà có bảo vệ 24/24, đảm bảo an ninh tuyệt đối, giờ giấc ra vào thoải mái.</br>– Khu vực ban công phơi đồ riêng biệt của từng phòng.</br>* Tòa nhà nằm ở vị trí trung tâm, giao thông thuận tiện, cách mặt đường Xã Đàn 20m, nằm trong khuôn viên Tập Thể Học Viện Kỹ Thuật Quân Sự nên an ninh rất tốt, gần các trung tâm thương mại, lên phố cổ cũng gần, cách ngã tư Xã Đàn 300m…",
@@ -92,7 +96,9 @@
       "price_p": "Free",
       "phone": "0988870225",
       "add": "SỐ 3/108 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội",
-      "locale": "Thanh Xuân, Hà Nội"
+      "locale": "Thanh Xuân, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B6-cho thuê mặt bằng làm văn phòng, spa",
@@ -107,7 +113,9 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B7-cho thuê mặt bằng làm văn phòng, spa",
@@ -122,7 +130,9 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B8-cho thuê mặt bằng làm văn phòng, spa",
@@ -137,7 +147,9 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B9-cho thuê mặt bằng làm văn phòng, spa",
@@ -152,7 +164,9 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B10-cho thuê mặt bằng làm văn phòng, spa",
@@ -167,7 +181,9 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B11-cho thuê mặt bằng làm văn phòng, spa",
@@ -182,7 +198,9 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B12-cho thuê mặt bằng làm văn phòng, spa",
@@ -197,7 +215,9 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     },
     {
       "title": "B13-cho thuê mặt bằng làm văn phòng, spa",
@@ -212,7 +232,9 @@
       "price_p": "Free",
       "phone": "0981 056 756",
       "add": "Số nhà 96 Đường La Thành – Phường Ô Chợ Dừa – Q. Đống Đa -HN",
-      "locale": "Đống Đa, Hà Nội"
+      "locale": "Đống Đa, Hà Nội",
+      "coordinate_lat": 20.999145,
+      "coordinate_long": 105.814108
     }
   ],
   "district_locale":{
