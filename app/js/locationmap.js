@@ -1,6 +1,6 @@
 "use strict";
 
-$(document).ready(function () {
+$(".page>a").click(function () {
     $.getJSON("./data.json", function (data) {
         $.each(data.news, function (key, value) {
             var selector_position = ".position.item" + (key + 1);
@@ -120,15 +120,15 @@ $(document).ready(function () {
                         }
                         map.fitBounds(bounds);
                     }
-                    $(".near_by_item").click(function () {
+                    $("#select_item" + (key + 1)).click(function () {
                         document.getElementById("place" + (key + 1)).innerHTML = " ";
-                        if ($(".near_by_item").val() == "Trường CĐ, ĐH") {
+                        if ($("#select_item" + (key + 1)).val() == "Trường CĐ, ĐH") {
                             search_nearby_item("university");
-                        } else if ($(".near_by_item").val() == "Điểm buýt") {
+                        } else if ($("#select_item" + (key + 1)).val() == "Điểm buýt") {
                             search_nearby_item("bus_station");
-                        } else if ($(".near_by_item").val() == "Bệnh viện") {
+                        } else if ($("#select_item" + (key + 1)).val() == "Bệnh viện") {
                             search_nearby_item("hospital");
-                        } else if ($(".near_by_item").val() == "Bãi gửi xe") {
+                        } else if ($("#select_item" + (key + 1)).val() == "Bãi gửi xe") {
                             search_nearby_item("parking");
                         }
                     });

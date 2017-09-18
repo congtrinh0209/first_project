@@ -166,7 +166,7 @@ $(document).ready(function() {
                                     <p style="color: green">Click vào địa điểm để nhận chỉ đường!</p>
                                     <div id="googleMap${key + 1}" style="width:100%;height:400px;"></div>
                                     <div class="right-panel" id="right-panel${key + 1}">
-                                        <select class="near_by_item">
+                                        <select class="near_by_item" id="select_item${key + 1}">
                                             <option>Địa điểm lân cận</option>
                                             <option>Trường CĐ, ĐH</option>
                                             <option>Điểm buýt</option>
