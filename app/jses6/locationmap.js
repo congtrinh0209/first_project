@@ -1,4 +1,4 @@
-$(".page>a").click(function () {
+function load_map () {
     $.getJSON("./data.json", (data) => {
         $.each(data.news, (key, value) => {
             var selector_position = `.position.item${key + 1}`;
@@ -13,9 +13,6 @@ $(".page>a").click(function () {
                     mapholder.innerHTML = "Geolocation không hỗ trợ trên trình duyệt này.";
                 }
                 function showPosition(position, item) {
-                    // Kích thước map trên trình duyệt
-                    mapholder.style.height = "400px";
-                    mapholder.style.width = "100%";
                     // Vị trí center cho map = vị trí địa điểm
                     let myOptions = {
                         center: {lat: coor_lat, lng: coor_long},
@@ -124,16 +121,16 @@ $(".page>a").click(function () {
                     $(`#select_item${key + 1}`).click(function() {
                         document.getElementById(`place${key + 1}`).innerHTML = " ";
                         if ($(`#select_item${key + 1}`).val() == "Trường CĐ, ĐH"){
-                            search_nearby_item("university")
+                            search_nearby_item("university");
                         }
                         else if ($(`#select_item${key + 1}`).val() == "Điểm buýt"){
-                            search_nearby_item("bus_station")
+                            search_nearby_item("bus_station");
                         }
                         else if ($(`#select_item${key + 1}`).val() == "Bệnh viện"){
-                            search_nearby_item("hospital")
+                            search_nearby_item("hospital");
                         }
                         else if ($(`#select_item${key + 1}`).val() == "Bãi gửi xe"){
-                            search_nearby_item("parking")
+                            search_nearby_item("parking");
                         }
                     });
                 }
@@ -141,7 +138,7 @@ $(".page>a").click(function () {
                 function showError(error) {
                     switch (error.code) {
                         case error.PERMISSION_DENIED:
-                            mapholder.innerHTML = "Google map đã bị tắt.";
+                            mapholder.innerHTML = "Chia sẻ vị trí chưa được kích hoạt.";
                             break;
                         case error.POSITION_UNAVAILABLE:
                             mapholder.innerHTML = "Không có thông tin vị trí.";
@@ -157,4 +154,11 @@ $(".page>a").click(function () {
             });
         });
     });
+}
+$(document).ready(function () {
+    load_map();
 });
+$(".page>a").click(function () {
+    load_map();
+});
+

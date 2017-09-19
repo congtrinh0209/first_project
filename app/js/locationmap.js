@@ -1,6 +1,6 @@
 "use strict";
 
-$(".page>a").click(function () {
+function load_map() {
     $.getJSON("./data.json", function (data) {
         $.each(data.news, function (key, value) {
             var selector_position = ".position.item" + (key + 1);
@@ -15,9 +15,6 @@ $(".page>a").click(function () {
                     mapholder.innerHTML = "Geolocation không hỗ trợ trên trình duyệt này.";
                 }
                 function showPosition(position, item) {
-                    // Kích thước map trên trình duyệt
-                    mapholder.style.height = "400px";
-                    mapholder.style.width = "100%";
                     // Vị trí center cho map = vị trí địa điểm
                     var myOptions = {
                         center: { lat: coor_lat, lng: coor_long },
@@ -137,7 +134,7 @@ $(".page>a").click(function () {
                 function showError(error) {
                     switch (error.code) {
                         case error.PERMISSION_DENIED:
-                            mapholder.innerHTML = "Google map đã bị tắt.";
+                            mapholder.innerHTML = "Chia sẻ vị trí chưa được kích hoạt.";
                             break;
                         case error.POSITION_UNAVAILABLE:
                             mapholder.innerHTML = "Không có thông tin vị trí.";
@@ -153,4 +150,10 @@ $(".page>a").click(function () {
             });
         });
     });
+}
+$(document).ready(function () {
+    load_map();
+});
+$(".page>a").click(function () {
+    load_map();
 });

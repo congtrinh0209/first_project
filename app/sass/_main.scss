@@ -54,7 +54,6 @@ article.main-content{
                 color: #69D17A;
               } 
             }
-            
           }
           .local,.area{
             font-weight: bold;
@@ -108,11 +107,16 @@ article.main-content{
         position: relative;
         .btn-close{
           @include btn2;
-          width: 80px;
+          width: 40px;
           padding: 8px;
           position: absolute;
           top: 5px;
           right: 0;
+          font-size: 0.8em;
+          @include tablet{
+            width: 80px;
+            font-size: 1.2em;
+          }
         }
         .nav-tabs{
           li a{
@@ -131,12 +135,15 @@ article.main-content{
                   line-height: 15px;
                   position: absolute;
                   right: 5px;
-                  top: 2%;
-                  width: 23%;
+                  top: 6%;
+                  width: 50%;
                   padding: 5px;
                   z-index: 1;
                   border: 1px solid #999;
                   background: #fff;
+                  @include desktop-md{
+                    width: 23%;
+                  }
                   .near_by_item{
                     list-style-type: none;
                     font-size: 16px;

@@ -4,7 +4,7 @@ $(document).ready(function() {
         const length_arr = data.news.length;  // Kích thước magr dữ liệu
         const nper_page = 2;                  // Số tin trên 1 trang
         var stt_b;                            // Số thứ tự box giữa pagination
-        var number_page = Math.ceil(length_arr/2); // Tính số trang
+        var number_page = Math.ceil(length_arr / nper_page); // Tính số trang
         function pagination(a, b) {            //Hàm render html cho mỗi trang
             let content_new = "";
             $.each(data.news, (key, value) => {
@@ -189,7 +189,16 @@ $(document).ready(function() {
                 }
             });
         }
-        pagination(0, 2);
+        pagination(0, nper_page);
+        if (number_page <= 5){
+            $(".page").each((key, value) => {
+                if (key > number_page - 1) {
+                    $(value).css("display", "none");
+                }
+            });
+            $(".first").addClass("disabled");
+            $(".last").addClass("disabled");
+        }
         //Hàm phân số thứ tự trang
         function stt_page() {
             $(".page0").children().html(stt_b);
@@ -231,7 +240,7 @@ $(document).ready(function() {
                 pagination(a, b);
             }
         });
-        // Hàm load cho First và Last
+        // Hàm load cho First-box và Last-box
         $(".first>a").click(function () {
             stt_b = 3;
             stt_page();

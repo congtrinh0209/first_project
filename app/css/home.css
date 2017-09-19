@@ -606,15 +606,20 @@ img {
           -webkit-transition: background-position 100ms ease;
           transition: background-position 100ms ease;
           background-position: left bottom;
-          width: 80px;
+          width: 40px;
           padding: 8px;
           position: absolute;
           top: 5px;
-          right: 0; }
+          right: 0;
+          font-size: 0.8em; }
           .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .btn-close:hover {
             background-position: right top;
             color: black;
             cursor: pointer; }
+          @media all and (min-width: 768px) {
+            .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .btn-close {
+              width: 80px;
+              font-size: 1.2em; } }
         .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .nav-tabs li a {
           color: #337ab7; }
         .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content {
@@ -627,12 +632,15 @@ img {
               line-height: 15px;
               position: absolute;
               right: 5px;
-              top: 2%;
-              width: 23%;
+              top: 6%;
+              width: 50%;
               padding: 5px;
               z-index: 1;
               border: 1px solid #999;
               background: #fff; }
+              @media all and (min-width: 992px) {
+                .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content .tab-pane:nth-child(4) .des-detail-content .right-panel {
+                  width: 23%; } }
               .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail .tab-content .tab-pane:nth-child(4) .des-detail-content .right-panel .near_by_item {
                 list-style-type: none;
                 font-size: 16px;
