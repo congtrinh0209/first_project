@@ -1,6 +1,6 @@
 //**Scroll fixed menu navigation-mobile,tablet
 $(document).ready(function() {
-    /***Gán dữ liệu vào menu search khi click logo******/
+    /***Gán dữ liệu vào menu search khi chọn loại hình quan tâm******/
     $(".room").on('click',function(){
         $("#arrow1").css("display", "inline-block");
         $(".loaihinh").val($(".loaihinh>option:nth-child(2)").val());
@@ -21,13 +21,7 @@ $(document).ready(function() {
         $(".loaihinh").val($(".loaihinh>option:nth-child(5)").val());
         $("#search-target").text("Mặt bằng cho thuê");
     });
-    //*************Load dữ liệu - chuyển trang
-    $.getJSON("./data.json",(data)=> {
-        $.each(data.users,(key,value)=>{
-            //**console.log(value.news[0].content);
-        })
-    });
-    var window_width = innerWidth;
+    let window_width = innerWidth;
     if (window_width <= 768) {
         $(".header").attr("data-offset-top", "89");
     }
@@ -38,7 +32,7 @@ $(document).ready(function() {
     }
     $(".sign-out").on("click",()=>{
         window.location.href = "home.html";
-    })
+    });
     //*************Check login//demo 2 user_data
         //****Lấy dữ liệu từ JSON - Gán cho biến
     var data_json;
@@ -49,7 +43,7 @@ $(document).ready(function() {
         //***Check login
     $(".login").on("click", ()=>{
         $.each(data_json.users,(key, value)=>{
-            if($("#uname").val() == value.mobile&& $("#psw").val() == value.pass || $("#uname").val() == value.email && $("#psw").val() == value.pass){
+            if($("#uname").val() == value.mobile && $("#psw").val() == value.pass || $("#uname").val() == value.email && $("#psw").val() == value.pass){
                 $("#uname").next("span").text("");
                 $("#psw").next("span").text("");
                 $(".error3").css("padding", "0px");

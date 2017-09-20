@@ -88,7 +88,7 @@
 																	<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Mặt bằng cho thuê</p></a></li>
 															</ul>
 													</li>
-													<li class="item"><a href="#"><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
+													<li class="item search_nearby"><a><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
 													<li class="item"><a href="#"><i class="fa fa-binoculars"></i><p>Giúp tôi</p></a></li>
 													<li class="item"><a href="#"><i class="fa fa-newspaper-o"></i><p>Tin tức</p></a></li>
 													<li class="item"><a href="#"><i class="fa fa-life-ring"></i><p>Hướng dẫn</p></a></li>
@@ -199,6 +199,18 @@
 			</header>
 			<main class="wrapper">
 					<article class="main-content col-xs-12 col-md-9">
+							<div class="search_place">
+									<div class="map-search">
+											<span>Bán kính tìm kiếm (đv: mét)</span>
+											<input class="input-radius" type="text" value="500"></input>
+											<button class="search-by-radius" onclick="search_locale()"><i class="fa fa-search"></i> Tìm</button>
+											<div id="mapholder"></div>
+									</div>
+									<div class="result-search">
+											<i class="fa fa-hand-o-right"></i>
+											<span> Tìm được 5 địa điểm cho thuê quanh vị trí của bạn.</span>
+									</div>
+							</div>
 							<div class="nav-text">
 									<ol>
 											<li><a href="home.html">Trang chủ</a></li>
@@ -530,9 +542,9 @@
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDUYFDaXnS0a217T0rP3xNrnqxuErZsD4&language=vi&region=vie&libraries=places"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/home.js"></script>
-	<script src="./pannellum/pannellum.js"></script>
-	<script src="./js/images360.js"></script>
 	<script src="./js/pagination.js"></script>
 	<script src="./js/locationmap.js"></script>
+	<script src="./js/images360.js"></script>
+	<script src="./pannellum/pannellum.js"></script>
 </body>
 </html>

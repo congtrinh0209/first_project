@@ -2,7 +2,7 @@
 
 //**Scroll fixed menu navigation-mobile,tablet
 $(document).ready(function () {
-    /***Gán dữ liệu vào menu search khi click logo******/
+    /***Gán dữ liệu vào menu search khi chọn loại hình quan tâm******/
     $(".room").on('click', function () {
         $("#arrow1").css("display", "inline-block");
         $(".loaihinh").val($(".loaihinh>option:nth-child(2)").val());
@@ -22,12 +22,6 @@ $(document).ready(function () {
         $("#arrow1").css("display", "inline-block");
         $(".loaihinh").val($(".loaihinh>option:nth-child(5)").val());
         $("#search-target").text("Mặt bằng cho thuê");
-    });
-    //*************Load dữ liệu - chuyển trang
-    $.getJSON("./data.json", function (data) {
-        $.each(data.users, function (key, value) {
-            //**console.log(value.news[0].content);
-        });
     });
     var window_width = innerWidth;
     if (window_width <= 768) {
