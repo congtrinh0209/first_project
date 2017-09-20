@@ -176,6 +176,12 @@ article.main-content{
                   }
                 }
               }
+            };
+            &:nth-child(5){
+              .panorama{
+                width: 100%;
+                height: 400px;
+              }
             }
           }
         }

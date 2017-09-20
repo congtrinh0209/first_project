@@ -179,7 +179,7 @@ $(document).ready(function() {
                             </div>
                             <div id="menu5_${key + 1}" class="tab-pane fade">
                                 <p style="color: green">Tính năng này hiện chỉ hỗ trợ trên Chrome Browser</p>
-                                <div id="panorama1" class="panorama"></div>
+                                <div id="panorama${key + 1}" class="panorama"></div>
                             </div>
                         </div>
                     </div>
