@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<title>Kênh thông tin tìm kiếm nhà ở, bất động sản cho thuê</title>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="Phòng trọ, Tìm kiếm phòng trọ, Cho thuê nhà trọ">
+		<meta name="author" content="congtrinh0209">
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./css/home.css">
+		<link rel='shortcut icon' type='image/x-icon' href='./images/logo-option2png.ico'/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body data-spy="scroll" data-target=".header" data-offset="475">
+<div class="wrapper-content">
+		<!---------- Phần banner ------->
+		<article class="banner">
+				<ul class="list-banner">
+						<li class="list item1">
+								<img class="logo-bg" src="./images/bg1.png">
+								<span class="list-text ">
+											<img src="./images/logo-option2png.png">
+											<span class="name">TÌM PHÒNG CÙNG BẠN</span>
+											<span class="slogan">Sứ mệnh của chúng tôi là mang đến sự hợp tác thoải mái giữa người cho thuê nhà và người đi thuê, vì lợi ích của cả hai bên.</span>
+									</span>
+						</li>
+						<li class="list item2">
+								<img class="logo-bg" src="./images/bg2.png">
+								<span class="list-text room">
+											<a href="#view"><img class="img-item" src="./images/room.png"></a>
+											<span>PHÒNG CHO THUÊ</span>
+									</span>
+						</li>
+						<li class="list item3">
+								<img class="logo-bg" src="./images/bg2.png">
+								<span class="list-text house">
+											<a href="#view"><img class="img-item" src="./images/house.png"></a>
+											<span>NHÀ CHO THUÊ</span>
+									</span>
+						</li>
+						<li class="list item4">
+								<img class="logo-bg" src="./images/bg2.png">
+								<span class="list-text flat">
+											<a href="#view"><img class="img-item" src="./images/flat.png"></a>
+											<span>CHUNG CƯ</span>
+									</span>
+						</li>
+						<li class="list item5">
+								<img class="logo-bg" src="./images/bg2.png">
+								<span class="list-text store">
+											<a href="#view"><img class="img-item" src="./images/store.png"></a>
+											<span>MẶT BẰNG CỬA HÀNG</span>
+									</span>
+						</li>
+				</ul>
+		</article>
+		<header class="header" data-spy="affix" data-offset-top="480" id="view">
+				<!---------- Phần nav-bar ------->
+				<nav class="navbar navbar-inverse">
+						<div class="container-fluid">
+								<div class="navbar-header">
+										<ul class="nav-mobile">   <!--Nav for mobile-->
+												<li><i class="fa fa-search"></i><p>Tìm phòng</p></li>
+												<li><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></li>
+												<li><i class="fa fa-upload"></i><p>Đăng tin</p></li>
+												<div class="clear"></div>
+										</ul>
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button>
+								</div>
+								<div class="collapse navbar-collapse" id="myNavbar">
+										<ul class="nav navbar-nav">
+												<li class="item"><a href="home.html"><i class="fa fa-home"></i><p>Trang chủ<p></p></a></li>
+												<li class="item dropdown">
+														<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-secret"></i><p>Cho thuê <span class="caret"></span></p></a>
+														<ul class="dropdown-menu">
+																<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Nhà cho thuê</p></a></li>
+																<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Phòng cho thuê</p></a></li>
+																<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Chung cư mini</p></a></li>
+																<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Mặt bằng cho thuê</p></a></li>
+														</ul>
+												</li>
+												<li class="item search_nearby"><a><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
+												<li class="item"><a href="#"><i class="fa fa-binoculars"></i><p>Giúp tôi</p></a></li>
+												<li class="item"><a href="#"><i class="fa fa-newspaper-o"></i><p>Tin tức</p></a></li>
+												<li class="item"><a href="#"><i class="fa fa-life-ring"></i><p>Hướng dẫn</p></a></li>
+												<li class="item"><a href="#"><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
+												<li class="item"><a href="#"><i class="fa fa-book"></i><p>Quản lý</p></a></li>
+										</ul>
+										<ul class="nav navbar-nav navbar-right"> <!-- Sign-in, Sign-up-->
+												<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i><span> Đăng nhập</span></button></li>
+												<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil"></i><span> Đăng ký</span></button></li>
+										</ul>
+								</div>
+						</div>
+						<!-- Show infomation acc -->
+						<section class="info-acc">
+								<div class="img-ava">
+										<img src="./images/user.jpg">
+								</div>
+								<div class="info-user">
+										<p>Xin chào: <b style="color: red">Trịnh Công Trình</b></p>
+										<button class="manager-user">Quản lý</button>
+										<button class="sign-out">Đăng xuất</button>
+								</div>
+								<div class="clear"></div>
+						</section>
+				</nav>
+				<!-- Modal Sign-in, Sign-up -->
+				<!-- Modal Sign-in -->
+				<section class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+										<div class="modal-header">
+												<h4 class="modal-title"><i class="fa fa-lock"></i>  Đăng nhập hệ thống !</h4>
+										</div>
+										<div class="modal-body">
+												<form action="home.html" id="sign-in" role="form">    <!--Login form-->
+														<div class="form-group">
+																<label><b><i class="fa fa-user"></i> Tên đăng nhập:</b></label>
+																<input type="text" class="form-control" id="uname" placeholder="Email hoặc số điện thoại" name="uname" value="0868979193" required>
+																<span style="color:red" class="error1"></span>
+														</div>
+														<div class="form-group">
+																<label><b><i class="fa fa-eye"></i> Mật khẩu:</b></label>
+																<input type="password" class="form-control" id="psw" placeholder="Mật khẩu đăng nhập" name="psw" value="02092008" required>
+																<span style="color:red" class="error2"></span>
+														</div>
+														<button class="login" type="submit"><i class="fa fa-power-off"></i> Login</button></br>
+														<div class="checkbox">
+																<label><input type="checkbox" value="" checked>Remember me</label>
+														</div>
+												</form>
+												<div class="psw" id="forgot-pass" data-toggle="collapse" data-target="#u-mobile"><a>Forgot password?</a></div>
+												<form id="request-pass">   <!--Request-password form-->
+														<div class="form-group" style="background-color:#f1f1f1">
+																<div class="collapse" id="u-mobile">
+																		<input type="text" class="form-control" id="send-mobile"  placeholder="Nhập số điện thoại của bạn chúng tôi sẽ gửi lại mật khẩu cho bạn" name="mobile" requisec><span style="color:red" class="error3"></span></br>
+																		<button id="send" type="submit"><i class="fa fa-paper-plane-o"></i> Send</button>
+																</div>
+																<span style="color:red" class="error3"></span>
+														</div>
+												</form>
+										</div>
+										<div class="modal-footer">
+												<button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+										</div>
+								</div>
+						</div>
+				</section>
+				<!-- Modal Sign-up -->
+				<section class="modal fade" id="myModal2" role="dialog">
+						<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+										<div class="modal-header">
+												<h4 class="modal-title"><i class="fa fa-user-plus"></i> Đăng ký tài khoản !</h4>
+										</div>
+										<div class="modal-body">
+												<form action="signup-success.html" id="login-form">
+														<div class="form-group">
+																<label><b>Họ tên:</b></label>
+																<input type="text" class="form-control" placeholder="Họ tên bạn" name="name" required>
+														</div>
+														<div class="form-group">
+																<label><b>Số điện thoại:</b></label>
+																<input type="text" class="form-control" placeholder="Số điện thoại của bạn" name="mobile" required>
+														</div>
+														<div class="form-group">
+																<label><b>Email:</b></label>
+																<input type="email" class="form-control" placeholder="Email của bạn" name="email" required>
+														</div>
+														<div class="form-group">
+																<label><b>Mật khẩu:</b></label>
+																<input type="password" class="form-control" id="psw1" placeholder="Mật khẩu" name="pass" required>
+														</div>
+														<div class="form-group">
+																<label><b>Nhập lại mật khẩu:</b></label>
+																<input type="password" class="form-control" id="psw2" placeholder="Nhập lại mật khẩu" name="pass" required><span style="color:red" class="error4"></span>
+														</div>
+														<button class="login" type="submit"><i class="fa fa-pencil"></i> Đăng ký</button>
+												</form>
+										</div>
+										<div class="modal-footer">
+												<button type="button" class="btn " data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+										</div>
+								</div>
+						</div>
+				</section>
+		</header>
+		<main class="wrapper">
+				<article class="main-content col-xs-12 col-md-9">
+						<div class="nav-text">                                  
+								<ol>
+										<li><a href="home.html">Trang chủ</a></li>
+										<li id="arrow1">  <i class="fa fa-angle-right"></i>  </li>
+										<li class="active" id="search-target">Tin tức</li>
+								</ol>
+						</div>
+						<section class="wrap-content">
+								<div class="content" id="new-item" style="border: none;">
+										<div id="new5" class="col-xs-12">
+												<div class="article-title">
+														<h3 style="color: #33cc66">Ý tưởng kinh doanh nhà trọ, ngồi không mỗi tháng kiếm trăm triệu?</h3>
+												</div>
+												<div class="clearfix"></div>
+												<div class="article-hr"><hr style="border-color: #33cc66"></div>
+												<div class="article-content">
+														<p>Những thành phố lớn thường là vùng trọng điểm kinh tế, tập trung các dịch vụ quan trọng nên đã trở thành “miền đất hứa” cho nhiều người tìm đến lập nghiệp hay học tập. Cũng vì vậy mà nhu cầu về nhà ở tại đây rất cao, tạo điều kiện cho các dịch vụ kinh doanh cho thuê phong trọ, nhà trọ phát triển, thậm chí có người còn kháo nhau rằng, mở nhà trọ thì ngồi không mỗi tháng cũng kiếm được trăm triệu. Đúng là không thể phủ nhận tiềm năng của ý tưởng kinh doanh này, nhưng sự thực có màu hồng như thế không? Hãy cùng chúng tôi tìm hiểu cơ hội và thách thức bạn phải đối mặt nếu lựa chọn ý tưởng này.</p>
+														<p style="text-align: center"><img alt="y"  src="./images/img-news/img1.jpg"></p>
+														<p><span style="font-size:16px"><strong>Ý tưởng kinh doanh nhà trọ đầy tiềm năng</strong></span></p>
+														<p><strong>Nhu cầu lớn</strong></p>
+														<p class="text-indent">Những thành phố lớn có tốc độ tăng dân số và đô thị hóa thường rất cao, lại thêm số lượng dân tỉnh lẻ tìm đến lập nghiệp hoặc học tập mỗi năm khá nhiều nên vấn đề nhu cầu bạn không phải quá lo lắng. Kể cả đối với những thành phố nhỏ hơn thì các khu gần trung tâm, khu công nghiệp cũng không thiếu người muốn tìm phòng trọ gần để tiện cho việc di chuyển.</p>
+														<p><strong>Doanh thu ổn định</strong></p>
+														<p class="text-indent">Ý tưởng kinh doanh nhà trọ thường không bị ảnh hưởng nhiều bởi sự biến động của thị trường bất động sản, dù giá đất có giảm thì hàng tháng bạn vẫn thu được một khoản tiền cố định. Điều này giúp bạn giảm khá nhiều áp lực tài chính nếu phải đi huy động vốn từ nhiều nguồn vay khác nhau.<br>
+																Cơ hội gia tăng giá trị bất động sản</p>
+														<p>Ngoài khoản tiền thu được hàng tháng từ các khách hàng thuê trọ bạn còn nắm trong tay một nguồn bất động sản không nhỏ và có khả năng gia tăng giá trị trong tương lai. Dù sau này bạn không còn kinh doanh nhà trọ nữa thì vẫn có thể sang nhượng lại với giá cao hơn nhiều.</p>
+														<p><strong>Khá… nhàn hạ</strong></p>
+														<p class="text-indent">Thực tế là việc đầu tư nhà trọ chỉ vất vả trong giai đoạn đầu về việc huy động vốn, lập kế hoạch và triển khai xây dựng, lắp đặt, còn khi đã có khách hàng thì mọi thứ đều đi vào hệ thống. Bạn không phải mất quá nhiều thời gian vào việc quản lý hay điều hành, chỉ cần kiểm tra thường xuyên để nắm bắt tình hình khu trọ là được.</p>
+														<p><strong><span style="font-size:16px">Những thách thức khi kinh doanh nhà trọ</span></strong></p>
+														<p><strong>Đầu tư lớn, thu bạc cắc</strong></p>
+														<p class="text-indent">Để hoàn thiện một khu trọ bạn phải tốn khá nhiều tiền đầu tư, trung bình khoảng trên dưới 1 tỷ cho khu hơn 10 phòng (tính cả tiền mua đất, xây dựng, lắp đặt trang thiết bị,…). Thế nhưng khi hưởng thành quả thì tiền thu về khá lẻ so với vốn, mỗi phòng từ 2 đến 3 triệu, chưa trừ chi phí thì tổng được hơn 30 triệu. Vì vậy tốc độ thu hồi vốn thường khá lâu, khoảng 5 đến 6 năm với quy mô trung bình. Nếu bạn phải đi vay vốn để đầu tư thì cần phải xem xét thật kỹ tránh các tình huống xấu sau này.</p>
+														<p><strong>Đối tượng khách hàng phức tạp</strong></p>
+														<p class="text-indent">Một khu trọ có nhiều loại người khác nhau, nếu bạn không biết sàng lọc và kiểm soát ngay từ đầu thì rất dễ xảy ra tình trạng loạn. Rất nhiều khu trọ từng gặp rắc rối vì có những đối tượng thiếu ý thức chung, hay nhậu nhẹt, mắc tệ nạn xã hội,… Vì vậy việc tìm kiếm và lựa chọn khách hàng là cực kỳ quan trọng nếu bạn muốn việc kinh doanh của mình diễn ra thuận lợi.</p>
+														<p><strong>Cần khả năng quản lý thật tốt</strong></p>
+														<p class="text-indent">Xây lên một khu trọ, đất là đất của bạn, nhà cũng là nhà bạn xây nên bạn quý trọng mọi thứ ở đó, nhưng với khách hàng thì chưa chắc, rất nhiều người thường tùy ý trong việc bảo quản đồ đạc dẫn đến hư hại. Nếu bạn không biết bao quát tình hình, không thể quản lý tốt tài sản của mình thì chỉ sau một thời gian ngắn khu trọ sẽ xuống cấp nghiêm trọng, tốn của bạn không ít tiền để tu sửa.</p>
+														<p><strong>Vấn đề thủ tục</strong></p>
+														<p class="text-indent">Chuyện đăng ký tạm trú tạm vắng luôn khiến các chủ trọ đau đầu, vì nếu làm cho vài chục người thì thủ tục rất lằng nhằng, còn nếu không làm thì sẽ bị phạt hành chính. Để đảm bảo, ngay khi ký hợp đồng với người thuê nhà bạn nên yêu cầu họ đi đăng ký ngay sau đó.</p>
+														<p><strong>Vấn đề an ninh</strong></p>
+														<p class="text-indent">Vài chục người sống trong một khu trọ không phải chuyện đơn giản, số tài sản chung và riêng là con số khổng lồ, nếu bạn không có biện pháp đảm bảo an ninh thì rất dễ xảy ra tình trạng mất cắp. Hiện nay nhiều khu trọ lớn còn lắp đặt hệ thống camera tại mỗi tầng, có khu vực gửi xe, thậm chí là bảo vệ riêng rất chuyên nghiệp, bạn nên cân nhắc về vấn đề này khi xây dựng.</p>
+														<p><strong>Chi phí dự phòng</strong></p>
+														<p class="text-indent">Mặc dù nhà trọ là tài sản cố định nhưng mức độ tiêu hao lại cưc kì nhanh nếu khả năng quản lý của bạn kém, lúc này cần phải có một khoản phí dự phòng để tu sửa và xử lý tình huống bất ngờ. Ngay từ lúc lập kế hoạch, huy động vốn bạn nên tính toán trước khoản này và thường xuyên bổ sung để tránh thiếu hụt.</p>
+
+														<p>Qua đây có thể thấy ý tưởng kinh doanh nhà trọ rất tiềm năng nhưng cũng tràn đầy thách thức chứ không tràn ngập màu hồng “ngồi không mỗi tháng kiếm trăm triệu” nhưng một số người lầm tưởng. Nếu bạn lựa chọn làm giàu bằng cách này thì hãy lập một kế hoạch thật chi tiết để thành công được đảm bảo hơn.</p>
+														<p>&nbsp;</p>
+														<p>&nbsp;</p>
+												</div>
+										</div>
+										<div id="new1" class="col-md-12">
+												<div class="article-title">
+														<h3 style="color: #33cc66">Những điều cần biết khi tìm phòng trọ</h3>
+												</div>
+												<div class="clearfix"></div>
+												<div class="article-hr"><hr style="border-color: #33cc66"></div>
+												<div class="article-content">
+														<p>Với những tân sinh viên lần đầu tiên đi tìm phòng trọ chắc hẳn sẽ gặp khá nhiều khó khăn do chưa có kinh nghiệm. Dưới đây là một số điều bạn cần biết khi tìm phòng trọ nhé.</p>
+
+														<p><strong>Nên thuê nhà trọ gần trường học</strong></p>
+
+														<p class="text-indent">Việc thuê phòng trọ gần trường học mang lại rất nhiều lợi ích cho bạn. Bạn nên tìm phòng trọ cách trường học từ 1-2 km để thuận tiện đi lại, đồng thời giúp bạn tiết kiệm công sức, thời gian và chi phí di chuyển.</p>
+
+														<p>Bên cạnh đó, việc trọ gần trường học còn giúp bạn dễ dàng tham gia các hoạt động ngoại khóa hay lên thư viện ôn tập vào những ngày nghỉ. Đồng thời còn giúp bạn tránh được cảnh tắc đường, chen chúc trên những chuyến xe bus chật chội giờ cao điểm và hạn chế việc bạn đi học muộn.</p>
+
+														<p>Hiện nay, xung quanh hầu hết các trường học đều có ký túc xá cũng như các khu trọ của người dân nên không khó để bạn có thể tìm được phòng trọ với yêu cầu trên. Tuy nhiên, giá cả phòng trọ tại những khu vực này lại là một yếu tố quan trọng bạn nên xem xét.</p>
+
+														<p><strong>Nên khảo sát giá phòng trọ trước khi thuê</strong></p>
+
+														<p class="text-indent">Để giúp bạn tránh tình trạng bị chủ nhà ép giá cao, bạn nên khảo sát giá phòng trọ trước khi quyết định thuê phòng. Vậy khảo sát bằng cách nào?</p>
+
+														<p>Bạn có thể khảo sát thực tế tại khu vực mà bạn muốn thuê phòng. Để thuê phòng trọ bạn nên tính toán mức phí sinh hoạt bố mẹ cho mỗi tháng là bao nhiêu và xem xét mình cần phòng trọ như thế nào?</p>
+
+														<p>Bạn nên khảo sát giá phòng với từng loại phòng như: phòng trọ trong dãy nhà trọ sinh viên, phòng ở chung nhà với chủ, phòng ở nhà nguyên căn, hay phòng ở chung cư. Phòng khép kín hay không khép kín? Phòng có gác xép hay không có gác xép? Phòng có thể ở được mấy người?</p>
+
+														<p>Sau đó, tùy theo lựa chọn của bạn để có thể tìm được căn phòng đúng yêu cầu với mức giá rẻ nhất nhé. Bạn cũng cần hỏi thăm những người đang thuê phòng trọ ở đó và xem mức giá mà nhà chủ đưa ra cho bạn có bị chênh lệch không để cân nhắc lại.</p>
+
+														<p><strong>Đối với tân sinh viên thì ký túc xá là lựa chọn tốt nhất</strong></p>
+
+														<p class="text-indent">Với tân sinh viên chưa có nhiều kinh nghiệm trong việc tìm phòng cũng như sống riêng thì ký túc xá sẽ là lựa chọn tốt dành cho bạn. Ở ký túc xá bạn có thể yên tâm về vấn đề đi lại bởi hầu hết các ký túc xá đều gần trường.</p>
+
+														<p>Ưu điểm cho những ai ở ký túc xá đó là được gần gũi với nhiều bạn, giúp đỡ nhau trong đời sống, sinh hoạt cũng như học tập. Bạn sẽ không còn cảm thấy cô đơn hay khó khăn những lúc ốm đau.</p>
+														<p style="text-align: center;"><img alt="nhung-dieu-can-biet-khi-tim-phong-tro" src="./images/img-news/img2.jpg"></p>
+														<p style="text-align: center;"><em>Một góc phòng trọ trong ký túc xá sinh viên.</em></p>
+
+														<p>Bạn có thể cập nhật những thông tin mới nhất về trường lớp, các hoạt động nhanh nhất tại môi trường ký túc này. Ký túc xá còn giúp bạn rèn luyện cách sống, kỹ năng giao tiếp do bạn có thể tiếp xúc và sinh hoạt với nhiều người, nhiều tính cách khác nhau.</p>
+
+														<p>Tuy nhiên, bạn cũng lưu ý rằng, an ninh trong ký túc xá không được đảm bảo chắc chắn, có thể xảy ra tình trạng trộm cắp. Đồng thời,ở ký túc xá sẽ khó còn cái gọi là không gian riêng dành cho bạn cũng như bạn cần phải khéo léo ứng xử trong nhiều tình huống khi sống chung với nhiều người.</p>
+
+														<p><strong>Phương tiện giao thông</strong></p>
+
+														<p class="text-indent">Khi bạn chưa thông thạo về đường phố nơi mình học thì phương tiện xe bus công cộng sẽ là lựa chọn tốt nhất. Hiện nay, tại thành phố Hà Nội, việc làm vé tháng xe bus dành cho sinh viên với giá ưu đãi chỉ 100.000 đồng/ tháng, bạn có thể lên bất kỳ tuyến xe bus nào và đi đến bất cứ đâu trong thành phố.</p>
+
+														<p><strong>Khu vực thuê phòng trọ</strong></p>
+
+														<p style="text-align: center;"><img alt="nhung-dieu-can-biet-khi-tim-phong-tro" src="./images/img-news/img2-2.jpg"></p>
+														<p style="text-align: center;"><em>Dãy nhà trọ sinh viên.</em></p>
+
+														<p class="text-indent">Một số lưu ý về khu vực thuê phòng trọ dành cho bạn là nên tìm địa điểm gần trung tâm, thuận lợi khi tiếp cận các tuyến xe bus. Bên cạnh đó, phòng trọ nên ở khu vực gần chợ, cửa hàng tạp hóa để tiện mua sắm, phục vụ sinh hoạt. Tránh trọ tại những nơi hẻo lánh dễ gặp nhiều tệ nạn, nhất là khi bạn ra ngoài vào buổi tối.</p>
+
+														<p><strong>Đọc kỹ hợp đồng trước khi thuê phòng</strong></p>
+
+														<p class="text-indent">Khi thuê phòng trọ, nhất thiết cần phải có hợp đồng thuê nhà gồm 2 bản được 2 bên xác nhận và mỗi bên giữ 1 bản.</p>
+
+														<p>Trước khi ký vào bản hợp đồng đó, bạn cần đọc kỹ các điều khoản của hợp đồng về quyền lợi, trách nhiệm cũng như giá thuê phòng trọ, tiền đặt cọc, giá điện nước cùng các dịch vụ internet, vệ sinh khác. Và chắc chắn rằng, bạn sẽ không bị thiệt với bản hợp đồng này nhé.</p>
+
+														<p><strong>Kiểm tra vật dụng nhà trọ trước khi chuyển đến</strong></p>
+
+														<p>Trước khi chuyển đến ở, bạn cần kiểm tra kỹ lưỡng hệ thống điện, đường ống nước và các thiết bị trong phòng. Nếu có sự cố gì, bạn nên yêu cầu chủ nhà nhanh chóng sửa chữa và thay thế.</p>
+
+														<p>Bạn cũng nên kiểm tra lại số điện và số nước của phòng trước khi chuyển vào ở, để chắc chắn rằng tiền điện, nước tháng sau của bạn được tính đúng.</p>
+
+														<p><strong>Cách tránh bị nhà chủ ép giá điện, nước</strong></p>
+
+														<p class="text-indent">Trong thương thảo hợp đồng, bạn cần chắc chắn tiền điện, nước các phòng là như nhau và không thay đổi theo thời gian nhất định.</p>
+
+														<p>Tốt nhất là bạn nên yêu cầu mỗi phòng có một đồng hồ đo điện, nước riêng để tránh trường hợp bị câu trộm điện, nước. Đồng thời, bạn cũng nên hỏi hàng xóm về tiền điện, nước của các phòng tương quan với vật dụng trong phòng của mình để xem xét liệu tiền điện, nước của mình có bị cao quá không. Nếu trường hợp bị cao lên bất ngờ thì bạn nên yêu cầu xem xét lại.</p>
+
+														<p><strong>Kinh nghiệm tìm người ở ghép</strong></p>
+
+														<p class="text-indent">Có thể nhiều bạn khi tìm được phòng phù hợp nhưng một mình không thể chi trả được tất cả các khoản tiền và bạn cần tìm người ở ghép.</p>
+
+														<p>Lúc này, bạn nên liên hệ với bạn bè và người thân để tìm người có cùng nhu cầu. Với những người này, bạn sẽ cảm thấy yên tâm hơn vì bạn đã có những thông tin cụ thể của đối phương đồng thời cũng đã hiểu về họ cũng như cách sống của họ.</p>
+
+														<p><strong>Có nên thuê phòng ở chung với nhà chủ hay không?</strong></p>
+
+														<p class="text-indent">Đây là câu hỏi mà không ít người thắc mắc. Việc bạn ở chung với nhà chủ có những ưu điểm và hạn chế nhất định. Tuy nhiên, nếu bạn là sinh viên năm nhất và bạn là con gái thì nên ở cùng nhà chủ bạn nhé.</p>
+
+														<p>Việc ở cùng nhà chủ giúp bạn đảm bảo an ninh tốt hơn, yên tĩnh hơn để bạn có thể tập trung học tập. Đồng thời, sự hạn chế trong giờ đóng cửa mỗi tối là cách để bạn trở về nhà sớm hơn và đảm bảo an toàn cho bản thân mình.</p>
+
+														<p>Trên đây là một số lưu ý nhỏ dành cho sinh viên khi thuê phòng trọ. Hi vọng những thông tin này sẽ giúp bạn có thêm nhiều kinh nghiệm và hiểu biết để có thể tìm được phòng trọ như ý cho bản thân, tránh những cạm bẫy từ bên ngoài.</p>
+														<p>&nbsp;</p>
+														<p>&nbsp;</p>
+												</div>
+										</div>
+										<div id="new2" class="col-md-12">
+												<div class="article-title">
+														<h3 style="color: #33cc66">Vì sao chọn ngành 'hot' vẫn... thất nghiệp?</h3>
+												</div>
+												<div class="clearfix"></div>
+												<div class="article-hr"><hr style="border-color: #33cc66"></div>
+												<div class="article-content">
+														<p><strong>"Chọn ngành 'hot' như Kinh tế, Tài chính – Ngân hàng, Thương mại có thể vẫn thất nghiệp, vì khối ngành này được nhiều người lựa chọn, dẫn đến cung lớn hơn cầu.</strong></p>
+
+														<p>Theo thống kê, khối ngành Kinh tế, Tài chính – Ngân hàng, Thương mại nhiều năm được ưa chuộng, điểm chuẩn luôn ở mức cao.</p>
+
+														<p><strong>"Đổ xô" chọn ngành hot</strong></p>
+
+														<p class="text-indent">Năm 2015, ngành Kinh tế thuộc Đại học Ngoại thương Hà Nội có điểm trúng tuyển 25,75 điểm khối A1 và D; 27,25 điểm khối A. Ngành này tại cơ sở TP HCM có mức điểm trúng tuyển khối A1, D1, D6 là 25,5.</p>
+
+														<p>Cũng trong năm 2015, điểm chuẩn ngành Tài chính – Ngân hàng của Đại học Kinh tế TP HCM là 21,75 điểm. Điểm trúng tuyển Đại học Ngoại thương cơ sở 2 TP HCM ngành Tài chính – Ngân hàng hai khối A và D đều 25 điểm, cơ sở 1 tại Hà Nội khối A và D lấy 24,75 điểm, khối A0 26,25 điểm.</p>
+
+														<p>Tuy nhiên, từ sau năm 2010 đến nay, truyền thông liên tục đưa những con số báo động về tình trạng thất nghiệp của sinh viên học ngành này. Kết quả khảo sát của Viện Nhân lực Ngân hàng - Tài chính cho thấy, trong hai năm 2012 và 2013, 30.000 - 32.000 sinh viên ngành Tài chính - Ngân hàng ra trường, nhưng chỉ khoảng một nửa số đó vào làm việc trong các ngân hàng.</p>
+
+														<p>Lỷ giải điều này, TS Phạm Mạnh Hà, chuyên gia tư vấn hướng nghiệp (Học viện Thanh thiếu niên Việt Nam) cho biết theo nghiên cứu gần đây, trong quá trình hội nhập, phát triển kinh tế, lĩnh vực Kinh tế - Tài chính – Ngân hàng, Thương mại vẫn hút nhân lực nhất. Dự báo cần 35% tổng nguồn nhân lực. Tuy nhiên, từ trước đến nay, khối ngành này vẫn được nhiều người lựa chọn nên dẫn đến sự đào thải nhân lực khắt khe.</p>
+
+														<p>Nhiều người đặt câu hỏi: Vì sao chọn ngành "hot" vẫn thất nghiệp? TS Hà cho rằng nếu nhà tuyển dụng cần nhân lực là 35% thì số người thi ngành này lên tới 75%.</p>
+
+														<p style="text-align: center;"><img alt="vi-sao-chon-nganh-hot-van-that-nghiep" src="./images/img-news/img3.jpg"></p>
+
+														<p>Dù vậy, khối ngành Kinh tế, Tài chính – Ngân hàng, Thương mại không phải thiếu việc làm, mà chỉ thiếu những người có năng lực.</p>
+
+														<p>Ông Hà cũng đưa ra nhận xét nếu như mùa tuyển sinh các năm trước, học sinh hỏi nhiều về các ngành "hot", thì năm nay các em băn khoăn nhiều đến vấn đề chọn nghề theo đam mê hay truyền thống gia đình.</p>
+
+														<p><strong>Cần tạo nên sự khác biệt</strong></p>
+
+														<p class="text-indent">PGS.TS Bùi Đức Triệu, Trưởng phòng Đào tạo Đại học Kinh tế Quốc dân Hà Nội nhận định, có tới 70-80% sinh viên ra trường học chuyên ngành Kinh tế làm lẫn việc của nhau. Khác với ngành Kỹ thuật, sinh viên học Quản trị Kinh doanh có thể làm được Kế Toán và ngược lại, bởi họ có nền tảng kiến thức tương đương.</p>
+
+														<p>Vậy, để tạo sự khác biệt khi xin việc, sinh viên cần có khả năng tự hoàn thiện và cạnh tranh. Ví dụ, sinh viên Đại học Kinh tế Quốc dân Hà Nội khi ra trường đều phải có chứng chỉ Ngoại ngữ và Tin học. Nhà trường tạo điều kiện cho các em học thêm ngành và chuyên ngành mới ngay từ năm thứ hai. Ra trường, sinh viên sẽ được trang bị đủ kiến thức đáp ứng mảng kinh tế rộng lớn.</p>
+
+														<p>Chia sẻ về điều này, Hoàng Đình Quang, sinh viên từng đạt điểm số kỷ lục của Đại học Ngoại thương Hà Nội nói, hiện nay, có khá nhiều người ra trường làm trái ngành, nghề, phần lớn ở lĩnh vực kinh tế. Trong đó, một số trường hợp do chọn nhầm ngành nghề mình không yêu thích, không phù hợp. Số còn lại vì họ đã cụ thể hoá công việc mình làm dựa trên những kiến thức tổng hợp được học.</p>
+
+														<p>“Các ngành kinh tế nói chung thường học khá nhiều kiến thức, từ marketing, quản trị, kinh tế vi mô, luật đến kỹ năng bán hàng, kỹ năng giao tiếp… Khi ra trường, tùy theo hoàn cảnh mà cá nhân có thể chọn một ngành cụ thể để theo đuổi. Đây không phải chọn nhầm nghề”, Hoàng Đình Quang nói.</p>
+
+														<p>Chàng sinh viên trường Ngoại thương cho rằng nếu không cố gắng và theo đuổi đến cùng, sự lựa chọn tốt nhất cũng sẽ biến thành sự lựa chọn tồi nhất.</p>
+
+														<p><strong>Nhóm ngành mới xuất hiện</strong></p>
+
+														<p class="text-indent">Theo thông tin từ Trung tâm Dự báo Nhu cầu Nhân lực và Thông tin Thị trường Lao động TP HCM, nhu cầu tìm việc của tháng 2/2016 bậc đại học, trên đại học cao nhất ở nhóm ngành Kế toán - Kiểm toán, Tài chính – Tín dụng – Ngân hàng.</p>
+
+														<p>Cũng trong năm 2016, cộng đồng chung ASEAN hình thành cũng là lúc mở ra nhiều cơ hội nghề nghiệp hơn cho thị trường lao động trong nước. Theo xu thế đó, năm 2016 bắt đầu xuất hiện nhiều nhóm ngành mới trên cơ sở những nhóm ngành cũ và có sự kết hợp, lồng ghép các nhóm ngành với nhau.</p>
+
+														<p>Xu hướng kết hợp giữa các chuyên ngành hình thành những nhóm ngành nghề mới như: Quản trị Rủi ro, Quản lý Chất lượng Chuyên ngành Công nghiệp – Công nghệ Kỹ thuật và Y tế, Quản lý Hệ thống Thông tin, Kế hoạch và Dự báo Kinh tế – Nhân lực – Xã hội – Kinh doanh, Tư vấn Tài chính Cá nhân...</p>
+
+														<p>Theo ông Trần Anh Tuấn, Phó giám đốc Trung tâm Dự báo Nhu cầu Nhân lực và Thông tin Thị trường Lao động TP HCM, những nhóm ngành trên đều khá mới mẻ và đòi hỏi nguồn nhân lực có trình độ cao. Do đó, ngoài các kiến thức chuyên ngành, bạn còn phải am tường kỹ năng ngoại ngữ, giao tiếp và đặc biệt phải có tác phong làm việc có kỷ luật và trách nhiệm.</p>
+														<p>&nbsp;</p>
+														<p>&nbsp;</p>
+												</div>
+										</div>
+										<div id="new3" class="col-md-12">
+												<div class="article-title">
+														<h3 style="color: #33cc66">Sinh viên Mỹ chọn ngành học thế nào?</h3>
+												</div>
+												<div class="clearfix"></div>
+												<div class="article-hr"><hr style="border-color: #33cc66"></div>
+												<div class="article-content">
+														<p><strong>Sinh viên Mỹ chọn ngành vào cuối năm thứ nhất hoặc năm hai. Họ có thể chuyển ngành trong quá trình học hoặc học thêm chuyên ngành khác.</strong></p>
+
+														<p>Chọn ngành là quyết định quan trọng, khó khăn đối với phần lớn sinh viên, vì nó ảnh hưởng nghề nghiệp, thu nhập tương lai, cũng như mức độ thành công của mỗi người.</p>
+
+														<p>Tổng số chương trình học thuật của các trường đại học, cao đẳng ở Mỹ lên đến gần 1.500. Mỗi 10 năm, con số này lại tăng thêm 355 nhằm đáp ứng nhu cầu thực tế của xã hội.</p>
+
+														<p style="text-align: center;"><img alt="sinh-vien-my-chon-nganh-hoc-the-nao" src="./images/img-news/img4-1.jpg"></p>
+
+														<p><strong>Không bắt buộc chọn chuyên ngành khi ứng tuyển</strong></p>
+
+														<p class="text-indent">Số lượng ngành học lớn giúp sinh viên Mỹ có nhiều sự lựa chọn hơn, nhưng cũng khiến họ khó đưa ra quyết định. Quy định về việc chọn ngành ở Mỹ khá khác với Việt Nam, tạo thuận lợi nhất cho người học.</p>
+
+														<p>Trung Dũng, du học sinh Việt Nam tại Đại học California, cho biết hầu hết các trường tuyển sinh chủ yếu dựa trên điểm trung bình học tập (GPA), điểm bài thi đánh giá năng lực (SAT hoặc ACT) và điểm TOEFL, IELTS đối với sinh viên quốc tế.</p>
+
+														<p>Việc chọn chuyên ngành không bắt buộc. Một số trường yêu cầu thí sinh liệt kê chuyên ngành dự định theo học, nhưng ứng viên hoàn toàn có thể đánh dấu “undecided” hoặc “undeclared” nếu họ chưa chắc chắn.</p>
+
+														<p>Cũng theo nam sinh này, sinh viên Mỹ thường chọn chuyên ngành vào cuối năm học thứ nhất hoặc thứ hai. Tuy nhiên, theo bà Libby Elizabeth Rafferty, cố vấn tuyển sinh quốc tế Đại học San Jose, sinh viên nước ngoài bắt buộc phải nêu rõ chuyên ngành họ ứng tuyển khi nộp đơn nhưng được phép chuyển chuyên ngành trong quá trình học.</p>
+
+														<p>Hai năm đầu, sinh viên tham gia các khóa học họ hứng thú, dành thời gian xác định đam mê, cũng như năng lực của bản thân trước khi quyết định.</p>
+
+														<p>Những bạn đã xác định đam mê vẫn nên dành hai năm đầu tiên để khám phá thêm bản thân bằng cách học những lớp học mới hơn.</p>
+
+														<p>“Ở Mỹ, các bạn có thể chọn ngành thoải mái trong hai năm đầu tiên, miễn là phù hợp thời gian biểu và năng lực. Trong một học kỳ, các khóa học của một sinh viên có thể trải rộng khắp những ngành không liên quan nhau. Họ có thể chọn 5 lớp bao gồm Vẽ, Lịch sử, Kinh tế, Kỹ năng thuyết trình và Khoa học Máy tính”, Ngọc Sơn, sinh viên Đại học Earlham, cho biết.</p>
+
+														<p>Bà Laura Shier, Giám đốc Nghiên cứu tiếng Anh học thuật tại Đại học Lewis &amp; Clark, khuyến khích sinh viên chọn các lớp ở nhiều ngành khác nhau để phát triển bản thân toàn diện, đồng thời có thêm nhiều sự lựa chọn khi quyết định chuyên ngành.</p>
+
+														<p style="text-align: center;"><img alt="sinh-vien-my-chon-nganh-hoc-the-nao" src="./images/img-news/img4-2.jpg"></p>
+
+														<p><strong>Dễ dàng chuyển chuyên ngành học</strong></p>
+
+														<p class="text-indent">Tiến sĩ Alfredo R. Varela, Giám đốc Chương trình Quốc tế tại Đại học St Mary, cho hay sinh viên có thể chuyển ngành trong quá trình học, thậm chí chuyển từ một ngành xã hội sang ngành thuộc khối kinh doanh.</p>
+
+														<p>Thủ tục chuyển ngành không phức tạp nhưng đối với những người chưa lựa chọn các khóa học cần thiết cho chuyên ngành mới, họ sẽ phải mất thêm từ một đến hai năm để hoàn thành chương trình và nhận bằng.</p>
+
+														<p>Một điểm đặc biệt khác ở các trường đại học Mỹ là sinh viên có thể theo học hai chuyên ngành chính hoặc nhiều chuyên ngành phụ bên cạnh chuyên ngành chính.</p>
+
+														<p>Trường hợp có thêm ngành phụ khá phổ biến, số lượng sinh viên tốt nghiệp với hai chuyên ngành chính trở lên cũng không hiếm. Nhưng nếu vậy, sinh viên sẽ phải trải qua quá trình học tập vất vả.</p>
+
+														<p>Sinh viên Mỹ thường chọn ngành căn cứ 3 yếu tố chính là đam mê, năng lực và triển vọng việc làm, thu nhập.</p>
+
+														<p>Theo các nhà tuyển sinh đại học Mỹ, yếu tố được xem xét nhiều nhất là đam mê. Tuy nhiên, tiến sĩ Varela khuyên sinh viên nên cân bằng giữa sở thích và năng lực.</p>
+
+														<p>Họ sẽ được phụ huynh, giáo viên trường trung học, cũng như đại học tư vấn để đưa ra quyết định ngành học.</p>
+
+														<p>Ngọc Sơn cho hay: “Ở trường mình, mỗi sinh viên sẽ có một giáo sư hướng dẫn về định hướng chương trình học. Đầu mỗi học kỳ, giáo sư có một buổi nói chuyện với sinh viên về lịch học kỳ này, qua đó thống nhất chương trình học và nhắc nhở sinh viên về các khóa học bắt buộc để đạt yêu cầu tốt nghiệp”.</p>
+
+														<p>Sơn cho biết thêm một số trường còn có trung tâm hướng nghiệp nhằm hỗ trợ sinh viên hoàn thiện CV, giới thiệu cơ hội thực tập cũng như việc làm. Các thông tin này thường được lấy qua hệ thống cựu học sinh và các tổ chức có liên kết với trường nên chủ yếu dành riêng cho học sinh của trường đó.</p>
+
+														<p>Cũng theo Sơn, sinh viên Việt Nam ở đây chọn ngành khá đa dạng. Thông thường, những bạn theo những ngành liên quan kỹ thuật sẽ xác định chuyên ngành trước khi ứng tuyển vào trường. Trong khi đó, du học sinh thuộc khối ngành xã hội và kinh tế thường đổi ngành nhiều lần hoặc học thêm ngành phụ.</p>
+
+														<p>Gần đây, Chính phủ Mỹ quyết định tăng thời gian ở lại nước này cho người tốt nghiệp khối ngành Khoa học, Công nghệ, Kỹ thuật và Toán lên tới 3 năm. Chính sách mới có thể ảnh hưởng lựa chọn ngành nghề của du học sinh.</p>
+
+														<p>Nhiều bạn có thể sẽ chuyển ngành hoặc học thêm ngành chính liên quan 4 khối ngành này để có cơ hội ở lại lâu hơn. Các khối ngành khác, sau khi tốt nghiệp, sẽ chỉ được ở lại 12 tháng.</p>
+														<p>&nbsp;</p>
+														<p>&nbsp;</p>
+												</div>
+										</div>
+										<div id="new4" class="col-md-12">
+												<div class="article-title">
+														<h3 style="color: #33cc66">Những điều cần biết khi tìm phòng trọ</h3>
+												</div>
+												<div class="clearfix"></div>
+												<div class="article-hr"><hr style="border-color: #33cc66"></div>
+												<div class="article-content">
+														<p>Với những tân sinh viên lần đầu tiên đi tìm phòng trọ chắc hẳn sẽ gặp khá nhiều khó khăn do chưa có kinh nghiệm. Dưới đây là một số điều bạn cần biết khi tìm phòng trọ nhé.</p>
+
+														<p><strong>Nên thuê nhà trọ gần trường học</strong></p>
+
+														<p class="text-indent">Việc thuê phòng trọ gần trường học mang lại rất nhiều lợi ích cho bạn. Bạn nên tìm phòng trọ cách trường học từ 1-2 km để thuận tiện đi lại, đồng thời giúp bạn tiết kiệm công sức, thời gian và chi phí di chuyển.</p>
+
+														<p>Bên cạnh đó, việc trọ gần trường học còn giúp bạn dễ dàng tham gia các hoạt động ngoại khóa hay lên thư viện ôn tập vào những ngày nghỉ. Đồng thời còn giúp bạn tránh được cảnh tắc đường, chen chúc trên những chuyến xe bus chật chội giờ cao điểm và hạn chế việc bạn đi học muộn.</p>
+
+														<p>Hiện nay, xung quanh hầu hết các trường học đều có ký túc xá cũng như các khu trọ của người dân nên không khó để bạn có thể tìm được phòng trọ với yêu cầu trên. Tuy nhiên, giá cả phòng trọ tại những khu vực này lại là một yếu tố quan trọng bạn nên xem xét.</p>
+
+														<p><strong>Nên khảo sát giá phòng trọ trước khi thuê</strong></p>
+
+														<p class="text-indent">Để giúp bạn tránh tình trạng bị chủ nhà ép giá cao, bạn nên khảo sát giá phòng trọ trước khi quyết định thuê phòng. Vậy khảo sát bằng cách nào?</p>
+
+														<p>Bạn có thể khảo sát thực tế tại khu vực mà bạn muốn thuê phòng. Để thuê phòng trọ bạn nên tính toán mức phí sinh hoạt bố mẹ cho mỗi tháng là bao nhiêu và xem xét mình cần phòng trọ như thế nào?</p>
+
+														<p>Bạn nên khảo sát giá phòng với từng loại phòng như: phòng trọ trong dãy nhà trọ sinh viên, phòng ở chung nhà với chủ, phòng ở nhà nguyên căn, hay phòng ở chung cư. Phòng khép kín hay không khép kín? Phòng có gác xép hay không có gác xép? Phòng có thể ở được mấy người?</p>
+
+														<p>Sau đó, tùy theo lựa chọn của bạn để có thể tìm được căn phòng đúng yêu cầu với mức giá rẻ nhất nhé. Bạn cũng cần hỏi thăm những người đang thuê phòng trọ ở đó và xem mức giá mà nhà chủ đưa ra cho bạn có bị chênh lệch không để cân nhắc lại.</p>
+
+														<p><strong>Đối với tân sinh viên thì ký túc xá là lựa chọn tốt nhất</strong></p>
+
+														<p class="text-indent">Với tân sinh viên chưa có nhiều kinh nghiệm trong việc tìm phòng cũng như sống riêng thì ký túc xá sẽ là lựa chọn tốt dành cho bạn. Ở ký túc xá bạn có thể yên tâm về vấn đề đi lại bởi hầu hết các ký túc xá đều gần trường.</p>
+
+														<p>Ưu điểm cho những ai ở ký túc xá đó là được gần gũi với nhiều bạn, giúp đỡ nhau trong đời sống, sinh hoạt cũng như học tập. Bạn sẽ không còn cảm thấy cô đơn hay khó khăn những lúc ốm đau.</p>
+														<p style="text-align: center;"><img alt="nhung-dieu-can-biet-khi-tim-phong-tro" src="./images/img-news/img2.jpg"></p>
+														<p style="text-align: center;"><em>Một góc phòng trọ trong ký túc xá sinh viên.</em></p>
+
+														<p>Bạn có thể cập nhật những thông tin mới nhất về trường lớp, các hoạt động nhanh nhất tại môi trường ký túc này. Ký túc xá còn giúp bạn rèn luyện cách sống, kỹ năng giao tiếp do bạn có thể tiếp xúc và sinh hoạt với nhiều người, nhiều tính cách khác nhau.</p>
+
+														<p>Tuy nhiên, bạn cũng lưu ý rằng, an ninh trong ký túc xá không được đảm bảo chắc chắn, có thể xảy ra tình trạng trộm cắp. Đồng thời,ở ký túc xá sẽ khó còn cái gọi là không gian riêng dành cho bạn cũng như bạn cần phải khéo léo ứng xử trong nhiều tình huống khi sống chung với nhiều người.</p>
+
+														<p><strong>Phương tiện giao thông</strong></p>
+
+														<p class="text-indent">Khi bạn chưa thông thạo về đường phố nơi mình học thì phương tiện xe bus công cộng sẽ là lựa chọn tốt nhất. Hiện nay, tại thành phố Hà Nội, việc làm vé tháng xe bus dành cho sinh viên với giá ưu đãi chỉ 100.000 đồng/ tháng, bạn có thể lên bất kỳ tuyến xe bus nào và đi đến bất cứ đâu trong thành phố.</p>
+
+														<p><strong>Khu vực thuê phòng trọ</strong></p>
+
+														<p style="text-align: center;"><img alt="nhung-dieu-can-biet-khi-tim-phong-tro" src="./images/img-news/img2-2.jpg"></p>
+														<p style="text-align: center;"><em>Dãy nhà trọ sinh viên.</em></p>
+
+														<p class="text-indent">Một số lưu ý về khu vực thuê phòng trọ dành cho bạn là nên tìm địa điểm gần trung tâm, thuận lợi khi tiếp cận các tuyến xe bus. Bên cạnh đó, phòng trọ nên ở khu vực gần chợ, cửa hàng tạp hóa để tiện mua sắm, phục vụ sinh hoạt. Tránh trọ tại những nơi hẻo lánh dễ gặp nhiều tệ nạn, nhất là khi bạn ra ngoài vào buổi tối.</p>
+
+														<p><strong>Đọc kỹ hợp đồng trước khi thuê phòng</strong></p>
+
+														<p class="text-indent">Khi thuê phòng trọ, nhất thiết cần phải có hợp đồng thuê nhà gồm 2 bản được 2 bên xác nhận và mỗi bên giữ 1 bản.</p>
+
+														<p>Trước khi ký vào bản hợp đồng đó, bạn cần đọc kỹ các điều khoản của hợp đồng về quyền lợi, trách nhiệm cũng như giá thuê phòng trọ, tiền đặt cọc, giá điện nước cùng các dịch vụ internet, vệ sinh khác. Và chắc chắn rằng, bạn sẽ không bị thiệt với bản hợp đồng này nhé.</p>
+
+														<p><strong>Kiểm tra vật dụng nhà trọ trước khi chuyển đến</strong></p>
+
+														<p>Trước khi chuyển đến ở, bạn cần kiểm tra kỹ lưỡng hệ thống điện, đường ống nước và các thiết bị trong phòng. Nếu có sự cố gì, bạn nên yêu cầu chủ nhà nhanh chóng sửa chữa và thay thế.</p>
+
+														<p>Bạn cũng nên kiểm tra lại số điện và số nước của phòng trước khi chuyển vào ở, để chắc chắn rằng tiền điện, nước tháng sau của bạn được tính đúng.</p>
+
+														<p><strong>Cách tránh bị nhà chủ ép giá điện, nước</strong></p>
+
+														<p class="text-indent">Trong thương thảo hợp đồng, bạn cần chắc chắn tiền điện, nước các phòng là như nhau và không thay đổi theo thời gian nhất định.</p>
+
+														<p>Tốt nhất là bạn nên yêu cầu mỗi phòng có một đồng hồ đo điện, nước riêng để tránh trường hợp bị câu trộm điện, nước. Đồng thời, bạn cũng nên hỏi hàng xóm về tiền điện, nước của các phòng tương quan với vật dụng trong phòng của mình để xem xét liệu tiền điện, nước của mình có bị cao quá không. Nếu trường hợp bị cao lên bất ngờ thì bạn nên yêu cầu xem xét lại.</p>
+
+														<p><strong>Kinh nghiệm tìm người ở ghép</strong></p>
+
+														<p class="text-indent">Có thể nhiều bạn khi tìm được phòng phù hợp nhưng một mình không thể chi trả được tất cả các khoản tiền và bạn cần tìm người ở ghép.</p>
+
+														<p>Lúc này, bạn nên liên hệ với bạn bè và người thân để tìm người có cùng nhu cầu. Với những người này, bạn sẽ cảm thấy yên tâm hơn vì bạn đã có những thông tin cụ thể của đối phương đồng thời cũng đã hiểu về họ cũng như cách sống của họ.</p>
+
+														<p><strong>Có nên thuê phòng ở chung với nhà chủ hay không?</strong></p>
+
+														<p class="text-indent">Đây là câu hỏi mà không ít người thắc mắc. Việc bạn ở chung với nhà chủ có những ưu điểm và hạn chế nhất định. Tuy nhiên, nếu bạn là sinh viên năm nhất và bạn là con gái thì nên ở cùng nhà chủ bạn nhé.</p>
+
+														<p>Việc ở cùng nhà chủ giúp bạn đảm bảo an ninh tốt hơn, yên tĩnh hơn để bạn có thể tập trung học tập. Đồng thời, sự hạn chế trong giờ đóng cửa mỗi tối là cách để bạn trở về nhà sớm hơn và đảm bảo an toàn cho bản thân mình.</p>
+
+														<p>Trên đây là một số lưu ý nhỏ dành cho sinh viên khi thuê phòng trọ. Hi vọng những thông tin này sẽ giúp bạn có thêm nhiều kinh nghiệm và hiểu biết để có thể tìm được phòng trọ như ý cho bản thân, tránh những cạm bẫy từ bên ngoài.</p>
+														<p>&nbsp;</p>
+														<p>&nbsp;</p>
+												</div>
+										</div>
+								</div>
+						</section>
+				</article>
+				<aside class="side-bar col-xs-12 col-md-3">
+						<section class="search-bar">
+								<div class="search" id="menu-search">
+										<div class="title-side">
+												TÌM PHÒNG
+										</div>
+										<div class="row">
+												<select class="select locale-item">
+														<option>Tỉnh, TP</option>
+														<option>Hà Nội</option>
+														<option>Đà Nẵng</option>
+														<option>TP.Hồ Chí Minh</option>
+												</select>
+												<select class="select locale_district">
+
+												</select>
+												<select class="select">
+														<option>Gần ĐH, CĐ</option>
+														<option>Bách Khoa</option>
+														<option>Xây Dựng</option>
+														<option>Tài chính</option>
+														<option>Ngoại thương</option>
+												</select>
+												<select class="select">
+														<option>Bạn là?</option>
+														<option>Sinh viên</option>
+														<option>Người đi làm</option>
+														<option>Kinh doanh</option>
+												</select>
+										</div>
+										<div class="row">
+												<select class="select loaihinh">
+														<option>Bạn cần tìm?</option>
+														<option>Thuê phòng trọ</option>
+														<option>Thuê nhà</option>
+														<option>Chung cư mini</option>
+														<option>Mặt bằng kinh doanh</option>
+												</select>
+												<select class="select">
+														<option>Diện tích?</option>
+														<option>Dưới 15m2</option>
+														<option>15m2 - 25m2</option>
+														<option>25m2 - 35m2</option>
+														<option>Trên 35m2</option>
+												</select>
+												<select class="select">
+														<option>Mức giá?</option>
+														<option>500 - 1000</option>
+														<option>1000 - 1500</option>
+														<option>1500 - 2000</option>
+														<option>2000 - 3000</option>
+														<option>Trên 3000</option>
+												</select>
+										</div>
+										<div class="icon-s"><i class="fa fa-search"></i><span> Tìm Kiếm</span></div>
+								</div>
+						</section>
+				</aside>
+				<div class="clear"></div>
+		</main>
+		<footer>
+				<img class="top-footer" src="./images/img-footer/footer1.png">
+				<div class="footer-content">
+						<div class="wrapper-fcontent">
+								<div class="f-content1 col-xs-12 col-sm-3">
+										<img src="./images/img-footer/logo-face.png">
+										<img src="./images/img-footer/slogan.png">
+								</div>
+								<div class="f-content2 col-xs-12 col-sm-5">
+										<ul class="footer-nav">
+												<li class="item"><a href="../HTML/about_us.html">Giới thiệu</a></li>
+												<li class="item"><a href="../HTML/quydinh.html">Quy định sử dụng</a></li>
+										</ul>
+										<div class="text-copyright">
+												<p>Website đăng tin chia sẻ miễn phí thông tin về phòng trọ cho thuê, nhà riêng cho thuê, văn phòng, mặt bằng kinh doanh...nhằm giúp người thuê phòng và người cho thuê phòng tương tác với nhau không qua trung gian môi giới.</p></br>
+												<p style="color: #2196F3;margin-bottom: 10px !important;">MỌI CHI TIẾT XIN LIÊN HỆ:</p>
+												<p>Email: <strong>timphongcungban@gmail.com</strong><br>
+												</p>
+												<p>Zalo: <strong>0868 97 91 93</strong></p>
+												<p>Hỗ trợ đăng tin: <strong>0868 97 91 93</strong><br><p>
+										</div>
+								</div>
+								<div class="footer-link col-xs-12 col-sm-4">
+										<div class="row1">
+												<a href="https://www.facebook.com/Timphongcungbancom-1064749426960008/"><img src="./images/img-footer/face-icon.png" title="FacePage"></a>
+												<a href="https://plus.google.com/u/0/105034502578187630822"><img src="./images/img-footer/google-icon.png" title="Google"></a>
+												<a href="https://chat.zalo.me/"><img src="./images/img-footer/zalo-icon.png" title="Zalo"></a>
+										</div>
+										<div class="row2">
+												<img src="./images/img-footer/img-footer.png">
+										</div>
+								</div>
+								<div class="clear"></div>
+								<div class="bot-footer">
+										<p>© Copyright 2017 Timphongcungban.com. All rights reserved.</p>
+								</div>
+						</div>
+				</div>
+		</footer>
+</div>
+<script src="./js/jquery-3.2.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/home.js"></script>
+</body>
+</html>

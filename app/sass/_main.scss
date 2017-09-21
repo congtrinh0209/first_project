@@ -5,6 +5,7 @@ article.main-content{
     padding-left: 3px;
     padding-right: 10px;
   }
+  // CSS Phần map tính năng tìm quanh đây
   .search_place{
     display: none;
     margin-top: 13px;
@@ -130,6 +131,7 @@ article.main-content{
       border-radius: 5px;
       margin: 10px 0;
       padding: 5px;
+      // CSS nội dung trang home.html
       .content-left{
         padding: 0;
         padding-top: 5px;
@@ -198,6 +200,59 @@ article.main-content{
             padding: 7px;
           }
         }
+      }
+      // CSS phần content trang support.html
+      .help-form{
+        padding: 5px;
+        text-align: justify;
+        p{
+          font-size: 18px;
+          color: #00914E;
+        }
+        .form-help{
+          margin-top:10px;
+          padding: 10px;
+          border: 1px solid #4FB748;
+          border-radius: 7px;
+          .form-group{
+            width: 60%;
+            label{}
+            input{}
+          }
+          button{
+            @include btn2;
+          }
+        }
+      }
+      // CSS phần content trang news.html
+      .news{
+        .row-news{
+          min-height: 300px;
+          .news-item{
+            .item{
+              a{
+                .img-responsive{}
+                .title{
+                  font-weight: bold;
+                  color: #288AD6;
+                  font-size: 16px;
+                  margin-top: 10px;
+                  text-align: justify;
+                  &:hover{
+                    color: #33CC66;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .article-content{
+        margin: 0 0 10px;
+        text-align: justify;
+      }
+      .text-indent{
+        text-indent: 30px;
       }
     }
     .content-detail{
@@ -289,6 +344,7 @@ article.main-content{
       }
     }
   }
+  //CSS phần phân trang pagination
   .pagination-container{
     margin: 0 auto;
     text-align: center;
@@ -297,6 +353,7 @@ article.main-content{
     }
   }
 }
+// CSS phần side-bar tin tức, form tìm kiếm
 aside.side-bar{
   padding: 1px;
   section.search-bar, section.news-bar{

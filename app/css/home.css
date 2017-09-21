@@ -699,6 +699,50 @@ img {
                 background-position: right top;
                 color: black;
                 cursor: pointer; }
+        .wrapper-content main article.main-content .wrap-content .content .help-form {
+          padding: 5px;
+          text-align: justify; }
+          .wrapper-content main article.main-content .wrap-content .content .help-form p {
+            font-size: 18px;
+            color: #00914E; }
+          .wrapper-content main article.main-content .wrap-content .content .help-form .form-help {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #4FB748;
+            border-radius: 7px; }
+            .wrapper-content main article.main-content .wrap-content .content .help-form .form-help .form-group {
+              width: 60%; }
+            .wrapper-content main article.main-content .wrap-content .content .help-form .form-help button {
+              background-color: #E74C3C;
+              color: #ffffff;
+              font-size: 1.2em;
+              border-radius: 5px;
+              border: none;
+              background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f7968c), color-stop(50%, #E74C3C));
+              background: linear-gradient(to left, #f7968c 50%, #E74C3C 50%);
+              background-size: 200% 100%;
+              -webkit-transition: background-position 100ms ease;
+              transition: background-position 100ms ease;
+              background-position: left bottom; }
+              .wrapper-content main article.main-content .wrap-content .content .help-form .form-help button:hover {
+                background-position: right top;
+                color: black;
+                cursor: pointer; }
+        .wrapper-content main article.main-content .wrap-content .content .news .row-news {
+          min-height: 300px; }
+          .wrapper-content main article.main-content .wrap-content .content .news .row-news .news-item .item a .title {
+            font-weight: bold;
+            color: #288AD6;
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: justify; }
+            .wrapper-content main article.main-content .wrap-content .content .news .row-news .news-item .item a .title:hover {
+              color: #33CC66; }
+        .wrapper-content main article.main-content .wrap-content .content .article-content {
+          margin: 0 0 10px;
+          text-align: justify; }
+        .wrapper-content main article.main-content .wrap-content .content .text-indent {
+          text-indent: 30px; }
       .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail {
         border-top: 1px solid #4fb748;
         padding-top: 10px;

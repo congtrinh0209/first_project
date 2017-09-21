@@ -102,4 +102,18 @@ $(document).ready(function () {
     $(".locale-item").click(function () {
         load_locale();
     });
+    // JS load tin cho trang tin tức
+
+    var _loop = function _loop(i) {
+        $("#news" + i).click(function () {
+            $.get("news_detail.html", function (data) {
+                $("#data-new").html(data);
+                $("#data-new").html($("#new" + i).html());
+            });
+        });
+    };
+
+    for (var i = 1; i <= 5; i++) {
+        _loop(i);
+    }
 });
