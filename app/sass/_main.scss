@@ -215,9 +215,10 @@ article.main-content{
           border: 1px solid #4FB748;
           border-radius: 7px;
           .form-group{
-            width: 60%;
-            label{}
-            input{}
+            width: 100%;
+            @include tablet{
+              width: 60%;
+            }
           }
           button{
             @include btn2;
@@ -253,6 +254,18 @@ article.main-content{
       }
       .text-indent{
         text-indent: 30px;
+      }
+      // CSS phần content trang guide.html
+      .guide_tab{
+         a{
+           font-weight: bold;
+           color: #33cc66;
+         }
+      }
+      .guide_content{
+        border: 1px solid #ddd;
+        border-top:none;
+        padding: 5px;
       }
     }
     .content-detail{

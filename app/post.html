@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="./css/home.css">
+		<link rel="stylesheet" type="text/css" href="./css/post.css">
 		<link rel='shortcut icon' type='image/x-icon' href='./images/logo-option2png.ico'/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -23,38 +24,38 @@
 						<li class="list item1">
 								<img class="logo-bg" src="./images/bg1.png">
 								<span class="list-text ">
-											<img src="./images/logo-option2png.png">
-											<span class="name">TÌM PHÒNG CÙNG BẠN</span>
-											<span class="slogan">Sứ mệnh của chúng tôi là mang đến sự hợp tác thoải mái giữa người cho thuê nhà và người đi thuê, vì lợi ích của cả hai bên.</span>
-									</span>
+													<img src="./images/logo-option2png.png">
+													<span class="name">TÌM PHÒNG CÙNG BẠN</span>
+													<span class="slogan">Sứ mệnh của chúng tôi là mang đến sự hợp tác thoải mái giữa người cho thuê nhà và người đi thuê, vì lợi ích của cả hai bên.</span>
+											</span>
 						</li>
 						<li class="list item2">
 								<img class="logo-bg" src="./images/bg2.png">
 								<span class="list-text room">
-											<a href="#view"><img class="img-item" src="./images/room.png"></a>
-											<span>PHÒNG CHO THUÊ</span>
-									</span>
+													<a href="#view"><img class="img-item" src="./images/room.png"></a>
+													<span>PHÒNG CHO THUÊ</span>
+											</span>
 						</li>
 						<li class="list item3">
 								<img class="logo-bg" src="./images/bg2.png">
 								<span class="list-text house">
-											<a href="#view"><img class="img-item" src="./images/house.png"></a>
-											<span>NHÀ CHO THUÊ</span>
-									</span>
+													<a href="#view"><img class="img-item" src="./images/house.png"></a>
+													<span>NHÀ CHO THUÊ</span>
+											</span>
 						</li>
 						<li class="list item4">
 								<img class="logo-bg" src="./images/bg2.png">
 								<span class="list-text flat">
-											<a href="#view"><img class="img-item" src="./images/flat.png"></a>
-											<span>CHUNG CƯ</span>
-									</span>
+													<a href="#view"><img class="img-item" src="./images/flat.png"></a>
+													<span>CHUNG CƯ</span>
+											</span>
 						</li>
 						<li class="list item5">
 								<img class="logo-bg" src="./images/bg2.png">
 								<span class="list-text store">
-											<a href="#view"><img class="img-item" src="./images/store.png"></a>
-											<span>MẶT BẰNG CỬA HÀNG</span>
-									</span>
+													<a href="#view"><img class="img-item" src="./images/store.png"></a>
+													<span>MẶT BẰNG CỬA HÀNG</span>
+											</span>
 						</li>
 				</ul>
 		</article>
@@ -64,7 +65,7 @@
 						<div class="container-fluid">
 								<div class="navbar-header">
 										<ul class="nav-mobile">   <!--Nav for mobile-->
-												<li><a href="#menu-search"><i class="fa fa-search"></i><p>Tìm phòng</p></a></li>
+												<li><a href="#menu-search"><i classs="fa fa-search"></i><p>Tìm phòng</p></a></li>
 												<li class="search_nearby"><a><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
 												<li><a><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
 												<div class="clear"></div>
@@ -202,33 +203,142 @@
 								<ol>
 										<li><a href="home.html">Trang chủ</a></li>
 										<li id="arrow1">  <i class="fa fa-angle-right"></i>  </li>
-										<li class="active" id="search-target">Trợ giúp tìm kiếm</li>
+										<li class="active" id="search-target">Tin tức</li>
 								</ol>
 						</div>
 						<section class="wrap-content">
-								<div class="content">
-										<div class="help-form">
-												<p style="font-size: 20px; color: #00914E;">Cảm ơn bạn đã đồng hành cùng chúng tôi. Sự hài lòng của bạn là thành công lớn nhất của <i style="font-size: 22px; color: red;">timphongcungban.com</i></p>
-												<p>Khó khăn:</br>- Bạn đang loay hoay tìm phòng trọ. </br> - Bạn kinh doanh phòng trọ nhưng chưa hiệu quả...</br>
-														Giải pháp:</br>
-														- Đội ngũ công tác viên hùng hậu, nhiệt tình chúng tôi sẽ giúp bạn tìm được nơi ở phù hợp, nhanh chóng nhất.</br>
-														- Các chiến lược marketing khoa học của chúng tôi khu trọ của bạn sẽ không còn tình trạng trống phòng...</br> Thật đơn giản hãy gửi yêu cầu cho chúng tôi.</p>
-												<form class="form-help">
-														<div class="form-group">
-																<label for="usr">Tên của bạn:</label>
-																<input type="text" class="form-control" id="usr">
+								<div class="content post" style="border: none;">
+										<h3 class="notice">Là người văn minh và tôn trọng người xem, hãy viết nội dung bằng Tiếng Việt có dấu!</h3>
+										<form class="form" id="form-dangtin" enctype="multipart/form-data" novalidate="novalidate">
+												<div class="wrapper form-step step1">
+														<!--Thông tin cơ bản-->
+														<div class="group-form">
+																<div class="form-title"><h3>THÔNG TIN CƠ BẢN</h3></div>
+																<div class="group-form-body">
+																		<div class="form-group">
+																				<label for="tieude">Tiêu đề tin:</label>
+																				<input type="email" class="form-control" id="tieude" placeholder="Hãy đặt tiêu đề đầy đủ, ý nghĩa khách hàng sẽ quan tâm hơn">
+																		</div>
+																		<!--form-row 1-->
+																		<div class="form-inline">
+																				<div class="form-group">
+																						<label for="type">Loại hình cho thuê:</label></br>
+																						<select class="form-control" id="type">
+																								<option>Chọn loại hình cho thuê</option>
+																								<option>Thuê phòng trọ</option>
+																								<option>Thuê nhà</option>
+																								<option>Chung cư mini</option>
+																								<option>Mặt bằng kinh doanh</option>
+																						</select>
+																				</div>
+																				<div class="form-group">
+																						<label for="mobile">Số điện thoại:</label></br>
+																						<input type="text" class="form-control" id="mobile">
+																				</div>
+																		</div>
+																		<!--form-row 2-->
+																		<div class="form-inline">
+																				<div class="form-group">
+																						<label for="price">Giá cho thuê:</label></br>
+																						<input type="text" class="form-control" id="price">
+																				</div>
+																				<div class="form-group">
+																						<label for="unit">Đơn vị:</label></br>
+																						<select class="form-control" id="unit">
+																								<option>Triệu/tháng</option>
+																								<option>Nghìn/tháng</option>
+																						</select>
+																				</div>
+																		</div>
+																		<!--form-row 3-->
+																		<h4>Giá dịch vụ cơ bản:</h4>
+																		<div class="form-inline">
+																				<div class="form-group">
+																						<label for="price-electric">Giá điện:</label></br>
+																						<input type="text" class="form-control" id="price-electric" placeholder="ex: 3.000đồng/số">
+																				</div>
+																				<div class="form-group">
+																						<label for="price-water">Giá nước:</label></br>
+																						<input type="text" class="form-control" id="price-water" placeholder="ex: 15.000đồng/m3, 50.000đồng/tháng">
+																				</div>
+																				<div class="form-group">
+																						<label for="price-internet">Internet:</label></br>
+																						<input type="text" class="form-control" id="price-internet" placeholder="ex: 50.000đồng/tháng">
+																				</div>
+																				<div class="form-group">
+																						<label for="price-park">Gửi xe:</label></br>
+																						<input type="text" class="form-control" id="price-park" placeholder="ex: Free, 50.000đồng/tháng">
+																				</div>
+																		</div>
+																</div>
 														</div>
-														<div class="form-group">
-																<label for="mobile">Số điện thoại:</label>
-																<input type="text" class="form-control" id="mobile">
+														<!--Phần địa chỉ-->
+														<div class="group-form">
+																<div class="form-title"><h3>ĐỊA CHỈ</h3></div>
+																<div class="group-form-body">
+																		<div class="form-inline">
+																				<div class="form-group">
+																						<label for="province">Tỉnh/Thành phố</label></br>
+																						<select class="form-control" id="province">
+																								<option>Hà Nội</option>
+																								<option>Đà Nẵng</option>
+																								<option>Tp.Hồ Chí Minh</option>
+																						</select>
+																				</div>
+																				<div class="form-group">
+																						<label for="district">Quận/Huyện</label></br>
+																						<select class="form-control" id="district">
+
+																						</select>
+																				</div>
+																				<div class="form-group">
+																						<label for="ward">Phường/Xã</label></br>
+																						<select class="form-control" id="ward">
+																								<option>Phường/Xã</option>
+																								<option>Nguyễn Đình Chiểu</option>
+																								<option>Trần Nhân Tông</option>
+																								<option>Hoàng Đạo Thúy</option>
+																						</select>
+																				</div>
+																		</div>
+																		<div class="form-group"><!--Thông tin vị trí cụ thể-->
+																				<label for="pac-input">Số nhà, Tên đường cụ thể</label></br>
+																				<input id="pac-input" class="controls" type="text" placeholder="Nhập địa chỉ nhà chi tiết...">
+																				<p style="position: absolute; top: 85px; color:rgba(89, 68, 206, 0.88) ">Vị trí trên bản đồ.</p>
+																				<i style="position: absolute; top: 110px;color: #E74C3C; font-size: 0.8em">Để tăng độ tin cậy và tin rao được nhiều người quan tâm hơn, hãy sửa vị trí tin rao của bạn trên bản đồ bằng cách kéo icon <img src="../IMG/position-marker.png" style="width: 20px;height: 25px;"> tới đúng vị trí của tin rao.</i>
+																				<div id="map"></div>
+																		</div>
+																</div>
 														</div>
-														<div class="form-group">
-																<label for="comment">Yêu cầu của bạn:</label>
-																<textarea class="form-control" rows="6" id="comment"></textarea>
+														<!--Thông tin mô tả chi tiết-->
+														<div class="group-form">
+																<div class="form-title"><h3>THÔNG TIN MÔ TẢ CHI TIẾT</h3></div>
+																<div class="group-form-body">
+																		<div class="form-group">
+																				<label for="comment">Giới thiệu mô tả về tin đăng của bạn. Ví dụ: Khu nhà có vị trí thuận lợi: Gần trường học, gần trạm xe buýt ...Tổng diện tích 52m2, đường đi ô tô vào tận cửa...</label>
+																				<textarea class="form-control" rows="5" id="comment"></textarea>
+																		</div>
+																</div>
 														</div>
-														<button type="submit" class="btn btn-default">Gửi</button>
-												</form>
-										</div>
+														<!--Phần hình ảnh hoặc video-->
+														<div class="group-form">
+																<div class="form-title"><h3>HÌNH ẢNH HOẶC VIDEO VỀ PHÒNG TRỌ.</h3></div>
+
+																<div class="group-form-body">
+																		<p style="color: #044880; font-size: 0.9em">Tin đăng có hình ảnh hoặc video rõ ràng sẽ được xem và gọi gấp nhiều lần so với tin rao không có. Hãy đăng ảnh hoặc video để được giao dịch nhanh chóng!</p>
+																		<div class="form-group">
+																				<div class="row">
+																						<div class="col-sm-12">
+																								<p>Định dạng ảnh hỗ trợ: .jpg .png .jpeg .gif - Dung lượng ảnh không quá 2MB</p>
+																								<input type=file id="files" multiple />
+																								<div id="files-list"></div>
+																						</div>
+																				</div>
+																		</div>
+																</div>
+														</div>
+														<button type="submit" class="btn-sub">Đăng tin ngay</button>
+										</form>
 								</div>
 						</section>
 				</article>
@@ -287,30 +397,6 @@
 												</select>
 										</div>
 										<div class="icon-s"><i class="fa fa-search"></i><span> Tìm Kiếm</span></div>
-								</div>
-						</section>
-						<section class="news-bar">
-								<div class="news">
-										<div class="title-side">
-												TIN TỨC
-										</div>
-										<div class="new-item">
-												<div class="news-img"><a href="../HTML/new2.html"><img src="./images/img-news/img2.jpg"></a></div>
-												<div class="news-detail"><a href="../HTML/new2.html">Những điều cần biết khi tìm phòng trọ…</a></div>
-												<div class="clear"></div>
-										</div>
-										<div class="new-item">
-												<div class="news-img"><a href="../HTML/new1.html"><img src="./images/img-news/img1.jpg"></a></div>
-												<div class="news-detail"><a href="../HTML/new1.html">Ý tưởng kinh doanh nhà trọ, ngồi không mỗi tháng kiếm trăm triệu?</a></div>
-												<div class="clear"></div>
-										</div>
-										<div class="new-item">
-												<div class="news-img"><a href="../HTML/new3.html"><img src="./images/img-news/img3.jpg"></a></div>
-												<div class="news-detail"><a href="../HTML/new3.html">Vì sao chọn ngành 'hot' vẫn thất nghiệp?</a></div>
-												<div class="clear"></div>
-										</div>
-										<div class="icon-s"><i class="fa fa-external-link-square"></i> &nbsp;<span>Xem Thêm</span></div>
-										<div class="clear"></div>
 								</div>
 						</section>
 				</aside>

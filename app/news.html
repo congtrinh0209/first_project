@@ -16,349 +16,348 @@
 
 </head>
 <body data-spy="scroll" data-target=".header" data-offset="475">
-<div class="wrapper-content">
-		<!---------- Phần banner ------->
-		<article class="banner">
-				<ul class="list-banner">
-						<li class="list item1">
-								<img class="logo-bg" src="./images/bg1.png">
-								<span class="list-text ">
-											<img src="./images/logo-option2png.png">
-											<span class="name">TÌM PHÒNG CÙNG BẠN</span>
-											<span class="slogan">Sứ mệnh của chúng tôi là mang đến sự hợp tác thoải mái giữa người cho thuê nhà và người đi thuê, vì lợi ích của cả hai bên.</span>
-									</span>
-						</li>
-						<li class="list item2">
-								<img class="logo-bg" src="./images/bg2.png">
-								<span class="list-text room">
-											<a href="#view"><img class="img-item" src="./images/room.png"></a>
-											<span>PHÒNG CHO THUÊ</span>
-									</span>
-						</li>
-						<li class="list item3">
-								<img class="logo-bg" src="./images/bg2.png">
-								<span class="list-text house">
-											<a href="#view"><img class="img-item" src="./images/house.png"></a>
-											<span>NHÀ CHO THUÊ</span>
-									</span>
-						</li>
-						<li class="list item4">
-								<img class="logo-bg" src="./images/bg2.png">
-								<span class="list-text flat">
-											<a href="#view"><img class="img-item" src="./images/flat.png"></a>
-											<span>CHUNG CƯ</span>
-									</span>
-						</li>
-						<li class="list item5">
-								<img class="logo-bg" src="./images/bg2.png">
-								<span class="list-text store">
-											<a href="#view"><img class="img-item" src="./images/store.png"></a>
-											<span>MẶT BẰNG CỬA HÀNG</span>
-									</span>
-						</li>
-				</ul>
-		</article>
-		<header class="header" data-spy="affix" data-offset-top="480" id="view">
-				<!---------- Phần nav-bar ------->
-				<nav class="navbar navbar-inverse">
-						<div class="container-fluid">
-								<div class="navbar-header">
-										<ul class="nav-mobile">   <!--Nav for mobile-->
-												<li><i class="fa fa-search"></i><p>Tìm phòng</p></li>
-												<li><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></li>
-												<li><i class="fa fa-upload"></i><p>Đăng tin</p></li>
-												<div class="clear"></div>
-										</ul>
-										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-										</button>
-								</div>
-								<div class="collapse navbar-collapse" id="myNavbar">
-										<ul class="nav navbar-nav">
-												<li class="item"><a href="home.html"><i class="fa fa-home"></i><p>Trang chủ<p></p></a></li>
-												<li class="item dropdown">
-														<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-secret"></i><p>Cho thuê <span class="caret"></span></p></a>
-														<ul class="dropdown-menu">
-																<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Nhà cho thuê</p></a></li>
-																<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Phòng cho thuê</p></a></li>
-																<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Chung cư mini</p></a></li>
-																<li class="sub-item"><a href="#"><i class="fa fa-bolt"></i><p>Mặt bằng cho thuê</p></a></li>
-														</ul>
-												</li>
-												<li class="item search_nearby"><a><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
-												<li class="item"><a href="support.html"><i class="fa fa-binoculars"></i><p>Giúp tôi</p></a></li>
-												<li class="item"><a href="news.html"><i class="fa fa-newspaper-o"></i><p>Tin tức</p></a></li>
-												<li class="item"><a href="#"><i class="fa fa-life-ring"></i><p>Hướng dẫn</p></a></li>
-												<li class="item"><a href="#"><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
-												<li class="item"><a href="#"><i class="fa fa-book"></i><p>Quản lý</p></a></li>
-										</ul>
-										<ul class="nav navbar-nav navbar-right"> <!-- Sign-in, Sign-up-->
-												<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i><span> Đăng nhập</span></button></li>
-												<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil"></i><span> Đăng ký</span></button></li>
-										</ul>
-								</div>
-						</div>
-						<!-- Show infomation acc -->
-						<section class="info-acc">
-								<div class="img-ava">
-										<img src="./images/user.jpg">
-								</div>
-								<div class="info-user">
-										<p>Xin chào: <b style="color: red">Trịnh Công Trình</b></p>
-										<button class="manager-user">Quản lý</button>
-										<button class="sign-out">Đăng xuất</button>
-								</div>
-								<div class="clear"></div>
-						</section>
-				</nav>
-				<!-- Modal Sign-in, Sign-up -->
-				<!-- Modal Sign-in -->
-				<section class="modal fade" id="myModal" role="dialog">
-						<div class="modal-dialog">
-								<!-- Modal content-->
-								<div class="modal-content">
-										<div class="modal-header">
-												<h4 class="modal-title"><i class="fa fa-lock"></i>  Đăng nhập hệ thống !</h4>
-										</div>
-										<div class="modal-body">
-												<form action="home.html" id="sign-in" role="form">    <!--Login form-->
-														<div class="form-group">
-																<label><b><i class="fa fa-user"></i> Tên đăng nhập:</b></label>
-																<input type="text" class="form-control" id="uname" placeholder="Email hoặc số điện thoại" name="uname" value="0868979193" required>
-																<span style="color:red" class="error1"></span>
-														</div>
-														<div class="form-group">
-																<label><b><i class="fa fa-eye"></i> Mật khẩu:</b></label>
-																<input type="password" class="form-control" id="psw" placeholder="Mật khẩu đăng nhập" name="psw" value="02092008" required>
-																<span style="color:red" class="error2"></span>
-														</div>
-														<button class="login" type="submit"><i class="fa fa-power-off"></i> Login</button></br>
-														<div class="checkbox">
-																<label><input type="checkbox" value="" checked>Remember me</label>
-														</div>
-												</form>
-												<div class="psw" id="forgot-pass" data-toggle="collapse" data-target="#u-mobile"><a>Forgot password?</a></div>
-												<form id="request-pass">   <!--Request-password form-->
-														<div class="form-group" style="background-color:#f1f1f1">
-																<div class="collapse" id="u-mobile">
-																		<input type="text" class="form-control" id="send-mobile"  placeholder="Nhập số điện thoại của bạn chúng tôi sẽ gửi lại mật khẩu cho bạn" name="mobile" requisec><span style="color:red" class="error3"></span></br>
-																		<button id="send" type="submit"><i class="fa fa-paper-plane-o"></i> Send</button>
-																</div>
-																<span style="color:red" class="error3"></span>
-														</div>
-												</form>
-										</div>
-										<div class="modal-footer">
-												<button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-										</div>
-								</div>
-						</div>
-				</section>
-				<!-- Modal Sign-up -->
-				<section class="modal fade" id="myModal2" role="dialog">
-						<div class="modal-dialog">
-								<!-- Modal content-->
-								<div class="modal-content">
-										<div class="modal-header">
-												<h4 class="modal-title"><i class="fa fa-user-plus"></i> Đăng ký tài khoản !</h4>
-										</div>
-										<div class="modal-body">
-												<form action="signup-success.html" id="login-form">
-														<div class="form-group">
-																<label><b>Họ tên:</b></label>
-																<input type="text" class="form-control" placeholder="Họ tên bạn" name="name" required>
-														</div>
-														<div class="form-group">
-																<label><b>Số điện thoại:</b></label>
-																<input type="text" class="form-control" placeholder="Số điện thoại của bạn" name="mobile" required>
-														</div>
-														<div class="form-group">
-																<label><b>Email:</b></label>
-																<input type="email" class="form-control" placeholder="Email của bạn" name="email" required>
-														</div>
-														<div class="form-group">
-																<label><b>Mật khẩu:</b></label>
-																<input type="password" class="form-control" id="psw1" placeholder="Mật khẩu" name="pass" required>
-														</div>
-														<div class="form-group">
-																<label><b>Nhập lại mật khẩu:</b></label>
-																<input type="password" class="form-control" id="psw2" placeholder="Nhập lại mật khẩu" name="pass" required><span style="color:red" class="error4"></span>
-														</div>
-														<button class="login" type="submit"><i class="fa fa-pencil"></i> Đăng ký</button>
-												</form>
-										</div>
-										<div class="modal-footer">
-												<button type="button" class="btn " data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-										</div>
-								</div>
-						</div>
-				</section>
-		</header>
-		<main class="wrapper">
-				<article class="main-content col-xs-12 col-md-9">
-						<div class="nav-text">
-								<ol>
-										<li><a href="home.html">Trang chủ</a></li>
-										<li id="arrow1">  <i class="fa fa-angle-right"></i>  </li>
-										<li class="active" id="search-target">Tin tức</li>
-								</ol>
-						</div>
-						<section class="wrap-content">
-								<div class="content" style="border: none;">
-										<div class="news" id="data-new">
-												<div class="row-news">
-														<div class="news-item col-xs-12 col-sm-6 col-md-4">
-																<div class="thumbnail item" id="news1">
-																		<a>
-																				<img class="img-responsive" src="./images/img-news/img2.jpg">
-																				<p class="title">Những điều cần biết khi tìm phòng trọ</p>
-																		</a>
-																</div>
-														</div>
-														<div class="news-item col-xs-12 col-sm-6 col-md-4">
-																<div class="thumbnail item"  id="news2">
-																		<a>
-																				<img class="img-responsive" src="./images/img-news/img3.jpg" alt="vi-sao-chon-nganh-hot-van-that-nghiep">
-																				<p class="title">Vì sao chọn ngành 'hot' vẫn thất nghiệp?</p>
-																		</a>
-																</div>
-														</div>
-														<div class="news-item col-xs-12 col-sm-6 col-md-4">
-																<div class="thumbnail item"  id="news3">
-																		<a>
-																				<img class="img-responsive" src="./images/img-news/img4-1.jpg" alt="sinh-vien-my-chon-nganh-hoc-the-nao">
-																				<p class="title">Sinh viên Mỹ chọn ngành học thế nào?</p>
-																		</a>
-																</div>
-														</div>
-												</div>
-												<div class="row-news">
-														<div class="news-item col-xs-12 col-sm-6 col-md-4">
-																<div class="thumbnail item"  id="news4">
-																		<a>
-																				<img class="img-responsive" src="./images/img-news/img5-1.jpg" alt="sinh-vien-hao-hung-tham-gia-ngay-hoi-dinh-huong-nghe-nghiep">
-																				<p class="title">Sinh viên hào hứng tham gia ngày hội Định hướng nghề nghiệp</p>
-																		</a>
-																</div>
-														</div>
-														<div class="news-item col-xs-12 col-sm-6 col-md-4">
-																<div class="thumbnail item"  id="news5">
-																		<a>
-																				<img class="img-responsive" src="./images/img-news/img1.jpg" alt="y-tuong-kinh-doanh-nha-tro-ngoi-khong-moi-thang-kiem-tram-trieu">
-																				<p class="title">Ý tưởng kinh doanh nhà trọ, ngồi không mỗi tháng kiếm trăm triệu?</p>
-																		</a>
-																</div>
-														</div>
-												</div>
-										</div>
-								</div>
-						</section>
+		<div class="wrapper-content">
+				<!---------- Phần banner ------->
+				<article class="banner">
+						<ul class="list-banner">
+								<li class="list item1">
+										<img class="logo-bg" src="./images/bg1.png">
+										<span class="list-text ">
+													<img src="./images/logo-option2png.png">
+													<span class="name">TÌM PHÒNG CÙNG BẠN</span>
+													<span class="slogan">Sứ mệnh của chúng tôi là mang đến sự hợp tác thoải mái giữa người cho thuê nhà và người đi thuê, vì lợi ích của cả hai bên.</span>
+											</span>
+								</li>
+								<li class="list item2">
+										<img class="logo-bg" src="./images/bg2.png">
+										<span class="list-text room">
+													<a href="#view"><img class="img-item" src="./images/room.png"></a>
+													<span>PHÒNG CHO THUÊ</span>
+											</span>
+								</li>
+								<li class="list item3">
+										<img class="logo-bg" src="./images/bg2.png">
+										<span class="list-text house">
+													<a href="#view"><img class="img-item" src="./images/house.png"></a>
+													<span>NHÀ CHO THUÊ</span>
+											</span>
+								</li>
+								<li class="list item4">
+										<img class="logo-bg" src="./images/bg2.png">
+										<span class="list-text flat">
+													<a href="#view"><img class="img-item" src="./images/flat.png"></a>
+													<span>CHUNG CƯ</span>
+											</span>
+								</li>
+								<li class="list item5">
+										<img class="logo-bg" src="./images/bg2.png">
+										<span class="list-text store">
+													<a href="#view"><img class="img-item" src="./images/store.png"></a>
+													<span>MẶT BẰNG CỬA HÀNG</span>
+											</span>
+								</li>
+						</ul>
 				</article>
-				<aside class="side-bar col-xs-12 col-md-3">
-						<section class="search-bar">
-								<div class="search" id="menu-search">
-										<div class="title-side">
-												TÌM PHÒNG
+				<header class="header" data-spy="affix" data-offset-top="480" id="view">
+						<!---------- Phần nav-bar ------->
+						<nav class="navbar navbar-inverse">
+								<div class="container-fluid">
+										<div class="navbar-header">
+												<ul class="nav-mobile">   <!--Nav for mobile-->
+														<li><a href="#menu-search"><i classs="fa fa-search"></i><p>Tìm phòng</p></a></li>
+														<li class="search_nearby"><a><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
+														<li><a><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
+														<div class="clear"></div>
+												</ul>
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+														<span class="icon-bar"></span>
+														<span class="icon-bar"></span>
+														<span class="icon-bar"></span>
+												</button>
 										</div>
-										<div class="row">
-												<select class="select locale-item">
-														<option>Tỉnh, TP</option>
-														<option>Hà Nội</option>
-														<option>Đà Nẵng</option>
-														<option>TP.Hồ Chí Minh</option>
-												</select>
-												<select class="select locale_district">
-
-												</select>
-												<select class="select">
-														<option>Gần ĐH, CĐ</option>
-														<option>Bách Khoa</option>
-														<option>Xây Dựng</option>
-														<option>Tài chính</option>
-														<option>Ngoại thương</option>
-												</select>
-												<select class="select">
-														<option>Bạn là?</option>
-														<option>Sinh viên</option>
-														<option>Người đi làm</option>
-														<option>Kinh doanh</option>
-												</select>
+										<div class="collapse navbar-collapse" id="myNavbar">
+												<ul class="nav navbar-nav">
+														<li class="item"><a href="home.html"><i class="fa fa-home"></i><p>Trang chủ<p></p></a></li>
+														<li class="item dropdown">
+																<a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-secret"></i><p>Cho thuê <span class="caret"></span></p></a>
+																<ul class="dropdown-menu">
+																		<li class="sub-item house"><a><i class="fa fa-bolt"></i><p>Nhà cho thuê</p></a></li>
+																		<li class="sub-item room"><a><i class="fa fa-bolt"></i><p>Phòng cho thuê</p></a></li>
+																		<li class="sub-item flat"><a><i class="fa fa-bolt"></i><p>Chung cư mini</p></a></li>
+																		<li class="sub-item store"><a><i class="fa fa-bolt"></i><p>Mặt bằng cho thuê</p></a></li>
+																</ul>
+														</li>
+														<li class="item search_nearby"><a><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
+														<li class="item"><a href="support.html"><i class="fa fa-binoculars"></i><p>Giúp tôi</p></a></li>
+														<li class="item"><a href="news.html"><i class="fa fa-newspaper-o"></i><p>Tin tức</p></a></li>
+														<li class="item"><a href="guide.html"><i class="fa fa-life-ring"></i><p>Hướng dẫn</p></a></li>
+														<li class="item"><a href="#"><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
+														<li class="item"><a href="#"><i class="fa fa-book"></i><p>Quản lý</p></a></li>
+												</ul>
+												<ul class="nav navbar-nav navbar-right"> <!-- Sign-in, Sign-up-->
+														<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i><span> Đăng nhập</span></button></li>
+														<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil"></i><span> Đăng ký</span></button></li>
+												</ul>
 										</div>
-										<div class="row">
-												<select class="select loaihinh">
-														<option>Bạn cần tìm?</option>
-														<option>Thuê phòng trọ</option>
-														<option>Thuê nhà</option>
-														<option>Chung cư mini</option>
-														<option>Mặt bằng kinh doanh</option>
-												</select>
-												<select class="select">
-														<option>Diện tích?</option>
-														<option>Dưới 15m2</option>
-														<option>15m2 - 25m2</option>
-														<option>25m2 - 35m2</option>
-														<option>Trên 35m2</option>
-												</select>
-												<select class="select">
-														<option>Mức giá?</option>
-														<option>500 - 1000</option>
-														<option>1000 - 1500</option>
-														<option>1500 - 2000</option>
-														<option>2000 - 3000</option>
-														<option>Trên 3000</option>
-												</select>
+								</div>
+								<!-- Show infomation acc -->
+								<section class="info-acc">
+										<div class="img-ava">
+												<img src="./images/user.jpg">
 										</div>
-										<div class="icon-s"><i class="fa fa-search"></i><span> Tìm Kiếm</span></div>
+										<div class="info-user">
+												<p>Xin chào: <b style="color: red">Trịnh Công Trình</b></p>
+												<button class="manager-user">Quản lý</button>
+												<button class="sign-out">Đăng xuất</button>
+										</div>
+										<div class="clear"></div>
+								</section>
+						</nav>
+						<!-- Modal Sign-in, Sign-up -->
+						<!-- Modal Sign-in -->
+						<section class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+										<!-- Modal content-->
+										<div class="modal-content">
+												<div class="modal-header">
+														<h4 class="modal-title"><i class="fa fa-lock"></i>  Đăng nhập hệ thống !</h4>
+												</div>
+												<div class="modal-body">
+														<form action="home.html" id="sign-in" role="form">    <!--Login form-->
+																<div class="form-group">
+																		<label><b><i class="fa fa-user"></i> Tên đăng nhập:</b></label>
+																		<input type="text" class="form-control" id="uname" placeholder="Email hoặc số điện thoại" name="uname" value="0868979193" required>
+																		<span style="color:red" class="error1"></span>
+																</div>
+																<div class="form-group">
+																		<label><b><i class="fa fa-eye"></i> Mật khẩu:</b></label>
+																		<input type="password" class="form-control" id="psw" placeholder="Mật khẩu đăng nhập" name="psw" value="02092008" required>
+																		<span style="color:red" class="error2"></span>
+																</div>
+																<button class="login" type="submit"><i class="fa fa-power-off"></i> Login</button></br>
+																<div class="checkbox">
+																		<label><input type="checkbox" value="" checked>Remember me</label>
+																</div>
+														</form>
+														<div class="psw" id="forgot-pass" data-toggle="collapse" data-target="#u-mobile"><a>Forgot password?</a></div>
+														<form id="request-pass">   <!--Request-password form-->
+																<div class="form-group" style="background-color:#f1f1f1">
+																		<div class="collapse" id="u-mobile">
+																				<input type="text" class="form-control" id="send-mobile"  placeholder="Nhập số điện thoại của bạn chúng tôi sẽ gửi lại mật khẩu cho bạn" name="mobile" requisec><span style="color:red" class="error3"></span></br>
+																				<button id="send" type="submit"><i class="fa fa-paper-plane-o"></i> Send</button>
+																		</div>
+																		<span style="color:red" class="error3"></span>
+																</div>
+														</form>
+												</div>
+												<div class="modal-footer">
+														<button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
+										</div>
 								</div>
 						</section>
-				</aside>
-				<div class="clear"></div>
-		</main>
-		<footer>
-				<img class="top-footer" src="./images/img-footer/footer1.png">
-				<div class="footer-content">
-						<div class="wrapper-fcontent">
-								<div class="f-content1 col-xs-12 col-sm-3">
-										<img src="./images/img-footer/logo-face.png">
-										<img src="./images/img-footer/slogan.png">
-								</div>
-								<div class="f-content2 col-xs-12 col-sm-5">
-										<ul class="footer-nav">
-												<li class="item"><a href="../HTML/about_us.html">Giới thiệu</a></li>
-												<li class="item"><a href="../HTML/quydinh.html">Quy định sử dụng</a></li>
-										</ul>
-										<div class="text-copyright">
-												<p>Website đăng tin chia sẻ miễn phí thông tin về phòng trọ cho thuê, nhà riêng cho thuê, văn phòng, mặt bằng kinh doanh...nhằm giúp người thuê phòng và người cho thuê phòng tương tác với nhau không qua trung gian môi giới.</p></br>
-												<p style="color: #2196F3;margin-bottom: 10px !important;">MỌI CHI TIẾT XIN LIÊN HỆ:</p>
-												<p>Email: <strong>timphongcungban@gmail.com</strong><br>
-												</p>
-												<p>Zalo: <strong>0868 97 91 93</strong></p>
-												<p>Hỗ trợ đăng tin: <strong>0868 97 91 93</strong><br><p>
+						<!-- Modal Sign-up -->
+						<section class="modal fade" id="myModal2" role="dialog">
+								<div class="modal-dialog">
+										<!-- Modal content-->
+										<div class="modal-content">
+												<div class="modal-header">
+														<h4 class="modal-title"><i class="fa fa-user-plus"></i> Đăng ký tài khoản !</h4>
+												</div>
+												<div class="modal-body">
+														<form action="signup-success.html" id="login-form">
+																<div class="form-group">
+																		<label><b>Họ tên:</b></label>
+																		<input type="text" class="form-control" placeholder="Họ tên bạn" name="name" required>
+																</div>
+																<div class="form-group">
+																		<label><b>Số điện thoại:</b></label>
+																		<input type="text" class="form-control" placeholder="Số điện thoại của bạn" name="mobile" required>
+																</div>
+																<div class="form-group">
+																		<label><b>Email:</b></label>
+																		<input type="email" class="form-control" placeholder="Email của bạn" name="email" required>
+																</div>
+																<div class="form-group">
+																		<label><b>Mật khẩu:</b></label>
+																		<input type="password" class="form-control" id="psw1" placeholder="Mật khẩu" name="pass" required>
+																</div>
+																<div class="form-group">
+																		<label><b>Nhập lại mật khẩu:</b></label>
+																		<input type="password" class="form-control" id="psw2" placeholder="Nhập lại mật khẩu" name="pass" required><span style="color:red" class="error4"></span>
+																</div>
+																<button class="login" type="submit"><i class="fa fa-pencil"></i> Đăng ký</button>
+														</form>
+												</div>
+												<div class="modal-footer">
+														<button type="button" class="btn " data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
 										</div>
 								</div>
-								<div class="footer-link col-xs-12 col-sm-4">
-										<div class="row1">
-												<a href="https://www.facebook.com/Timphongcungbancom-1064749426960008/"><img src="./images/img-footer/face-icon.png" title="FacePage"></a>
-												<a href="https://plus.google.com/u/0/105034502578187630822"><img src="./images/img-footer/google-icon.png" title="Google"></a>
-												<a href="https://chat.zalo.me/"><img src="./images/img-footer/zalo-icon.png" title="Zalo"></a>
-										</div>
-										<div class="row2">
-												<img src="./images/img-footer/img-footer.png">
-										</div>
+						</section>
+				</header>
+				<main class="wrapper">
+						<article class="main-content col-xs-12 col-md-9">
+								<div class="nav-text">
+										<ol>
+												<li><a href="home.html">Trang chủ</a></li>
+												<li id="arrow1">  <i class="fa fa-angle-right"></i>  </li>
+												<li class="active" id="search-target">Tin tức</li>
+										</ol>
 								</div>
-								<div class="clear"></div>
-								<div class="bot-footer">
-										<p>© Copyright 2017 Timphongcungban.com. All rights reserved.</p>
+								<section class="wrap-content">
+										<div class="content" style="border: none;">
+												<div class="news" id="data-new">
+														<div class="row-news">
+																<div class="news-item col-xs-12 col-sm-6 col-md-4">
+																		<div class="thumbnail item" id="news1">
+																				<a>
+																						<img class="img-responsive" src="./images/img-news/img2.jpg">
+																						<p class="title">Những điều cần biết khi tìm phòng trọ</p>
+																				</a>
+																		</div>
+																</div>
+																<div class="news-item col-xs-12 col-sm-6 col-md-4">
+																		<div class="thumbnail item"  id="news2">
+																				<a>
+																						<img class="img-responsive" src="./images/img-news/img3.jpg" alt="vi-sao-chon-nganh-hot-van-that-nghiep">
+																						<p class="title">Vì sao chọn ngành 'hot' vẫn thất nghiệp?</p>
+																				</a>
+																		</div>
+																</div>
+																<div class="news-item col-xs-12 col-sm-6 col-md-4">
+																		<div class="thumbnail item"  id="news3">
+																				<a>
+																						<img class="img-responsive" src="./images/img-news/img4-1.jpg" alt="sinh-vien-my-chon-nganh-hoc-the-nao">
+																						<p class="title">Sinh viên Mỹ chọn ngành học thế nào?</p>
+																				</a>
+																		</div>
+																</div>
+														</div>
+														<div class="row-news">
+																<div class="news-item col-xs-12 col-sm-6 col-md-4">
+																		<div class="thumbnail item"  id="news4">
+																				<a>
+																						<img class="img-responsive" src="./images/img-news/img5-1.jpg" alt="sinh-vien-hao-hung-tham-gia-ngay-hoi-dinh-huong-nghe-nghiep">
+																						<p class="title">Sinh viên hào hứng tham gia ngày hội Định hướng nghề nghiệp</p>
+																				</a>
+																		</div>
+																</div>
+																<div class="news-item col-xs-12 col-sm-6 col-md-4">
+																		<div class="thumbnail item"  id="news5">
+																				<a>
+																						<img class="img-responsive" src="./images/img-news/img1.jpg" alt="y-tuong-kinh-doanh-nha-tro-ngoi-khong-moi-thang-kiem-tram-trieu">
+																						<p class="title">Ý tưởng kinh doanh nhà trọ, ngồi không mỗi tháng kiếm trăm triệu?</p>
+																				</a>
+																		</div>
+																</div>
+														</div>
+												</div>
+										</div>
+								</section>
+						</article>
+						<aside class="side-bar col-xs-12 col-md-3">
+								<section class="search-bar">
+										<div class="search" id="menu-search">
+												<div class="title-side">
+														TÌM PHÒNG
+												</div>
+												<div class="row">
+														<select class="select locale-item">
+																<option>Tỉnh, TP</option>
+																<option>Hà Nội</option>
+																<option>Đà Nẵng</option>
+																<option>TP.Hồ Chí Minh</option>
+														</select>
+														<select class="select locale_district">
+		
+														</select>
+														<select class="select">
+																<option>Gần ĐH, CĐ</option>
+																<option>Bách Khoa</option>
+																<option>Xây Dựng</option>
+																<option>Tài chính</option>
+																<option>Ngoại thương</option>
+														</select>
+														<select class="select">
+																<option>Bạn là?</option>
+																<option>Sinh viên</option>
+																<option>Người đi làm</option>
+																<option>Kinh doanh</option>
+														</select>
+												</div>
+												<div class="row">
+														<select class="select loaihinh">
+																<option>Bạn cần tìm?</option>
+																<option>Thuê phòng trọ</option>
+																<option>Thuê nhà</option>
+																<option>Chung cư mini</option>
+																<option>Mặt bằng kinh doanh</option>
+														</select>
+														<select class="select">
+																<option>Diện tích?</option>
+																<option>Dưới 15m2</option>
+																<option>15m2 - 25m2</option>
+																<option>25m2 - 35m2</option>
+																<option>Trên 35m2</option>
+														</select>
+														<select class="select">
+																<option>Mức giá?</option>
+																<option>500 - 1000</option>
+																<option>1000 - 1500</option>
+																<option>1500 - 2000</option>
+																<option>2000 - 3000</option>
+																<option>Trên 3000</option>
+														</select>
+												</div>
+												<div class="icon-s"><i class="fa fa-search"></i><span> Tìm Kiếm</span></div>
+										</div>
+								</section>
+						</aside>
+						<div class="clear"></div>
+				</main>
+				<footer>
+						<img class="top-footer" src="./images/img-footer/footer1.png">
+						<div class="footer-content">
+								<div class="wrapper-fcontent">
+										<div class="f-content1 col-xs-12 col-sm-3">
+												<img src="./images/img-footer/logo-face.png">
+												<img src="./images/img-footer/slogan.png">
+										</div>
+										<div class="f-content2 col-xs-12 col-sm-5">
+												<ul class="footer-nav">
+														<li class="item"><a href="../HTML/about_us.html">Giới thiệu</a></li>
+														<li class="item"><a href="../HTML/quydinh.html">Quy định sử dụng</a></li>
+												</ul>
+												<div class="text-copyright">
+														<p>Website đăng tin chia sẻ miễn phí thông tin về phòng trọ cho thuê, nhà riêng cho thuê, văn phòng, mặt bằng kinh doanh...nhằm giúp người thuê phòng và người cho thuê phòng tương tác với nhau không qua trung gian môi giới.</p></br>
+														<p style="color: #2196F3;margin-bottom: 10px !important;">MỌI CHI TIẾT XIN LIÊN HỆ:</p>
+														<p>Email: <strong>timphongcungban@gmail.com</strong><br>
+														</p>
+														<p>Zalo: <strong>0868 97 91 93</strong></p>
+														<p>Hỗ trợ đăng tin: <strong>0868 97 91 93</strong><br><p>
+												</div>
+										</div>
+										<div class="footer-link col-xs-12 col-sm-4">
+												<div class="row1">
+														<a href="https://www.facebook.com/Timphongcungbancom-1064749426960008/"><img src="./images/img-footer/face-icon.png" title="FacePage"></a>
+														<a href="https://plus.google.com/u/0/105034502578187630822"><img src="./images/img-footer/google-icon.png" title="Google"></a>
+														<a href="https://chat.zalo.me/"><img src="./images/img-footer/zalo-icon.png" title="Zalo"></a>
+												</div>
+												<div class="row2">
+														<img src="./images/img-footer/img-footer.png">
+												</div>
+										</div>
+										<div class="clear"></div>
+										<div class="bot-footer">
+												<p>© Copyright 2017 Timphongcungban.com. All rights reserved.</p>
+										</div>
 								</div>
 						</div>
-				</div>
-		</footer>
-</div>
+				</footer>
+		</div>
 <script src="./js/jquery-3.2.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/home.js"></script>
-<script src="./js/news_detail.js"></script>
 </body>
 </html>

@@ -244,6 +244,8 @@ img {
           float: left; }
           .wrapper-content header nav .container-fluid .navbar-header .nav-mobile li:nth-child(2) {
             width: 40%; }
+          .wrapper-content header nav .container-fluid .navbar-header .nav-mobile li a {
+            color: #ffffff; }
       .wrapper-content header nav .container-fluid .navbar-header button {
         border-color: #ffffff; }
         .wrapper-content header nav .container-fluid .navbar-header button span {
@@ -711,7 +713,10 @@ img {
             border: 1px solid #4FB748;
             border-radius: 7px; }
             .wrapper-content main article.main-content .wrap-content .content .help-form .form-help .form-group {
-              width: 60%; }
+              width: 100%; }
+              @media all and (min-width: 768px) {
+                .wrapper-content main article.main-content .wrap-content .content .help-form .form-help .form-group {
+                  width: 60%; } }
             .wrapper-content main article.main-content .wrap-content .content .help-form .form-help button {
               background-color: #E74C3C;
               color: #ffffff;
@@ -743,6 +748,13 @@ img {
           text-align: justify; }
         .wrapper-content main article.main-content .wrap-content .content .text-indent {
           text-indent: 30px; }
+        .wrapper-content main article.main-content .wrap-content .content .guide_tab a {
+          font-weight: bold;
+          color: #33cc66; }
+        .wrapper-content main article.main-content .wrap-content .content .guide_content {
+          border: 1px solid #ddd;
+          border-top: none;
+          padding: 5px; }
       .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail {
         border-top: 1px solid #4fb748;
         padding-top: 10px;

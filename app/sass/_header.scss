@@ -12,7 +12,8 @@ nav{
       padding: 0;
     }
     .navbar-header{
-      .nav-mobile{       //***Phần nav cho mobile**
+      //***Phần nav cho mobile**
+      .nav-mobile{       
         padding-top: 5px;
         display: inline-block;
         width: 80%;
@@ -26,6 +27,9 @@ nav{
           float: left;
           &:nth-child(2){
             width: 40%;
+          }
+          a{
+            color: $color-white;
           }
         }
       }
@@ -102,7 +106,8 @@ nav{
         li.open a{
           background-color: transparent;
         }
-        li.dropdown{      //********Menu drop-down*******
+        //********Menu drop-down*******
+        li.dropdown{      
           .dropdown-toggle{}
           .dropdown-menu{
             background-color: #2A3B45;
@@ -151,7 +156,8 @@ nav{
           }
         }
       }
-      ul.navbar-right{      //**Sign-in, Sign-up**
+      //**Sign-in, Sign-up**
+      ul.navbar-right{      
         @include tablet{
           display: inline-block;
           margin: 0;

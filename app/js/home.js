@@ -2,7 +2,7 @@
 
 //**Scroll fixed menu navigation-mobile,tablet
 $(document).ready(function () {
-    /***Gán dữ liệu vào menu search khi chọn loại hình quan tâm******/
+    /***Gán dữ liệu vào menu search khi chọn loại hình tim kiem******/
     $(".room").on('click', function () {
         $("#arrow1").css("display", "inline-block");
         $(".loaihinh").val($(".loaihinh>option:nth-child(2)").val());
@@ -58,7 +58,7 @@ $(document).ready(function () {
         });
         return false;
     });
-    //****************Request send password
+    //********Request send password
     $("#send").on("click", function () {
         $.each(data_json.users, function (key, value) {
             if ($("#send-mobile").val() == value.mobile) {
@@ -73,7 +73,7 @@ $(document).ready(function () {
         });
         return false;
     });
-    //*************Load các quận huyện theo địa danh-menu search
+    //*************Load các quận huyện theo địa danh - menu search
     function data_locale(data) {
         $.each(data, function (key, value) {
             display_locale += "<option>" + value + "</option>";
