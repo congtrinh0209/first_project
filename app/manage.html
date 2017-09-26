@@ -201,43 +201,141 @@
 						<div class="nav-text">
 								<ol>
 										<li><a href="home.html">Trang chủ</a></li>
-										<li id="arrow1">  <i class="fa fa-angle-right"></i>  </li>
-										<li class="active" id="search-target">Hướng dẫn</li>
+										<li id="arrow1"><i class="fa fa-angle-right"></i></li>
+										<li class="active" id="search-target">Quản lý</li>
 								</ol>
 						</div>
 						<section class="wrap-content">
 								<div class="content" style="border: none;">
-										<!-- Nav tabs -->
-										<ul class="guide_tab nav nav-tabs tab" role="tablist">
-												<li role="presentation" class="active"><a href="#support1" role="tab" data-toggle="tab">HƯỚNG DẪN ĐĂNG KÝ</a></li>
-												<li role="presentation" class=""><a href="#support2" role="tab" data-toggle="tab">HƯỚNG DẪN ĐĂNG TIN</a></li>
-												<li role="presentation" class=""><a href="#support3" role="tab" data-toggle="tab">HƯỚNG DẪN TÌM PHÒNG</a></li>
-										</ul>
+										<div class="wrapper">
+												<!-- Nav tabs -->
+												<ul class="nav nav-tabs tab" role="tablist">
+														<li role="presentation" class="active"><a href="#quan_ly_tin" aria-controls="quan_ly_tin" role="tab" data-toggle="tab">Quản lý tin</a></li>
+														<li role="presentation" class="info-user"><a href="#thong_tin_ca_nhan"
+														                                     aria-controls="thong_tin_ca_nhan" role="tab" data-toggle="tab">Thông tin cá nhân</a></li>
+												</ul>
 
-										<!-- Tab panes -->
-										<div class="guide_content tab-content">
-												<div role="tabpanel" class="tab-pane active" id="support1">
-														<h4 style="color: red">Lợi ích khi là thành viên của <i>timphongcungban.com</i></h4>
-														<p>-  Đăng tin rao cho thuê phòng trọ, nhà cho thuê, cho thuê căn  hộ, tìm người ở ghép hiệu quả, chuyên nghiệp, lượt truy cập cao nhất, đứng top 1 từ khóa cho thuê phòng trọ, nhà trọ, thuê nhà nguyên căn, tìm người ở ghép...</br>
-																-  Quản lý các tin đã đăng: dễ dàng làm mới, đăng tin, sửa tin, hạ tin nhưng vẫn còn lưu lại, xóa tin đăng ở trang cá nhân.</p>
-														</br>
-														<strong>Bước 1:</strong> Click vào đề mục đăng ký ở góc phải trên cùng trang.</br>
-														<!--Chèn ảnh-->
-														<strong>Bước 2:</strong> Điền đầy đủ thông tin vào mẫu, tất cả đều bắt buộc và chính xác. Click đăng ký để hoàn tất quá trình.</br>
-														<!--Chèn ảnh-->
-														<i>Quý khách vui lòng nhớ tên tài khoản và mật khẩu đã đăng ký để tiến hành quá trình đăng nhập vào hệ thống và đăng tin</i>
-												</div>
-												<div role="tabpanel" class="tab-pane" id="support3">
+												<!-- Tab panes -->
+												<div class="tab-content">
+														<div role="tabpanel" class="tab-pane active" id="quan_ly_tin">
+																<div class="table-responsive">
+																		<table class="table table-bordered table-hover">
+																				<thead>
+																						<tr>
+																								<th style="white-space: nowrap;" class="td_center">Mã số</th>
+																								<th style="white-space: nowrap;">Trạng thái</th>
+																								<th style="white-space: nowrap;">Tiêu đề</th>
+																								<th style="white-space: nowrap;">Ngày đăng tin</th>
+																								<th style="white-space: nowrap;">Ngày hết hạn</th>
+																								<th style="white-space: nowrap; text-align: center;">Thao tác</th>
+																						</tr>
+																				</thead>
+																				<tbody>
+																						<tr>
+																								<td class="td_col2 td_matin">102230</td>
+																								<td class="td_col2 td_matin" id="status" style="color: #4CAF50">Tin đang được đăng</td>
+																								<td class="td_col3">
+																										<a href="home.html#content1" class="" target="_blank">NHÀ TÔI CHÍNH CHỦ CHO THUÊ PHÒNG TRỌ TẠI SỐ 3/108 NGUYỄN TRÃI - THƯỢNG ĐÌNH -THANH XUÂN</a>
+																								</td>
+																								<td class="td_col4 date-up item1" style="color: #4CAF50"></td>
+																								<td class="td_col4 date-dead item1" style="color: #ED2327"></td>
+																								<td>
+																										<a class="btn btn_action" href="post-edit.html"><i class="fa fa-pencil"></i> Sửa</a>
+																										<a class="btn btn_action" id="st1"><i class="fa fa-expeditedssl" ></i> Ngừng đăng tin</a>
+																										<a class="btn btn_action" id="st2"><i class="fa fa-refresh"></i> Đăng lại</a>
+																								</td>
+																						</tr>
+																						<tr>
+																								<td class="td_col2 td_matin">102340</td>
+																								<td class="td_col2 td_matin" id="status2" style="color: #ED2327">Tin đã ngừng đăng</td>
+																								<td class="td_col3">
+																										<a href="home.html#content1" class="" target="_blank">NHÀ TÔI CHÍNH CHỦ CHO THUÊ PHÒNG TRỌ TẠI SỐ 131A, NGÕ 105/20 ĐƯỜNG DOÃN KẾ THIỆN, MAI DỊCH, QUẬN CẦU GIẤY</a>
+																								</td>
+																								<td class="td_col4 date-up item2" style="color: #4CAF50"></td>
+																								<td class="td_col4 date-dead item2" style="color: #ED2327"></td>
+																								<td>
+																										<a class="btn btn_action" href="post-edit.html"><i class="fa fa-pencil"></i> Sửa</a>
+																										<a class="btn btn_action" id="st1-2"><i class="fa fa-expeditedssl" ></i> Ngừng đăng tin</a>
+																										<a class="btn btn_action" id="st2-2"><i class="fa fa-refresh"></i> Đăng lại</a>
+																								</td>
+																						</tr>
+																				</tbody>
+																		</table>
+																</div>
+																<div class="page_navigation">
+																		<p></p>
+																</div>
+														</div>
 
-												</div>
-												<div role="tabpanel" class="tab-pane" id="support2">
-														<p style="color: blue">Sau khi đã đăng ký tài khoản, để đăng tin trên timphongcungban.com bạn vui lòng đăng nhập tài khoản, sau đó vào phần <i>ĐĂNG TIN</i> để đăng tin mới như ảnh bên dưới:</p>
-														<!--Chèn ảnh-->
-														<i>Lưu ý khi đăng tin:</i>
-														<p>+  Điền đầy đủ các thông tin bắt buộc vào các ô nhập liệu trong phần đăng tin.</p>
-														<p>+  Phần giá cho thuê, vui lòng nhập chính xác 1 giá duy nhất (Không nhập giá từ ....đến ....) và chọn đúng đơn vị giá là triệu/tháng hoặc nghìn/tháng.</p>
-														<p>+  Diện tích nhập đúng 1 diện tích duy nhất (Không nhập diện tích từ ....đến ....)</p>
-														<p>+ Sau khi nhập đầy đủ các thông tin, bấm ĐĂNG TIN NGAY và chờ vài giây để tin bạn hiển thị trên website, nếu đăng tin thành công hệ thống sẽ báo bạn đã đăng tin thành công, nếu hệ thống cảnh báo màu đỏ, các ô chọn màu bị sai, vui lòng nhập lại cho chính xác và bấm ĐĂNG TIN NGAY.</p>
+														<div role="tabpanel" class="tab-pane" id="thong_tin_ca_nhan">
+																<form id="form_thong_tin_ca_nhan" class="js-form-thong-tin-ca-nhan">
+																		<div class="form-group">
+																				<div class="row">
+																						<div class="col-sm-6 col-xs-12">
+																								<label for="username">Tài khoản</label>
+																								<input type="text" class="form-control" name="username" id="username" placeholder="" value="congtrinh0209" disabled="">
+																						</div>
+																				</div>
+																		</div>
+																		<div class="form-group">
+																				<div class="row">
+																						<div class="col-sm-6 col-xs-12">
+																								<label for="last_name">Họ của bạn</label>
+																								<input type="text" class="form-control" name="last_name" id="last_name" placeholder="" value="Trịnh">
+																						</div>
+																				</div>
+																		</div>
+																		<div class="form-group">
+																				<div class="row">
+																						<div class="col-sm-6 col-xs-12">
+																								<label for="first_name">Tên của bạn</label>
+																								<input type="text" class="form-control" name="first_name" id="first_name" placeholder="" value="Công Trình">
+																						</div>
+																				</div>
+																		</div>
+																		<div class="form-group">
+																				<div class="row">
+																						<div class="col-sm-6 col-xs-12">
+																								<label for="phone">Điện thoại</label>
+																								<input type="phone" class="form-control" name="phone" id="phone" placeholder="" value="0868979493">
+																						</div>
+																				</div>
+																		</div>
+																		<div class="form-group">
+																				<div class="row">
+																						<div class="col-sm-6 col-xs-12">
+																								<label for="email">Email</label>
+																								<input type="email" class="form-control" name="email" id="email" placeholder="" value="congtrinh0209@gmail.com">
+																						</div>
+																				</div>
+																		</div>
+																		<div class="form-group">
+																				<div class="row">
+																						<div class="col-sm-6 col-xs-12">
+																								<label for="password_new">Mật khẩu mới</label>
+																								<input type="password" class="form-control" name="new_password" id="password_new" placeholder="" value="">
+																						</div>
+																				</div>
+																		</div>
+																		<div class="form-group">
+																				<div class="row">
+																						<div class="col-sm-6 col-xs-12">
+																								<label for="password_new2">Xác nhận mật khẩu mới</label>
+																								<input type="password" class="form-control" name="repassword" id="password_new2" placeholder="" value="">
+																						</div>
+																				</div>
+																		</div>
+																		<div class="avatar">
+																				<img src="./images/user.jpg" id="displayImg">
+																				<div>
+																						Thay ảnh đại diện:
+																						<input type="file" onchange="previewFile()">
+																				</div>
+																		</div>
+																		<input type="hidden" name="action" value="update_user_info">
+																		<button type="submit" class="btn btn-primary" id="update">Cập nhật</button>
+																</form>
+														</div>
 												</div>
 										</div>
 								</div>

@@ -65,9 +65,9 @@
 						<div class="container-fluid">
 								<div class="navbar-header">
 										<ul class="nav-mobile">   <!--Nav for mobile-->
-												<li><a href="#menu-search"><i classs="fa fa-search"></i><p>Tìm phòng</p></a></li>
+												<li><a href="#menu-search"><i class="fa fa-search"></i><p>Tìm phòng</p></a></li>
 												<li class="search_nearby"><a><i class="fa fa-map-marker"></i><p>Tìm quanh đây</p></a></li>
-												<li><a><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
+												<li><a href="post.html"><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
 												<div class="clear"></div>
 										</ul>
 										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -92,8 +92,8 @@
 												<li class="item"><a href="support.html"><i class="fa fa-binoculars"></i><p>Giúp tôi</p></a></li>
 												<li class="item"><a href="news.html"><i class="fa fa-newspaper-o"></i><p>Tin tức</p></a></li>
 												<li class="item"><a href="guide.html"><i class="fa fa-life-ring"></i><p>Hướng dẫn</p></a></li>
-												<li class="item"><a href="#"><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
-												<li class="item"><a href="#"><i class="fa fa-book"></i><p>Quản lý</p></a></li>
+												<li class="item"><a href="post.html"><i class="fa fa-upload"></i><p>Đăng tin</p></a></li>
+												<li class="item"><a href="manage.html"><i class="fa fa-book"></i><p>Quản lý</p></a></li>
 										</ul>
 										<ul class="nav navbar-nav navbar-right"> <!-- Sign-in, Sign-up-->
 												<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i><span> Đăng nhập</span></button></li>
@@ -203,7 +203,7 @@
 								<ol>
 										<li><a href="home.html">Trang chủ</a></li>
 										<li id="arrow1">  <i class="fa fa-angle-right"></i>  </li>
-										<li class="active" id="search-target">Tin tức</li>
+										<li class="active" id="search-target">Đăng tin</li>
 								</ol>
 						</div>
 						<section class="wrap-content">
@@ -238,7 +238,7 @@
 																		</div>
 																		<!--form-row 2-->
 																		<div class="form-inline">
-																				<div class="form-group">
+																				<div class="form-group ">
 																						<label for="price">Giá cho thuê:</label></br>
 																						<input type="text" class="form-control" id="price">
 																				</div>
@@ -288,7 +288,6 @@
 																				<div class="form-group">
 																						<label for="district">Quận/Huyện</label></br>
 																						<select class="form-control" id="district">
-
 																						</select>
 																				</div>
 																				<div class="form-group">
@@ -305,7 +304,7 @@
 																				<label for="pac-input">Số nhà, Tên đường cụ thể</label></br>
 																				<input id="pac-input" class="controls" type="text" placeholder="Nhập địa chỉ nhà chi tiết...">
 																				<p style="position: absolute; top: 85px; color:rgba(89, 68, 206, 0.88) ">Vị trí trên bản đồ.</p>
-																				<i style="position: absolute; top: 110px;color: #E74C3C; font-size: 0.8em">Để tăng độ tin cậy và tin rao được nhiều người quan tâm hơn, hãy sửa vị trí tin rao của bạn trên bản đồ bằng cách kéo icon <img src="../IMG/position-marker.png" style="width: 20px;height: 25px;"> tới đúng vị trí của tin rao.</i>
+																				<i style="position: absolute; top: 110px;color: #E74C3C; font-size: 0.8em">Để tăng độ tin cậy và tin rao được nhiều người quan tâm hơn, hãy sửa vị trí tin rao của bạn trên bản đồ bằng cách kéo icon <img src=".images/position-marker.png" style="width: 20px;height: 25px;"> tới đúng vị trí của tin rao.</i>
 																				<div id="map"></div>
 																		</div>
 																</div>
@@ -323,7 +322,6 @@
 														<!--Phần hình ảnh hoặc video-->
 														<div class="group-form">
 																<div class="form-title"><h3>HÌNH ẢNH HOẶC VIDEO VỀ PHÒNG TRỌ.</h3></div>
-
 																<div class="group-form-body">
 																		<p style="color: #044880; font-size: 0.9em">Tin đăng có hình ảnh hoặc video rõ ràng sẽ được xem và gọi gấp nhiều lần so với tin rao không có. Hãy đăng ảnh hoặc video để được giao dịch nhanh chóng!</p>
 																		<div class="form-group">
@@ -442,6 +440,76 @@
 				</div>
 		</footer>
 </div>
+<!--Script google map-->
+<script>
+	function initAutocomplete() {
+		var map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: 21.028511, lng: 105.804817},
+			zoom: 13,
+			mapTypeId: 'roadmap'
+		});
+
+		// Create the search box and link it to the UI element.
+		var input = document.getElementById('pac-input');
+		var searchBox = new google.maps.places.SearchBox(input);
+		// Bias the SearchBox results towards current map's viewport.
+		map.addListener('bounds_changed', function() {
+			searchBox.setBounds(map.getBounds());
+		});
+		var markers = [];
+		// Listen for the event fired when the user selects a prediction and retrieve
+		// more details for that place.
+		searchBox.addListener('places_changed', function() {
+			var places = searchBox.getPlaces();
+			if (places.length == 0) {
+				return;
+			}
+			// Clear out the old markers.
+			markers.forEach(function(marker) {
+				marker.setMap(null);
+			});
+			markers = [];
+			// For each place, get the icon, name and location.
+			var bounds = new google.maps.LatLngBounds();
+			places.forEach(function(place) {
+				if (!place.geometry) {
+					console.log("Returned place contains no geometry");
+					return;
+				}
+				var icon = {
+					url: place.icon,
+					size: new google.maps.Size(71, 71),
+					origin: new google.maps.Point(0, 0),
+					anchor: new google.maps.Point(17, 34),
+					scaledSize: new google.maps.Size(25, 25)
+				};
+				// Create a marker for each place.
+				markers.push(new google.maps.Marker({
+					map: map,
+					icon: 'https://congtrinh0209.github.io/Du_anTN/IMG/position-marker.png',
+					title: place.name,
+					position: place.geometry.location,
+					draggable: true,
+				}));
+				if (place.geometry.viewport) {
+					// Only geocodes have viewport.
+					bounds.union(place.geometry.viewport);
+				} else {
+					bounds.extend(place.geometry.location);
+				}
+			});
+			map.fitBounds(bounds);
+			function moveMarker( map, marker ) {
+				marker.setPosition( new google.maps.LatLng( Lat, Lng) );
+				map.panTo( new google.maps.LatLng( Lat, Lng) );
+			};
+		});
+
+	}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDUYFDaXnS0a217T0rP3xNrnqxuErZsD4&language=vi&region=vie&libraries=places&callback=initAutocomplete"
+        async defer></script>
 <script src="./js/jquery-3.2.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/home.js"></script>

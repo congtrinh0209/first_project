@@ -755,6 +755,38 @@ img {
           border: 1px solid #ddd;
           border-top: none;
           padding: 5px; }
+        .wrapper-content main article.main-content .wrap-content .content #quan_ly_tin #st1, .wrapper-content main article.main-content .wrap-content .content #quan_ly_tin #st1-2 {
+          color: #ED2327; }
+        .wrapper-content main article.main-content .wrap-content .content #quan_ly_tin #st2, .wrapper-content main article.main-content .wrap-content .content #quan_ly_tin #st2-2 {
+          color: #4CAF50; }
+        .wrapper-content main article.main-content .wrap-content .content #quan_ly_tin #st1:hover, .wrapper-content main article.main-content .wrap-content .content #quan_ly_tin #st2:hover, .wrapper-content main article.main-content .wrap-content .content #quan_ly_tin #st1-2:hover, .wrapper-content main article.main-content .wrap-content .content #quan_ly_tin #st2-2:hover {
+          color: black; }
+        .wrapper-content main article.main-content .wrap-content .content #thong_tin_ca_nhan {
+          border: 1px solid #ddd;
+          border-top: none;
+          padding: 5px;
+          position: relative; }
+          .wrapper-content main article.main-content .wrap-content .content #thong_tin_ca_nhan #update {
+            margin-left: 15px;
+            width: 150px !important; }
+          .wrapper-content main article.main-content .wrap-content .content #thong_tin_ca_nhan .avatar {
+            position: absolute;
+            top: 5%;
+            right: 5%; }
+          .wrapper-content main article.main-content .wrap-content .content #thong_tin_ca_nhan #displayImg {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black; }
+        .wrapper-content main article.main-content .wrap-content .content .wrapper_padding {
+          border: 1px solid #dedede;
+          border-radius: 2px;
+          -webkit-box-shadow: 0 0 6px #ebebeb;
+          box-shadow: 0 0 6px #ebebeb;
+          background: #fff;
+          padding: 0 15px 15px;
+          font-size: 14px; }
+        .wrapper-content main article.main-content .wrap-content .content article p {
+          margin: 0 0 10px 0 !important; }
       .wrapper-content main article.main-content .wrap-content .content-detail .menu-detail {
         border-top: 1px solid #4fb748;
         padding-top: 10px;

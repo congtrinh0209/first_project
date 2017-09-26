@@ -1,0 +1,161 @@
+.main-content{
+    margin-top: 10px;
+}
+.notice{
+	padding: 10px;
+	background-color: #D9534F;
+	color: white;
+}
+#form-dangtin{
+	width: 100% !important;
+	margin-top: 10px;
+	border: none;
+}
+.group-form{
+	border: 2px solid #00914E;
+	margin-bottom: 20px;
+  border-radius: 7px;
+}
+.huongdan{padding: 10px;}
+.huongdan ul li{
+	text-align: justify;
+}
+#pwd{
+	margin-top: 0 !important; 
+}
+.form-control{
+    width: 100% !important;
+	margin: 0 !important;
+}
+.form-inline{
+	margin-bottom: 10px;
+}
+.form-title{
+	background-color: #4FB748;
+	color: black;
+	padding: 10px;
+	margin-bottom:10px; 
+}
+.group-form-body{
+	padding: 0 10px;
+}
+.btn-sub{
+	margin-top: 20px !important;
+	width: 150px !important;
+	height: 50px !important;
+	border-radius: 5px;
+    background-color: #E74C3C;
+    background: linear-gradient(to left, #f7968c 50%,#E74C3C 50%);
+    background-size: 200% 100%;
+    transition: background-position 100ms ease;
+    background-position: left bottom;
+    margin-top: 1px;
+    color: white;
+    }
+.btn-sub:hover{
+	background-position: right bottom;
+}
+h3{
+	margin: 0 !important;
+	font-size: 18px !important;
+}
+.group-form-body .form-group label{
+	color: #044880;
+  font-size: 0.9em;
+}
+.group-form-body .form-group {
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+#files-list .file-detail{
+    padding: 10px;
+    border-radius: 3px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.thumbnail{
+	width: 300px;
+    height: 200px;
+}
+ul li span.title{
+ 	font-weight: bold;
+ }
+ .wrap-content{
+ 	margin-top: 20px;
+ }
+.side-bar{
+	margin-top: 10px;
+}
+/******CSS Map**********/
+ #map{
+ 	width: 100%;
+ 	height: 450px;
+ 	margin-top: 145px;
+ }
+ #description {
+    font-size: 15px;
+    font-weight: 300;
+}
+#infowindow-content .title {
+    font-weight: bold;
+}
+      #infowindow-content {
+        display: none;
+      }
+      #map #infowindow-content {
+        display: inline;
+      }
+      .pac-card {
+        margin: 10px 10px 0 0;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+      }
+      #pac-container {
+        padding-bottom: 12px;
+        margin-right: 12px;
+      }
+      .pac-controls {
+        display: inline-block;
+        padding: 5px 11px;
+      }
+      .pac-controls label {
+        font-size: 13px;
+        font-weight: 300;
+      }
+      #form-dangtin > div > div:nth-child(2) > div.group-form-body > div:nth-child(3){
+      	position: relative;
+      }
+      #pac-input {
+          height: 35px;
+        background-color: #fff;
+        font-size: 15px;
+        position: absolute !important;
+        top: 22px !important;
+        left: 0 !important;
+        text-overflow: ellipsis;
+        color: #555;
+  	    background-image: none;
+  	    border: 1px solid #ccc;
+  	    border-radius: 4px;
+  	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      }
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+      #title {
+        color: #fff;
+        background-color: #4d90fe;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 6px 12px;
+      }
+      #target {
+        width: 345px;
+      }
+     

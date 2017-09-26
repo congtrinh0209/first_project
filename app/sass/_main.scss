@@ -131,7 +131,7 @@ article.main-content{
       border-radius: 5px;
       margin: 10px 0;
       padding: 5px;
-      // CSS nội dung trang home.html
+  // CSS nội dung trang home.html
       .content-left{
         padding: 0;
         padding-top: 5px;
@@ -201,7 +201,7 @@ article.main-content{
           }
         }
       }
-      // CSS phần content trang support.html
+  // CSS phần content trang support.html
       .help-form{
         padding: 5px;
         text-align: justify;
@@ -225,7 +225,7 @@ article.main-content{
           }
         }
       }
-      // CSS phần content trang news.html
+  // CSS phần content trang news.html
       .news{
         .row-news{
           min-height: 300px;
@@ -255,7 +255,7 @@ article.main-content{
       .text-indent{
         text-indent: 30px;
       }
-      // CSS phần content trang guide.html
+  // CSS phần content trang guide.html
       .guide_tab{
          a{
            font-weight: bold;
@@ -266,6 +266,50 @@ article.main-content{
         border: 1px solid #ddd;
         border-top:none;
         padding: 5px;
+      }
+  // CSS phần content trang manage.html
+      #quan_ly_tin{
+        #st1,#st1-2{
+          color: #ED2327
+        }
+        #st2,#st2-2{
+          color: #4CAF50;
+        }
+        #st1:hover,#st2:hover,#st1-2:hover,#st2-2:hover{
+          color: black;
+        }
+      }
+      #thong_tin_ca_nhan{
+        border: 1px solid #ddd;
+        border-top: none;
+        padding: 5px;
+        position: relative;
+        #update{
+          margin-left: 15px;
+          width: 150px !important;
+        }
+        .avatar{
+          position: absolute;
+          top: 5%;
+          right: 5%;
+        }
+        #displayImg {
+          width: 300px;
+          height: 200px;
+          border: 1px solid black;
+        }
+      }
+  // CSS trang rules.html, about-us.html
+      .wrapper_padding {
+        border: 1px solid #dedede;
+        border-radius: 2px;
+        box-shadow: 0 0 6px #ebebeb;
+        background: #fff;
+        padding: 0 15px 15px;
+        font-size: 14px;
+      }
+      article p {
+        margin: 0 0 10px 0 !important;
       }
     }
     .content-detail{
