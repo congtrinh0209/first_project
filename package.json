@@ -8,14 +8,22 @@
   },
   "author": "congtrinh0209",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.25.0",
     "babel-preset-env": "^1.6.0",
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^7.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sass-globbing": "0.0.2"
-  }
+    "gulp": "^3.9.1",
+    "gulp-sass-globbing": "^0.0.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/congtrinh0209/first_project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/congtrinh0209/first_project/issues"
+  },
+  "homepage": "https://github.com/congtrinh0209/first_project#readme"
 }

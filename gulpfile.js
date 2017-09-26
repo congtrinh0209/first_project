@@ -40,7 +40,7 @@ gulp.task('browserSync', function () {
     });
 });
 
-//all in one task
+//All in one task
 //Note: Task 'browserSync' and 'Sass', 'babel' always run before 'watch'.
 gulp.task("watch", ["browserSync", "sass", "babel"], function () {
     gulp.watch("app/sass/**/*.scss", ["sass"]);   //auto compile when file change and reload browser
