@@ -1,54 +1,21 @@
-/********** Load ảnh đại diện trang Manager  **********/
-function previewFile() {
-	let preview = document.getElementById('displayImg');
-	let file    = document.querySelector('input[type=file]').files[0];
-	let reader  = new FileReader();
+/********** JS CHO TRANG MANAGE.HTML - TRANG QUẢN LÝ Load ảnh đại diện  **********/
+	function previewFile() {
+		let preview = document.getElementById('displayImg');
+		let file    = document.querySelector('input[type=file]').files[0];
+		let reader  = new FileReader();
 
-	reader.addEventListener("load", function () {
-		preview.src = reader.result;
-	}, false);
+		reader.addEventListener("load", function () {
+			preview.src = reader.result;
+		}, false);
 
-	if (file) {
-		reader.readAsDataURL(file);
+		if (file) {
+			reader.readAsDataURL(file);
+		}
 	}
-}
 $(document).ready(function() {
-    /***Gán dữ liệu vào menu search khi chọn loại hình tim kiem******/
-    $(".room").on('click',function(){
-        $("#arrow1").css("display", "inline-block");
-        $(".loaihinh").val($(".loaihinh>option:nth-child(2)").val());
-        $("#search-target").text("Phòng cho thuê");
-    });
-    $(".house").on('click',function(){
-        $("#arrow1").css("display", "inline-block");
-        $(".loaihinh").val($(".loaihinh>option:nth-child(3)").val());
-        $("#search-target").text("Nhà cho thuê");
-    });
-    $(".flat").on('click',function(){
-        $("#arrow1").css("display", "inline-block");
-        $(".loaihinh").val($(".loaihinh>option:nth-child(4)").val());
-        $("#search-target").text("Căn hộ cho thuê");
-    });
-    $(".store").on('click',function(){
-        $("#arrow1").css("display", "inline-block");
-        $(".loaihinh").val($(".loaihinh>option:nth-child(5)").val());
-        $("#search-target").text("Mặt bằng cho thuê");
-    });
-    let window_width = innerWidth;
-    if (window_width <= 768) {
-        $(".header").attr("data-offset-top", "89");
-    }
-    //*****Hiển thị sign-in, sign-up
-    if ($(location).attr("href").search("psw")>0){
-        $(".navbar-right").css("display", "none");
-        $(".info-acc").css("display", "block");
-    }
-    $(".sign-out").on("click",()=>{
-        window.location.href = "home.html";
-    });
     //*************Check login//demo 2 user_data
         //****Lấy dữ liệu từ JSON - Gán cho biến
-    var data_json;
+    let data_json;
     $.getJSON("./data.json", (data)=>{
         data_json = data;
         return data_json;
@@ -70,6 +37,39 @@ $(document).ready(function() {
         });
         return false;
     });
+		/***Gán dữ liệu vào menu search khi chọn loại hình tim kiem******/
+		$(".room").on('click',function(){
+			$("#arrow1").css("display", "inline-block");
+			$(".loaihinh").val($(".loaihinh>option:nth-child(2)").val());
+			$("#search-target").text("Phòng cho thuê");
+		});
+		$(".house").on('click',function(){
+			$("#arrow1").css("display", "inline-block");
+			$(".loaihinh").val($(".loaihinh>option:nth-child(3)").val());
+			$("#search-target").text("Nhà cho thuê");
+		});
+		$(".flat").on('click',function(){
+			$("#arrow1").css("display", "inline-block");
+			$(".loaihinh").val($(".loaihinh>option:nth-child(4)").val());
+			$("#search-target").text("Căn hộ cho thuê");
+		});
+		$(".store").on('click',function(){
+			$("#arrow1").css("display", "inline-block");
+			$(".loaihinh").val($(".loaihinh>option:nth-child(5)").val());
+			$("#search-target").text("Mặt bằng cho thuê");
+		});
+		let window_width = innerWidth;
+		if (window_width <= 768) {
+			$(".header").attr("data-offset-top", "89");
+		}
+		//*****Hiển thị sign-in, sign-up
+		if ($(location).attr("href").search("psw")>0){
+			$(".navbar-right").css("display", "none");
+			$(".info-acc").css("display", "block");
+		}
+		$(".sign-out").on("click",()=>{
+			window.location.href = "home.html";
+		});
         //********Request send password
     $("#send").on("click",()=> {
         $.each(data_json.users,(key, value)=>{
@@ -93,7 +93,7 @@ $(document).ready(function() {
         });
     }
     function load_locale(){
-        var display_locale = "<option>Quận, Huyện</option>";
+        let display_locale = "<option>Quận, Huyện</option>";
         if ($(".locale-item").val() == "Hà Nội"){
             $.each(data_json.district_locale.district_hn,(key,value)=> {
                 display_locale += `<option>${value}</option>`;
@@ -127,10 +127,6 @@ $(document).ready(function() {
             });
         });
     }
-
-    // JS CHO TRANG MANAGE.HTML - TRANG QUẢN LÝ
-
-
 	/********** Trạng thái bài đăng DEMO CHO 2 BÀI ĐĂNG**********/
 	let date_current = new Date();
 	let msec_date_current = Date.parse(date_current);

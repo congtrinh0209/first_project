@@ -921,6 +921,11 @@ img {
               background-position: right top;
               color: black;
               cursor: pointer; }
+            .wrapper-content main aside.side-bar section.search-bar .search .icon-s a, .wrapper-content main aside.side-bar section.search-bar .news .icon-s a, .wrapper-content main aside.side-bar section.news-bar .search .icon-s a, .wrapper-content main aside.side-bar section.news-bar .news .icon-s a {
+              color: #ffffff;
+              padding: 10px 80px; }
+              .wrapper-content main aside.side-bar section.search-bar .search .icon-s a:hover, .wrapper-content main aside.side-bar section.search-bar .news .icon-s a:hover, .wrapper-content main aside.side-bar section.news-bar .search .icon-s a:hover, .wrapper-content main aside.side-bar section.news-bar .news .icon-s a:hover {
+                color: #000000; }
       .wrapper-content main aside.side-bar section.news-bar .news .new-item {
         padding: 5px;
         text-align: justify;
