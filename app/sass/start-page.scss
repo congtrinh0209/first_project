@@ -1,6 +1,8 @@
 //**Bourbon và font-face
 @import '../../bourbon/bourbon';
 @import 'font';
+$color-black: #000000;
+$color-white: #ffffff;
 //**Responsive mixin
 $tablet-width: 768px;
 $desktop-md-width: 992px;
@@ -19,6 +21,36 @@ $desktop-lg-width: 1200px;
   @media all and (min-width: #{$desktop-lg-width}) {
     @content
   }
+}
+// Animation
+@keyframes mouse-scroll {
+  0%{bottom: 30px}
+  50%{bottom: 45px}
+  100%{bottom: 30px}
+}
+//
+@mixin text($color,$font-size){
+  color: $color;
+  font-size: $font-size;
+}
+@mixin btn($color1,$color2){
+  background-color: $color1;
+  @include text($color-white,1.2em);
+  border-radius: 5px;
+  border: none;
+  //******
+  background: linear-gradient(to left, $color2 50%,$color1 50%);
+  background-size: 200% 100%;
+  transition: background-position 100ms ease;
+  background-position: left bottom;
+  &:hover{
+    background-position: right top;
+    color: black;
+    cursor: pointer;
+  }
+}
+@mixin btn1{
+  @include btn(#5cb85c,#69D17A)
 }
 @mixin position($type,$top,$right,$bottom,$left){
   position: $type;
@@ -64,20 +96,99 @@ img{
 //**CSS phần nội dung
 .wrap-content{
   width: 100%;
+  height: 100%;
   position: relative;
-  height: 1000px;
+  font-family: Helvetica ,"Helvetica Neue", Arial;
   .ad-audio{
     width:100%;
-    height: 100%;
-    background-position: center 100%;
-    background-image: url("./images/img-startpage/banner1.jpg");
-    border: 1px solid black;
+    height: 100vh;
+    background-position: center;
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/banner1.jpg");
     @include position(fixed, 0, null, null, null);
+    z-index: -1;
+  }
+  .content{
+    color: $color-black;
+    background-position: center top;
+    padding-top: 60px;
+    @include desktop-lg{
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed
+    }
+    .box-content{
+      max-width: 1020px;
+      margin: 0 auto;
+      .content-left{
+        width: 100%;
+        text-align: center;
+        @include tablet{
+          float: left;
+          width: 60%;
+        }
+        h5{}
+        h2{}
+        .text-des{}
+        button{
+          @include btn1;
+        }
+      }
+      .content-right{
+        width: 100%;
+        text-align: center;
+        @include tablet{
+          float: right;
+          width: 40%;
+        }
+        img{
+          width: 75%;
+        }
+      }
+    }
   }
   .content1{
     width: 100%;
-    height: 300px;
-    margin-top: 300px;
-    background: greenyellow;
+    height: 100vh;
+    background: transparent;
+    text-align: center;
+    position: relative;
+    .slogan{
+      max-width: 1020px;
+      font-size: 1em;
+      line-height: 70px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $color-white;
+      @include tablet{
+        font-size: 1.2em;
+      }
+      @include desktop-md{
+        font-size: 1.5em;
+      }
+      .btn-enter{
+        @include btn1;
+        width: 200px;
+        height: 45px;
+        margin: 0 auto;
+        a{
+          font-size: 18px;
+          color: $color-white;
+          line-height: 45px;
+        }
+        &:hover a{color: $color-black}
+      }
+    }
+    .scroll-icon img{
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: mouse-scroll 1.2s linear infinite;
+    }
+  }
+  .content2{
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg1.jpg");
   }
 }

@@ -14,6 +14,22 @@
   font-family: Lato-Italic;
   src: url("../fonts/Lato/fonts/Lato-Italic.woff2") format("woff2"), url("../fonts/Lato/fonts/Lato-Italic.ttf") format("truetype"), url("../fonts/Lato/fonts/Lato-Italic.eot") format("eot"); }
 
+@-webkit-keyframes mouse-scroll {
+  0% {
+    bottom: 30px; }
+  50% {
+    bottom: 45px; }
+  100% {
+    bottom: 30px; } }
+
+@keyframes mouse-scroll {
+  0% {
+    bottom: 30px; }
+  50% {
+    bottom: 45px; }
+  100% {
+    bottom: 30px; } }
+
 body {
   font-family: Lato-Regular, Helvetica, sans-serif;
   font-size: 14px; }
@@ -48,16 +64,115 @@ img {
 
 .wrap-content {
   width: 100%;
+  height: 100%;
   position: relative;
-  height: 1000px; }
+  font-family: Helvetica ,"Helvetica Neue", Arial; }
   .wrap-content .ad-audio {
     width: 100%;
-    height: 100%;
-    border: 1px solid black;
+    height: 100vh;
+    background-position: center;
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/banner1.jpg");
     position: fixed;
-    top: 0; }
+    top: 0;
+    z-index: -1; }
+  .wrap-content .content {
+    color: #000000;
+    background-position: center top;
+    padding-top: 60px; }
+    @media all and (min-width: 1200px) {
+      .wrap-content .content {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed; } }
+    .wrap-content .content .box-content {
+      max-width: 1020px;
+      margin: 0 auto; }
+      .wrap-content .content .box-content .content-left {
+        width: 100%;
+        text-align: center; }
+        @media all and (min-width: 768px) {
+          .wrap-content .content .box-content .content-left {
+            float: left;
+            width: 60%; } }
+        .wrap-content .content .box-content .content-left button {
+          background-color: #5cb85c;
+          color: #ffffff;
+          font-size: 1.2em;
+          border-radius: 5px;
+          border: none;
+          background: -webkit-gradient(linear, right top, left top, color-stop(50%, #69D17A), color-stop(50%, #5cb85c));
+          background: linear-gradient(to left, #69D17A 50%, #5cb85c 50%);
+          background-size: 200% 100%;
+          -webkit-transition: background-position 100ms ease;
+          transition: background-position 100ms ease;
+          background-position: left bottom; }
+          .wrap-content .content .box-content .content-left button:hover {
+            background-position: right top;
+            color: black;
+            cursor: pointer; }
+      .wrap-content .content .box-content .content-right {
+        width: 100%;
+        text-align: center; }
+        @media all and (min-width: 768px) {
+          .wrap-content .content .box-content .content-right {
+            float: right;
+            width: 40%; } }
+        .wrap-content .content .box-content .content-right img {
+          width: 75%; }
   .wrap-content .content1 {
     width: 100%;
-    height: 300px;
-    margin-top: 300px;
-    background: greenyellow; }
+    height: 100vh;
+    background: transparent;
+    text-align: center;
+    position: relative; }
+    .wrap-content .content1 .slogan {
+      max-width: 1020px;
+      font-size: 1em;
+      line-height: 70px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #ffffff; }
+      @media all and (min-width: 768px) {
+        .wrap-content .content1 .slogan {
+          font-size: 1.2em; } }
+      @media all and (min-width: 992px) {
+        .wrap-content .content1 .slogan {
+          font-size: 1.5em; } }
+      .wrap-content .content1 .slogan .btn-enter {
+        background-color: #5cb85c;
+        color: #ffffff;
+        font-size: 1.2em;
+        border-radius: 5px;
+        border: none;
+        background: -webkit-gradient(linear, right top, left top, color-stop(50%, #69D17A), color-stop(50%, #5cb85c));
+        background: linear-gradient(to left, #69D17A 50%, #5cb85c 50%);
+        background-size: 200% 100%;
+        -webkit-transition: background-position 100ms ease;
+        transition: background-position 100ms ease;
+        background-position: left bottom;
+        width: 200px;
+        height: 45px;
+        margin: 0 auto; }
+        .wrap-content .content1 .slogan .btn-enter:hover {
+          background-position: right top;
+          color: black;
+          cursor: pointer; }
+        .wrap-content .content1 .slogan .btn-enter a {
+          font-size: 18px;
+          color: #ffffff;
+          line-height: 45px; }
+        .wrap-content .content1 .slogan .btn-enter:hover a {
+          color: #000000; }
+    .wrap-content .content1 .scroll-icon img {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-animation: mouse-scroll 1.2s linear infinite;
+      animation: mouse-scroll 1.2s linear infinite; }
+  .wrap-content .content2 {
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg1.jpg"); }
