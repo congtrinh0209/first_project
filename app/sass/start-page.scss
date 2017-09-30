@@ -108,40 +108,158 @@ img{
     z-index: -1;
   }
   .content{
-    color: $color-black;
+    color: #1d2129;
     background-position: center top;
-    padding-top: 60px;
+    padding: 60px 0;
     @include desktop-lg{
       background-position: center;
       background-size: cover;
-      background-attachment: fixed
     }
-    .box-content{
+    .type1{
       max-width: 1020px;
       margin: 0 auto;
+      position: relative;
+      .content-left{
+          width: 100%;
+          text-align: left;
+          @include tablet{
+            float: left;
+            width: 60%;
+            padding-left: 15%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          h5{
+            font-size: 18px;
+            text-transform: uppercase;
+          }
+          h2{
+            font-size: 40px;
+          }
+          .text-des{
+            font-size: 15px;
+            margin-top: 20px;
+          }
+          button{
+            @include btn1;
+            width: 90px;
+            height: 40px;
+            margin-top: 30px;
+          }
+        }
+      .content-right{
+          width: 100%;
+          text-align: center;
+          @include tablet{
+            float: right;
+            width: 40%;
+          }
+          .wrap-right{
+            transform: rotate(5deg);
+            img{
+              width: 75%;
+            }
+          }
+        }
+    }
+    .type2{
+      max-width: 1020px;
+      margin: 0 auto;
+      position: relative;
+      .content-right{
+        width: 100%;
+        text-align: left;
+        @include tablet{
+          float: right;
+          width: 60%;
+          padding-right: 10%;
+          padding-left: 5%;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+        h5{
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+        h2{
+          font-size: 40px;
+        }
+        .text-des{
+          font-size: 15px;
+          margin-top: 20px;
+        }
+        button{
+          @include btn1;
+          width: 90px;
+          height: 40px;
+          margin-top: 30px;
+        }
+      }
       .content-left{
         width: 100%;
         text-align: center;
         @include tablet{
           float: left;
-          width: 60%;
-        }
-        h5{}
-        h2{}
-        .text-des{}
-        button{
-          @include btn1;
-        }
-      }
-      .content-right{
-        width: 100%;
-        text-align: center;
-        @include tablet{
-          float: right;
           width: 40%;
         }
-        img{
-          width: 75%;
+        .wrap-right{
+          transform: rotate(-5deg);
+          img{
+            width: 75%;
+          }
+        }
+      }
+    }
+    .type3{
+      max-width: 1020px;
+      margin: 0 auto;
+      position: relative;
+      .content-right{
+        width: 100%;
+        text-align: left;
+        @include tablet{
+          float: right;
+          width: 50%;
+          padding-right: 10%;
+          padding-left: 5%;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+        h5{
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+        h2{
+          font-size: 40px;
+        }
+        .text-des{
+          font-size: 15px;
+          margin-top: 20px;
+        }
+        button{
+          @include btn1;
+          width: 90px;
+          height: 40px;
+          margin-top: 30px;
+        }
+      }
+      .content-left{
+        width: 100%;
+        min-height: 400px;
+        text-align: center;
+        @include tablet{
+          float: left;
+          width: 50%;
+        }
+        .wrap-right{
+          img{
+            width: 75%;
+          }
         }
       }
     }
@@ -190,5 +308,16 @@ img{
   }
   .content2{
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg1.jpg");
+  }
+  .content3{
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg2.jpg");
+  }
+  .content4{
+    padding: 0;
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg3.jpg");
+    @include desktop-lg{
+      background-position: center 100%;
+      background-size: cover;
+    }
   }
 }
