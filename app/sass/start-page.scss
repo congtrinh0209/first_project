@@ -110,10 +110,31 @@ img{
   .content{
     color: #1d2129;
     background-position: center top;
-    padding: 60px 0;
+    padding: 20px;
+    @include tablet{
+      padding: 60px 0;
+    }
     @include desktop-lg{
       background-position: center;
       background-size: cover;
+    }
+    h5{
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    h2{
+      font-size: 40px;
+    }
+    .text-des{
+      font-size: 15px;
+      margin-top: 20px;
+      line-height: 2em;
+    }
+    button{
+      @include btn1;
+      width: 125px;
+      height: 40px;
+      margin-top: 30px;
     }
     .type1{
       max-width: 1020px;
@@ -130,23 +151,6 @@ img{
             top: 50%;
             transform: translateY(-50%);
           }
-          h5{
-            font-size: 18px;
-            text-transform: uppercase;
-          }
-          h2{
-            font-size: 40px;
-          }
-          .text-des{
-            font-size: 15px;
-            margin-top: 20px;
-          }
-          button{
-            @include btn1;
-            width: 90px;
-            height: 40px;
-            margin-top: 30px;
-          }
         }
       .content-right{
           width: 100%;
@@ -159,6 +163,7 @@ img{
             transform: rotate(5deg);
             img{
               width: 75%;
+              padding-top: 40px;
             }
           }
         }
@@ -180,23 +185,6 @@ img{
           right: 0;
           transform: translateY(-50%);
         }
-        h5{
-          font-size: 18px;
-          text-transform: uppercase;
-        }
-        h2{
-          font-size: 40px;
-        }
-        .text-des{
-          font-size: 15px;
-          margin-top: 20px;
-        }
-        button{
-          @include btn1;
-          width: 90px;
-          height: 40px;
-          margin-top: 30px;
-        }
       }
       .content-left{
         width: 100%;
@@ -209,6 +197,7 @@ img{
           transform: rotate(-5deg);
           img{
             width: 75%;
+            padding-top: 40px;
           }
         }
       }
@@ -230,23 +219,6 @@ img{
           right: 0;
           transform: translateY(-50%);
         }
-        h5{
-          font-size: 18px;
-          text-transform: uppercase;
-        }
-        h2{
-          font-size: 40px;
-        }
-        .text-des{
-          font-size: 15px;
-          margin-top: 20px;
-        }
-        button{
-          @include btn1;
-          width: 90px;
-          height: 40px;
-          margin-top: 30px;
-        }
       }
       .content-left{
         width: 100%;
@@ -259,6 +231,7 @@ img{
         .wrap-right{
           img{
             width: 75%;
+            padding-top: 40px;
           }
         }
       }
@@ -313,11 +286,19 @@ img{
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg2.jpg");
   }
   .content4{
-    padding: 0;
+    padding:20px;
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg3.jpg");
+    @include tablet{
+      padding:20px 0;
+    }
     @include desktop-lg{
       background-position: center 100%;
       background-size: cover;
     }
+  }
+  .content5{
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg4.jpg");
+    color: $color-white;
+    font-weight: bold;
   }
 }
