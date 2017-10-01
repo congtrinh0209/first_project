@@ -153,20 +153,23 @@ img{
           }
         }
       .content-right{
-          width: 100%;
-          text-align: center;
-          @include tablet{
-            float: right;
-            width: 40%;
-          }
-          .wrap-right{
-            transform: rotate(5deg);
-            img{
-              width: 75%;
-              padding-top: 40px;
-            }
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        @include tablet{
+          float: right;
+          width: 40%;
+        }
+        .wrap-right{
+          transform: translateX(120px);
+          transition: opacity 1.5s cubic-bezier(.01, .04, .26, .95), transform 1.5s cubic-bezier(.03, .68, .26, .95);
+          img{
+            width: 75%;
+            padding-top: 40px;
+            transform: rotate(5deg)
           }
         }
+      }
     }
     .type2{
       max-width: 1020px;
@@ -189,15 +192,18 @@ img{
       .content-left{
         width: 100%;
         text-align: center;
+        overflow: hidden;
         @include tablet{
           float: left;
           width: 40%;
         }
         .wrap-right{
-          transform: rotate(-5deg);
+          transform: translateX(-120px);
+          transition: opacity 1.5s cubic-bezier(.01, .04, .26, .95), transform 1.5s cubic-bezier(.03, .68, .26, .95);
           img{
             width: 75%;
             padding-top: 40px;
+            transform: rotate(-5deg);
           }
         }
       }
