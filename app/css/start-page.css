@@ -30,6 +30,40 @@
   100% {
     bottom: 30px; } }
 
+@-webkit-keyframes wave-animation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    visibility: visible; }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    visibility: hidden; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    visibility: visible; } }
+
+@keyframes wave-animation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    visibility: visible; }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    visibility: hidden; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    visibility: visible; } }
+
 body {
   font-family: Lato-Regular, Helvetica, sans-serif;
   font-size: 14px; }
@@ -283,8 +317,12 @@ img {
     font-weight: bold; }
     .wrap-content .content2 .content-right .wrap-right img {
       -webkit-transform: rotate(0deg) !important;
-      transform: rotate(0deg) !important; }
-    .wrap-content .content2 .content-right .wrap-right .local .icon-locale {
+      transform: rotate(0deg) !important;
+      padding: 0 !important;
+      width: 80% !important; }
+    .wrap-content .content2 .content-right .wrap-right .locale:hover {
+      cursor: pointer; }
+    .wrap-content .content2 .content-right .wrap-right .locale .icon-locale {
       border-radius: 50%;
       text-align: center;
       width: 28px;
@@ -293,21 +331,115 @@ img {
       padding-top: 5px;
       color: white;
       float: left; }
-    .wrap-content .content2 .content-right .wrap-right .local .locale-text {
+    .wrap-content .content2 .content-right .wrap-right .locale .locale-text {
       text-align: center;
       padding: 5px;
       float: right;
       color: white;
       font-size: 1.2em; }
-    .wrap-content .content2 .content-right .wrap-right .local .hn {
+    .wrap-content .content2 .content-right .wrap-right .locale .wave {
       position: absolute;
-      top: 94px;
-      left: 35%;
+      display: block;
+      z-index: -1;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      opacity: 0;
+      background-color: #3061AE;
+      visibility: hidden;
+      -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+      transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+      transition: opacity .3s, transform .3s, visibility 0s 1s;
+      transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+      -webkit-animation: wave-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+      animation: wave-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite; }
+    .wrap-content .content2 .content-right .wrap-right .locale.hn {
+      position: absolute;
+      top: 21%;
+      left: 39%;
       z-index: 5;
-      padding-top: 13px; }
-      .wrap-content .content2 .content-right .wrap-right .local .hn .locale-text {
-        color: blue;
+      padding-top: 0; }
+      .wrap-content .content2 .content-right .wrap-right .locale.hn .locale-text {
+        color: red;
         font-size: 1.2em; }
+      .wrap-content .content2 .content-right .wrap-right .locale.hn .wave-hn {
+        top: 0;
+        left: 0; }
+    .wrap-content .content2 .content-right .wrap-right .locale.dn {
+      position: absolute;
+      top: 47%;
+      left: 59%;
+      z-index: 5;
+      padding-top: 20px; }
+      .wrap-content .content2 .content-right .wrap-right .locale.dn .wave-dn {
+        top: 21px;
+        left: 0; }
+    .wrap-content .content2 .content-right .wrap-right .locale.hcm {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      z-index: 5;
+      padding-top: 20px; }
+      .wrap-content .content2 .content-right .wrap-right .locale.hcm .wave-hcm {
+        top: 21px;
+        left: 0; }
+    .wrap-content .content2 .content-right .wrap-right .container-popover {
+      display: none;
+      visibility: hidden;
+      width: 75%;
+      position: absolute;
+      z-index: 20;
+      background: #fff;
+      border: 1px solid #d4d5d5;
+      border-radius: 10px;
+      -webkit-box-shadow: 5px 5px 10px #03325d;
+      box-shadow: 5px 5px 10px #03325d; }
+      .wrap-content .content2 .content-right .wrap-right .container-popover.first {
+        top: 29%;
+        left: 7%; }
+      .wrap-content .content2 .content-right .wrap-right .container-popover.second {
+        top: 59%;
+        left: 26%; }
+      .wrap-content .content2 .content-right .wrap-right .container-popover.third {
+        top: 35%;
+        left: 17%; }
+      .wrap-content .content2 .content-right .wrap-right .container-popover .ppover .triangle_border {
+        position: absolute;
+        width: 20px;
+        height: 13px;
+        top: -13px;
+        margin-left: 44.5%;
+        background: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/boder-top.png") no-repeat; }
+      .wrap-content .content2 .content-right .wrap-right .container-popover .ppover .locale-item3 {
+        background: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/boder-bottom.png") no-repeat;
+        position: absolute;
+        width: 20px;
+        height: 13px;
+        top: 100%; }
+      .wrap-content .content2 .content-right .wrap-right .container-popover .ppover ul li.text {
+        margin: 0 auto;
+        font-size: 18px;
+        color: #0558a4;
+        padding: 10px 0; }
+      .wrap-content .content2 .content-right .wrap-right .container-popover .ppover ul li.img {
+        position: absolute;
+        border: 1px solid #e2e2e2;
+        width: 89%;
+        top: 50px;
+        left: 13px; }
+      .wrap-content .content2 .content-right .wrap-right .container-popover .ppover ul li.view-more {
+        font-size: 16px;
+        color: #fff;
+        margin: 10px 0; }
+        .wrap-content .content2 .content-right .wrap-right .container-popover .ppover ul li.view-more:hover {
+          opacity: 0.6; }
+        .wrap-content .content2 .content-right .wrap-right .container-popover .ppover ul li.view-more div {
+          border-radius: 4px;
+          text-align: center;
+          cursor: pointer; }
+          .wrap-content .content2 .content-right .wrap-right .container-popover .ppover ul li.view-more div button {
+            margin-top: 0;
+            font-size: 1em; }
   .wrap-content .content3 {
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg2.jpg"); }
   .wrap-content .content4 {

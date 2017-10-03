@@ -53,11 +53,9 @@ $desktop-lg-width: 1200px;
   z-index: 5;
   padding-top: $pdt;
 }
-@mixin popover($mrt, $mrl){
-  display: none;
-  visibility: hidden;
-  margin-top: $mrt;
-  margin-left: $mrl;
+@mixin popover($top, $left){
+  top: $top;
+  left: $left;
 }
 //
 @mixin text($color,$font-size){
@@ -329,8 +327,13 @@ img{
       .wrap-right{
         img{
           transform: rotate(0deg) !important;
+          padding: 0 !important;
+          width: 80% !important;
         }
-        .local{
+        .locale{
+          &:hover{
+            cursor: pointer;
+          }
           .icon-locale{
             border-radius: 50%;
             text-align: center;
@@ -361,25 +364,25 @@ img{
             transition: opacity .3s, transform .3s, visibility 0s 1s;
             animation: wave-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           }
-          .hn{
-            @include locale(94px, 35%, 13px);
+          &.hn{
+            @include locale(21%, 39%, 0);
             .locale-text{
-              @include text(blue, 1.2em)
+              @include text(red, 1.2em)
             }
             .wave-hn{
               top: 0;
               left: 0;
             }
           }
-          .dn{
-            @include locale(280px, 67%, 20px);
+          &.dn{
+            @include locale(47%, 59%, 20px);
             .wave-dn{
               top: 21px;
               left: 0;
             }
           }
-          .hcm{
-            @include locale(458px, 50%, 20px);
+          &.hcm{
+            @include locale(75%, 50%, 20px);
             .wave-hcm{
               top: 21px;
               left: 0;
@@ -387,22 +390,23 @@ img{
           }
         }
         .container-popover{
+          display: none;
+          visibility: hidden;
           width: 75%;
-          height: 250px;
           position: absolute;
           z-index: 20;
           background: #fff;
           border: 1px solid #d4d5d5;
           border-radius: 10px;
           box-shadow: 5px 5px 10px #03325d;
-          .first{
-            @include popover(135px, 3%)
+          &.first{
+            @include popover(29%, 7%)
           }
-          .second{
-            @include popover(36px, 26%)
+          &.second{
+            @include popover(59%, 26%)
           }
-          .third{
-            @include popover(210px, 17%)
+          &.third{
+            @include popover(35%, 17%)
           }
           .ppover{
             .triangle_border{
@@ -412,25 +416,20 @@ img{
               top: -13px;
               margin-left: 44.5%;
               background: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/boder-top.png") no-repeat;
-              &:nth-child(2), &:nth-child(3){
-                background: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/boder-bottom.png") no-repeat;
-                top: 248px;
-              }
+            }
+            .locale-item3{
+              background: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/boder-bottom.png") no-repeat;
+              position: absolute;
+              width: 20px;
+              height: 13px;
+              top: 100%;
             }
             ul{
               li.text{
-                width: 100px;
-                margin: 15px 90px;
-                font-size: 20px;
+                margin: 0 auto;
+                font-size: 18px;
                 color: #0558a4;
-                line-height: 110%;
-                &:nth-child(2){
-                  margin: 15px 80px;
-                }
-                &:nth-child(3){
-                  width: 130px;
-                  margin: 15px 63px;
-                }
+                padding: 10px 0;
               }
               li.img{
                 position: absolute;
@@ -440,22 +439,20 @@ img{
                 left: 13px;
               }
               li.view-more{
-                position: absolute;
                 font-size: 16px;
                 color: #fff;
-                bottom: 20px;
-                left: 37px;
+                margin: 10px 0;
                 &:hover{
                   opacity: 0.6;
                 }
                 div{
-                  width: 190%;
-                  margin: 10px 0 0 16.7%;
-                  background: #0558a4;
                   border-radius: 4px;
                   text-align: center;
-                  padding: 12px 0 12px 0;
                   cursor: pointer;
+                  button{
+                    margin-top: 0;
+                    font-size: 1em;
+                  }
                 }
               }
             }
