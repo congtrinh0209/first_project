@@ -277,7 +277,37 @@ img {
       -webkit-animation: mouse-scroll 1.2s linear infinite;
       animation: mouse-scroll 1.2s linear infinite; }
   .wrap-content .content2 {
-    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg1.jpg"); }
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg9.jpg");
+    background-size: cover;
+    color: #ffffff;
+    font-weight: bold; }
+    .wrap-content .content2 .content-right .wrap-right img {
+      -webkit-transform: rotate(0deg) !important;
+      transform: rotate(0deg) !important; }
+    .wrap-content .content2 .content-right .wrap-right .local .icon-locale {
+      border-radius: 50%;
+      text-align: center;
+      width: 28px;
+      height: 28px;
+      background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/locale.png");
+      padding-top: 5px;
+      color: white;
+      float: left; }
+    .wrap-content .content2 .content-right .wrap-right .local .locale-text {
+      text-align: center;
+      padding: 5px;
+      float: right;
+      color: white;
+      font-size: 1.2em; }
+    .wrap-content .content2 .content-right .wrap-right .local .hn {
+      position: absolute;
+      top: 94px;
+      left: 35%;
+      z-index: 5;
+      padding-top: 13px; }
+      .wrap-content .content2 .content-right .wrap-right .local .hn .locale-text {
+        color: blue;
+        font-size: 1.2em; }
   .wrap-content .content3 {
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg2.jpg"); }
   .wrap-content .content4 {
@@ -295,5 +325,4 @@ img {
     color: #ffffff;
     font-weight: bold; }
   .wrap-content .content6 {
-    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg9.jpg");
-    color: #ffffff; }
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg1.jpg"); }
