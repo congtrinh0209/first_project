@@ -81,7 +81,7 @@ img {
     padding: 20px; }
     @media all and (min-width: 768px) {
       .wrap-content .content {
-        padding: 60px 0; } }
+        padding: 40px 0; } }
     @media all and (min-width: 1200px) {
       .wrap-content .content {
         background-position: center;
@@ -132,6 +132,7 @@ img {
             transform: translateY(-50%); } }
       .wrap-content .content .type1 .content-right {
         width: 100%;
+        padding: 20px;
         text-align: center;
         overflow: hidden; }
         @media all and (min-width: 768px) {
@@ -139,6 +140,7 @@ img {
             float: right;
             width: 40%; } }
         .wrap-content .content .type1 .content-right .wrap-right {
+          opacity: 0;
           -webkit-transform: translateX(120px);
           transform: translateX(120px);
           -webkit-transition: opacity 1.5s cubic-bezier(0.01, 0.04, 0.26, 0.95), -webkit-transform 1.5s cubic-bezier(0.03, 0.68, 0.26, 0.95);
@@ -170,6 +172,7 @@ img {
             transform: translateY(-50%); } }
       .wrap-content .content .type2 .content-left {
         width: 100%;
+        padding: 20px;
         text-align: center;
         overflow: hidden; }
         @media all and (min-width: 768px) {
@@ -177,6 +180,7 @@ img {
             float: left;
             width: 40%; } }
         .wrap-content .content .type2 .content-left .wrap-right {
+          opacity: 0;
           -webkit-transform: translateX(-120px);
           transform: translateX(-120px);
           -webkit-transition: opacity 1.5s cubic-bezier(0.01, 0.04, 0.26, 0.95), -webkit-transform 1.5s cubic-bezier(0.03, 0.68, 0.26, 0.95);
@@ -290,3 +294,6 @@ img {
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg4.jpg");
     color: #ffffff;
     font-weight: bold; }
+  .wrap-content .content6 {
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg9.jpg");
+    color: #ffffff; }

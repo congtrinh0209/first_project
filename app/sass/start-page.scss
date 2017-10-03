@@ -112,7 +112,7 @@ img{
     background-position: center top;
     padding: 20px;
     @include tablet{
-      padding: 60px 0;
+      padding: 40px 0;
     }
     @include desktop-lg{
       background-position: center;
@@ -154,6 +154,7 @@ img{
         }
       .content-right{
         width: 100%;
+        padding: 20px;
         text-align: center;
         overflow: hidden;
         @include tablet{
@@ -161,6 +162,7 @@ img{
           width: 40%;
         }
         .wrap-right{
+          opacity: 0;
           transform: translateX(120px);
           transition: opacity 1.5s cubic-bezier(.01, .04, .26, .95), transform 1.5s cubic-bezier(.03, .68, .26, .95);
           img{
@@ -191,6 +193,7 @@ img{
       }
       .content-left{
         width: 100%;
+        padding: 20px;
         text-align: center;
         overflow: hidden;
         @include tablet{
@@ -198,6 +201,7 @@ img{
           width: 40%;
         }
         .wrap-right{
+          opacity: 0;
           transform: translateX(-120px);
           transition: opacity 1.5s cubic-bezier(.01, .04, .26, .95), transform 1.5s cubic-bezier(.03, .68, .26, .95);
           img{
@@ -306,5 +310,9 @@ img{
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg4.jpg");
     color: $color-white;
     font-weight: bold;
+  }
+  .content6{
+    background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg9.jpg");
+    color: $color-white;
   }
 }
