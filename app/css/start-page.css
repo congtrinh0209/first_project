@@ -128,7 +128,8 @@ img {
     .wrap-content .content .text-des {
       font-size: 15px;
       margin-top: 20px;
-      line-height: 2em; }
+      line-height: 2em;
+      text-indent: 22px; }
     .wrap-content .content button {
       background-color: #5cb85c;
       color: #ffffff;
@@ -148,6 +149,10 @@ img {
         background-position: right top;
         color: black;
         cursor: pointer; }
+      .wrap-content .content button a {
+        color: #ffffff; }
+      .wrap-content .content button:hover a {
+        color: #000000; }
     .wrap-content .content .type1 {
       max-width: 1020px;
       margin: 0 auto;
@@ -260,13 +265,23 @@ img {
     height: 100vh;
     background: transparent;
     text-align: center;
-    position: relative; }
+    position: relative;
+    padding-top: 0; }
+    .wrap-content .content1 .logo {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      z-index: 10; }
+      .wrap-content .content1 .logo img {
+        height: 200px; }
     .wrap-content .content1 .slogan {
       max-width: 1020px;
       font-size: 1em;
       line-height: 70px;
       position: relative;
-      top: 50%;
+      top: 65%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
@@ -454,7 +469,6 @@ img {
         background-size: cover; } }
   .wrap-content .content5 {
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg4.jpg");
-    color: #ffffff;
-    font-weight: bold; }
+    color: #ffffff; }
   .wrap-content .content6 {
     background-image: url("https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-startpage/bg1.jpg"); }
