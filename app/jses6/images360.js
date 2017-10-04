@@ -12,7 +12,7 @@ $(document).ready(function(){
                 "pitch": -3,
                 "yaw": -50,
                 "type": "equirectangular",
-                "panorama": "https://congtrinh0209.github.io/Du_anTN/IMG/IMG-360/PANO_20170601_155002_1.jpg",
+                "panorama": "https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-360/PANO_20170601_155002_1.jpg",
                 "autoRotate": -3,
                 "hotSpots": [
                     {
@@ -33,7 +33,7 @@ $(document).ready(function(){
                 "pitch": -50,
                 "yaw": 80,
                 "type": "equirectangular",
-                "panorama": "https://congtrinh0209.github.io/Du_anTN/IMG/IMG-360/PANO_20170601_162248_3.jpg",
+                "panorama": "https://raw.githubusercontent.com/congtrinh0209/first_project/master/app/images/img-360/PANO_20170601_162248_3.jpg",
                 "autoLoad": true,
                 "autoRotate": -3,
                 "hotSpots": [
