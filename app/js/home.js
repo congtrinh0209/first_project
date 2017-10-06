@@ -188,5 +188,4 @@ $(document).ready(function () {
 								$('#status2').html("Tin đang được đăng");
 								$('#status2').css("color", "#4CAF50");
 				});
-				///////////////////////////////////
 });

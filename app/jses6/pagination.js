@@ -80,7 +80,7 @@ $(document).ready(function() {
                             <li class="active"><a data-toggle="tab" href="#menu1_${key + 1}">THÔNG TIN CHUNG</a></li>
                             <li><a data-toggle="tab" href="#menu2_${key + 1}">MÔ TẢ CHI TIẾT</a></li>
                             <li><a data-toggle="tab" href="#menu3_${key + 1}">HÌNH ẢNH</a></li>
-                            <li><a data-toggle="tab" href="#menu5_${key + 1}">ẢNH 360<sup>o</sup></a></li>
+                            <li class = "img-360${key + 1}"><a data-toggle="tab" href="#menu5_${key + 1}">ẢNH 360<sup>o</sup></a></li>
                             <li class="position item${key + 1}"><a data-toggle="tab" href="#menu4_${key + 1}">VỊ TRÍ</a></li>
                         </ul>
                         <!-- Content navs tabs-->
@@ -178,8 +178,7 @@ $(document).ready(function() {
                                 </div>
                             </div>
                             <div id="menu5_${key + 1}" class="tab-pane fade">
-                                <p style="color: green">Tính năng này hiện chỉ hỗ trợ trên Chrome Browser</p>
-                                <div id="panorama${key + 1}" class="panorama"></div>
+                               <div id="panorama${key + 1}" class="panorama"></div>
                             </div>
                         </div>
                     </div>
